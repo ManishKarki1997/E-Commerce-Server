@@ -1,6 +1,7 @@
 import express, { NextFunction, Request, Response } from "express";
 import { PrismaClient } from "@prisma/client";
-import jwt from "jsonwebtoken";
+// import jwt from "jsonwebtoken";
+const jwt = require("jsonwebtoken");
 import bcrypt from "bcryptjs";
 import {
   BAD_REQUEST_ERROR,
@@ -34,6 +35,9 @@ Router.post("/", async (req: Request, res: Response, next: NextFunction) => {
       process.env.JWT_SECRET_KEY || "random_jwt_2321@231**@$@#)"
     );
 
+    const activationExpiryDate = new Date();
+    activationExpiryDate.setHours(activationExpiryDate.getHours() + 6);
+
     await sendEmail(
       "manishkarki247@gmail.com",
       "Activate your X-Commerce Account",
@@ -56,6 +60,7 @@ Router.post("/", async (req: Request, res: Response, next: NextFunction) => {
         password: hashedPassword,
         avatar,
         accountActivationToken,
+        activationExpiryDate,
       },
     });
 
@@ -72,5 +77,55 @@ Router.post("/", async (req: Request, res: Response, next: NextFunction) => {
     next(error);
   }
 });
+
+// activate account
+Router.get(
+  "/activateAccount",
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      interface Token {
+        token?: string;
+      }
+      const { token }: Token = req.query;
+
+      const { email } = jwt.decode(token!, process.env.JWT_SECRET_KEY);
+
+      if (!email) {
+        throw new BAD_REQUEST_ERROR("Invalid Token");
+      }
+
+      const user = await prisma.user.findFirst({ where: { email } });
+
+      if (!user) {
+        throw new BAD_REQUEST_ERROR("User does not exist");
+      }
+
+      if (user?.activationExpiryDate < new Date()) {
+        throw new BAD_REQUEST_ERROR(
+          "Activation token has expired. Please try and login to resend the token again."
+        );
+      }
+
+      const activatedUser = await prisma.user.update({
+        where: {
+          email,
+        },
+        data: {
+          ...user,
+          isActivated: true,
+          accountActivationToken: "",
+          activationExpiryDate: new Date(),
+        },
+      });
+
+      return res
+        .status(HttpStatusCode.OK)
+        .send(new OK_REQUEST("Account activated successfully.", activatedUser));
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  }
+);
 
 export default Router;
