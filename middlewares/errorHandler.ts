@@ -8,16 +8,10 @@ const errorHandler = (
   res: Response,
   next: NextFunction
 ) => {
-  if (err instanceof BaseError) {
-    return res.status(err.httpCode).send({
-      error: true,
-      err,
-    });
-  }
-
-  return res.status(HttpStatusCode.INTERNAL_SERVER).send({
+  console.log(err);
+  return res.status(err.httpCode).send({
     error: true,
-    message: "Something went wrong",
+    message: err.message,
   });
 };
 

@@ -1,11 +1,12 @@
 import express, { NextFunction, Request, Response } from "express";
 import { PrismaClient } from "@prisma/client";
-// import jwt from "jsonwebtoken";
+import cookie from "cookie";
 const jwt = require("jsonwebtoken");
 import bcrypt from "bcryptjs";
 import {
   BAD_REQUEST_ERROR,
   INTERNAL_SERVER_ERROR,
+  NOT_FOUND_ERROR,
   OK_REQUEST,
 } from "../helpers/Error";
 import { HttpStatusCode } from "../constants/HttpStatusCodes";
@@ -13,6 +14,9 @@ import sendEmail from "../helpers/SendMail";
 const prisma = new PrismaClient();
 
 const Router = express.Router();
+
+const cookieAgeInDays = 2;
+const confirmAccountExpiryInHours = 24;
 
 // register user
 Router.post("/", async (req: Request, res: Response, next: NextFunction) => {
@@ -36,7 +40,9 @@ Router.post("/", async (req: Request, res: Response, next: NextFunction) => {
     );
 
     const activationExpiryDate = new Date();
-    activationExpiryDate.setHours(activationExpiryDate.getHours() + 6);
+    activationExpiryDate.setHours(
+      activationExpiryDate.getHours() + confirmAccountExpiryInHours
+    );
 
     await sendEmail(
       "manishkarki247@gmail.com",
@@ -123,6 +129,56 @@ Router.get(
         .send(new OK_REQUEST("Account activated successfully.", activatedUser));
     } catch (error) {
       console.log(error);
+      next(error);
+    }
+  }
+);
+
+// login
+Router.post(
+  "/login",
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { email, password } = req.body;
+
+      const existingUser = await prisma.user.findFirst({
+        where: {
+          email,
+        },
+      });
+
+      if (!existingUser) {
+        throw new NOT_FOUND_ERROR("User with that email not found");
+      }
+
+      const isPasswordValid = await bcrypt.compareSync(
+        password,
+        existingUser.password
+      );
+
+      if (!isPasswordValid) {
+        throw new BAD_REQUEST_ERROR("Invalid Credentials");
+      }
+
+      const token = jwt.sign(
+        { email: existingUser.email },
+        process.env.JWT_SECRET_KEY || "random_jwt_2321@231**@$@#)"
+      );
+
+      res.setHeader(
+        "Set-Cookie",
+        cookie.serialize("xcommerce", token, {
+          httpOnly: true,
+          secure: true,
+          maxAge: 60 * 60 * 24 * cookieAgeInDays, // 1 day
+        })
+      );
+
+      return res
+        .status(HttpStatusCode.OK)
+        .send(new OK_REQUEST("Logged in successfully", existingUser));
+    } catch (error) {
+      // console.log(error);
       next(error);
     }
   }
