@@ -36,6 +36,6 @@ export class OK_REQUEST {
 
   constructor(message = "Success", payload: any = {}) {
     this.message = message;
-    this.payload = { ...payload };
+    this.payload = payload;
   }
 }
