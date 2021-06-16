@@ -13,13 +13,15 @@ generator client {
 
 
 model User {
+  @@map("users")
   id      Int      @default(autoincrement()) @id
   uid     String   @default(uuid()) @unique
   email   String   @unique
   name    String
   password String
-  avatar  String
+  avatar  String @default("https://initiate.alphacoders.com/images/879/cropped-1920-1200-879280.jpg?711")
   isActivated Boolean @default(false)
+  isDeleted Boolean @default(false)
   role    UserRole @default(USER)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
