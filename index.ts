@@ -2,11 +2,13 @@ import express from "express";
 import cookieParser from "cookie-parser";
 import errorHandler from "./middlewares/errorHandler";
 import { AuthController } from "./controllers";
+import { auth } from "./middlewares";
 
 const app = express();
 
 app.use(express.json());
 app.use(cookieParser());
+app.use(auth);
 
 app.use("/api/users", AuthController);
 

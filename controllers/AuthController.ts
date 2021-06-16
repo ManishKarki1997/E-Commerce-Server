@@ -11,6 +11,7 @@ import {
 } from "../helpers/Error";
 import { HttpStatusCode } from "../constants/HttpStatusCodes";
 import sendEmail from "../helpers/SendMail";
+import { NOTFOUND } from "dns";
 const prisma = new PrismaClient();
 
 const Router = express.Router();
@@ -183,5 +184,35 @@ Router.post(
     }
   }
 );
+
+// get logged in user
+Router.get("/me", async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    const { token } = req.cookies;
+
+    const { email } = jwt.decode(token!, process.env.JWT_SECRET_KEY);
+
+    if (!email) {
+      throw new BAD_REQUEST_ERROR("Invalid Token");
+    }
+
+    const user = await prisma.user.findFirst({
+      where: {
+        email,
+      },
+    });
+
+    if (!user) {
+      throw new NOT_FOUND_ERROR("User not found");
+    }
+
+    return res
+      .status(HttpStatusCode.OK)
+      .send(new OK_REQUEST("Logged in successfully", user));
+  } catch (error) {
+    console.log(error);
+    next(error);
+  }
+});
 
 export default Router;
