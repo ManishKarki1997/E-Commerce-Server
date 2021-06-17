@@ -51,7 +51,7 @@ Router.post("/", async (req: Request, res: Response, next: NextFunction) => {
           },
         })
       );
-      return
+      return;
     }
 
     const salt = await bcrypt.genSalt(12);
@@ -121,14 +121,14 @@ Router.get(
 
       if (!email) {
         next(new BAD_REQUEST_ERROR("Invalid Token"));
-        return
+        return;
       }
 
       const user = await prisma.user.findFirst({ where: { email } });
 
       if (!user) {
         next(new BAD_REQUEST_ERROR("User does not exist"));
-        return
+        return;
       }
 
       if (user?.activationExpiryDate! < new Date()) {
@@ -137,7 +137,7 @@ Router.get(
             "Activation token has expired. Please try and login to resend the token again."
           )
         );
-        return
+        return;
       }
 
       const activatedUser = await prisma.user.update({
@@ -168,6 +168,7 @@ Router.post(
   async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { email, password } = req.body;
+      console.log(req.body);
 
       const existingUser = await prisma.user.findFirst({
         where: {
@@ -176,8 +177,13 @@ Router.post(
       });
 
       if (!existingUser) {
-        next(new NOT_FOUND_ERROR("User with that email not found"));
-        return
+        next(
+          new NOT_FOUND_ERROR("User with that email not found", {
+            email: "Invalid Credentials",
+            password: "Invalid Credentials",
+          })
+        );
+        return;
       }
 
       const isPasswordValid = bcrypt.compareSync(
@@ -186,9 +192,13 @@ Router.post(
       );
 
       if (!isPasswordValid) {
-        next(new BAD_REQUEST_ERROR("Invalid Credentials"));
-        return
-
+        next(
+          new BAD_REQUEST_ERROR("Invalid Credentials", {
+            password: "Invalid Credentials",
+            email: "Invalid Credentials",
+          })
+        );
+        return;
       }
 
       const token = jwt.sign(
@@ -207,11 +217,10 @@ Router.post(
 
       return res
         .status(HttpStatusCode.OK)
-        .send(new OK_REQUEST("Logged in successfully", existingUser));
+        .send(new OK_REQUEST("Logged in successfully", { user: existingUser }));
     } catch (error) {
       // console.log(error);
       next(error);
-      
     }
   }
 );
@@ -228,8 +237,7 @@ Router.get(
 
       if (!email) {
         next(new BAD_REQUEST_ERROR("Invalid Token"));
-        return
-
+        return;
       }
 
       const user = await prisma.user.findFirst({
@@ -240,8 +248,7 @@ Router.get(
 
       if (!user) {
         next(new NOT_FOUND_ERROR("User not found"));
-        return
-
+        return;
       }
 
       return res

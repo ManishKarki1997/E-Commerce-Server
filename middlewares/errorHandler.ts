@@ -10,13 +10,15 @@ const errorHandler = (
 ) => {
   if (err.httpCode !== undefined) {
     return res.status(err.httpCode).send({
-      error: true,
+      error: err.httpCode != 200,
       message: err.message,
-      payload: err.payload,
+      errors: err.httpCode == 200 ? null : err.payload,
+      payload: err.httpCode == 200 ? err.payload : null,
     });
   } else {
     return res.status(500).send({
       error: true,
+      errors: {},
       message: "Something went wrong",
     });
   }
