@@ -11,7 +11,10 @@ import {
 } from "../helpers/Error";
 import { HttpStatusCode } from "../constants/HttpStatusCodes";
 import sendEmail from "../helpers/SendMail";
-import { NOTFOUND } from "dns";
+import { auth } from "../middlewares";
+import { UserSchema } from "../validators";
+import { transformJoiErrors } from "../helpers";
+
 const prisma = new PrismaClient();
 
 const Router = express.Router();
@@ -23,13 +26,32 @@ const confirmAccountExpiryInHours = 24;
 Router.post("/", async (req: Request, res: Response, next: NextFunction) => {
   const { name, email, avatar, password } = req.body;
   try {
+    const isValidSchema = UserSchema.validate(req.body, {
+      stripUnknown: true,
+    });
+    if (isValidSchema.error) {
+      return next(
+        new BAD_REQUEST_ERROR(
+          "Invalid Data",
+          transformJoiErrors(isValidSchema.error)
+        )
+      );
+    }
+
     const existingUser = await prisma.user.findFirst({
       where: {
         email,
       },
     });
     if (existingUser) {
-      throw new BAD_REQUEST_ERROR("User with that email already exists");
+      next(
+        new BAD_REQUEST_ERROR("User with that email already exists", {
+          errors: {
+            email: "User with that email already exists",
+          },
+        })
+      );
+      return
     }
 
     const salt = await bcrypt.genSalt(12);
@@ -98,19 +120,24 @@ Router.get(
       const { email } = jwt.decode(token!, process.env.JWT_SECRET_KEY);
 
       if (!email) {
-        throw new BAD_REQUEST_ERROR("Invalid Token");
+        next(new BAD_REQUEST_ERROR("Invalid Token"));
+        return
       }
 
       const user = await prisma.user.findFirst({ where: { email } });
 
       if (!user) {
-        throw new BAD_REQUEST_ERROR("User does not exist");
+        next(new BAD_REQUEST_ERROR("User does not exist"));
+        return
       }
 
-      if (user?.activationExpiryDate < new Date()) {
-        throw new BAD_REQUEST_ERROR(
-          "Activation token has expired. Please try and login to resend the token again."
+      if (user?.activationExpiryDate! < new Date()) {
+        next(
+          new BAD_REQUEST_ERROR(
+            "Activation token has expired. Please try and login to resend the token again."
+          )
         );
+        return
       }
 
       const activatedUser = await prisma.user.update({
@@ -149,20 +176,23 @@ Router.post(
       });
 
       if (!existingUser) {
-        throw new NOT_FOUND_ERROR("User with that email not found");
+        next(new NOT_FOUND_ERROR("User with that email not found"));
+        return
       }
 
-      const isPasswordValid = await bcrypt.compareSync(
+      const isPasswordValid = bcrypt.compareSync(
         password,
-        existingUser.password
+        existingUser!.password
       );
 
       if (!isPasswordValid) {
-        throw new BAD_REQUEST_ERROR("Invalid Credentials");
+        next(new BAD_REQUEST_ERROR("Invalid Credentials"));
+        return
+
       }
 
       const token = jwt.sign(
-        { email: existingUser.email },
+        { email: existingUser!.email },
         process.env.JWT_SECRET_KEY || "random_jwt_2321@231**@$@#)"
       );
 
@@ -181,38 +211,47 @@ Router.post(
     } catch (error) {
       // console.log(error);
       next(error);
+      
     }
   }
 );
 
 // get logged in user
-Router.get("/me", async (req: Request, res: Response, next: NextFunction) => {
-  try {
-    const { token } = req.cookies;
+Router.get(
+  "/me",
+  auth,
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { token } = req.cookies;
 
-    const { email } = jwt.decode(token!, process.env.JWT_SECRET_KEY);
+      const { email } = jwt.decode(token!, process.env.JWT_SECRET_KEY);
 
-    if (!email) {
-      throw new BAD_REQUEST_ERROR("Invalid Token");
+      if (!email) {
+        next(new BAD_REQUEST_ERROR("Invalid Token"));
+        return
+
+      }
+
+      const user = await prisma.user.findFirst({
+        where: {
+          email,
+        },
+      });
+
+      if (!user) {
+        next(new NOT_FOUND_ERROR("User not found"));
+        return
+
+      }
+
+      return res
+        .status(HttpStatusCode.OK)
+        .send(new OK_REQUEST("Logged in successfully", user));
+    } catch (error) {
+      console.log(error);
+      next(error);
     }
-
-    const user = await prisma.user.findFirst({
-      where: {
-        email,
-      },
-    });
-
-    if (!user) {
-      throw new NOT_FOUND_ERROR("User not found");
-    }
-
-    return res
-      .status(HttpStatusCode.OK)
-      .send(new OK_REQUEST("Logged in successfully", user));
-  } catch (error) {
-    console.log(error);
-    next(error);
   }
-});
+);
 
 export default Router;
