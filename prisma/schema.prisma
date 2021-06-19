@@ -7,6 +7,13 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+
+enum UserRole {
+  SUPERADMIN
+  ADMIN
+  USER
+}
+
 model User {
   @@map("users")
   id                     Int      @id @default(autoincrement())
@@ -24,8 +31,15 @@ model User {
   activationExpiryDate   DateTime @default(now())  
 }
 
-enum UserRole {
-  SUPERADMIN
-  ADMIN
-  USER
+model Category{
+  @@map("categories")
+  id                        Int         @id @default(autoincrement())
+  uid                       String      @unique @default(uuid())
+  name                      String      @unique
+  imageUrl                  String      @default("https://initiate.alphacoders.com/images/879/cropped-1920-1200-879280.jpg?711")
+  totalProducts             Int         @default(0)
+  totalSubCategories        Int         @default(0)
+  createdAt                 DateTime    @default(now())
+  updatedAt                 DateTime    @updatedAt
+  isDeleted                 Boolean     @default(false)
 }

@@ -168,7 +168,6 @@ Router.post(
   async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { email, password } = req.body;
-      console.log(req.body);
 
       const existingUser = await prisma.user.findFirst({
         where: {
@@ -231,9 +230,9 @@ Router.get(
   auth,
   async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { token } = req.cookies;
+      const { xcommerce } = req.cookies;
 
-      const { email } = jwt.decode(token!, process.env.JWT_SECRET_KEY);
+      const { email } = jwt.decode(xcommerce!, process.env.JWT_SECRET_KEY);
 
       if (!email) {
         next(new BAD_REQUEST_ERROR("Invalid Token"));
@@ -247,13 +246,17 @@ Router.get(
       });
 
       if (!user) {
-        next(new NOT_FOUND_ERROR("User not found"));
+        next(
+          new NOT_FOUND_ERROR("User not found", {
+            email: "User not found",
+          })
+        );
         return;
       }
 
       return res
         .status(HttpStatusCode.OK)
-        .send(new OK_REQUEST("Logged in successfully", user));
+        .send(new OK_REQUEST("Logged in successfully", { user }));
     } catch (error) {
       console.log(error);
       next(error);

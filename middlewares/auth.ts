@@ -5,8 +5,9 @@ const jwt = require("jsonwebtoken");
 
 const auth = (req: Request, res: Response, next: NextFunction) => {
   try {
-    const { token } = req.cookies;
-    if (!token) {
+    
+    const { xcommerce } = req.cookies;
+    if (!xcommerce) {
       throw new BAD_REQUEST_ERROR("You are not logged in.");
     }
     next();
