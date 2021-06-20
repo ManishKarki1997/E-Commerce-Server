@@ -29,6 +29,12 @@ export class BAD_REQUEST_ERROR extends BaseError {
   }
 }
 
+export class UNAUTHORIZED_ERROR extends BaseError {
+  constructor(message = "Unauthorized", payload: any = {}) {
+    super(HttpStatusCode.UNAUTHORIZED, message, payload);
+  }
+}
+
 export class OK_REQUEST {
   public readonly message: string;
   public readonly payload: any;

@@ -1,14 +1,22 @@
 require("dotenv").config();
 import { NextFunction, Request, Response } from "express";
+import { HttpStatusCode } from "../constants/HttpStatusCodes";
 import { BAD_REQUEST_ERROR } from "../helpers/Error";
 const jwt = require("jsonwebtoken");
 
 const auth = (req: Request, res: Response, next: NextFunction) => {
   try {
-    const { token } = req.cookies;
-    if (!token) {
+    const { xcommerceToken } = req.cookies;
+    if (!xcommerceToken) {
       throw new BAD_REQUEST_ERROR("You are not logged in.");
     }
+    const decodedToken = jwt.verify(
+      xcommerceToken,
+      process.env.JWT_SECRET_KEY || "random_jwt_2321@231**@$@#)"
+    );
+    (req as any).user = decodedToken;
+    // req["user"] = decodedToken;
+
     next();
   } catch (err) {
     console.log(err);

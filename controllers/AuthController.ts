@@ -200,13 +200,14 @@ Router.post(
       }
 
       const token = jwt.sign(
-        { email: existingUser!.email },
+        { email: existingUser!.email, role: existingUser.role },
         process.env.JWT_SECRET_KEY || "random_jwt_2321@231**@$@#)"
       );
 
       res.setHeader(
         "Set-Cookie",
-        cookie.serialize("xcommerce", token, {
+        cookie.serialize("xcommerceToken", String(token), {
+          path: "/",
           httpOnly: true,
           secure: true,
           maxAge: 60 * 60 * 24 * cookieAgeInDays, // 1 day
@@ -229,18 +230,21 @@ Router.get(
   auth,
   async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { token } = req.cookies;
+      const xcommerceToken = req.cookies.xcommerceToken;
 
-      const { email } = jwt.decode(token!, process.env.JWT_SECRET_KEY);
+      const decodedToken = await jwt.decode(
+        xcommerceToken!,
+        process.env.JWT_SECRET_KEY
+      );
 
-      if (!email) {
+      if (!decodedToken.email) {
         next(new BAD_REQUEST_ERROR("Invalid Token"));
         return;
       }
 
       const user = await prisma.user.findFirst({
         where: {
-          email,
+          email: decodedToken.email,
         },
       });
 

@@ -1,13 +1,11 @@
 {
   "scripts": {
-    "dev": "nodemon --exec ts-node index.ts",
+    "dev": "nodemon --exec ts-node --files index.ts",
     "start": "node dist/index.ts",
     "build": "tsc"
   },
   "dependencies": {
     "@prisma/client": "^2.25.0",
-    "@types/cors": "^2.8.10",
-    "@types/express": "^4.17.12",
     "bcryptjs": "^2.4.3",
     "cookie": "^0.4.0",
     "cookie-parser": "^1.4.5",
@@ -22,6 +20,8 @@
     "@types/bcryptjs": "^2.4.2",
     "@types/cookie": "^0.4.0",
     "@types/cookie-parser": "^1.4.2",
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.12",
     "@types/joi": "^17.2.3",
     "@types/node": "^15.12.2",
     "@types/nodemailer": "^6.4.2",
