@@ -12,7 +12,7 @@ const errorHandler = (
     return res.status(err.httpCode).send({
       error: err.httpCode != 200,
       message: err.message,
-      errors: err.httpCode == 200 ? null : err.payload,
+      errors: err.httpCode == 200 ? null : { ...err.payload.errors },
       payload: err.httpCode == 200 ? err.payload : null,
     });
   } else {

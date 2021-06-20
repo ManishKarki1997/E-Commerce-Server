@@ -1,5 +1,4 @@
 import express, { NextFunction, Request, Response } from "express";
-import { PrismaClient } from "@prisma/client";
 import cookie from "cookie";
 const jwt = require("jsonwebtoken");
 import bcrypt from "bcryptjs";
@@ -15,7 +14,7 @@ import { auth } from "../middlewares";
 import { UserSchema } from "../validators";
 import { transformJoiErrors } from "../helpers";
 
-const prisma = new PrismaClient();
+import prisma from "../db/prisma";
 
 const Router = express.Router();
 
@@ -230,9 +229,9 @@ Router.get(
   auth,
   async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { xcommerce } = req.cookies;
+      const { token } = req.cookies;
 
-      const { email } = jwt.decode(xcommerce!, process.env.JWT_SECRET_KEY);
+      const { email } = jwt.decode(token!, process.env.JWT_SECRET_KEY);
 
       if (!email) {
         next(new BAD_REQUEST_ERROR("Invalid Token"));

@@ -5,13 +5,13 @@ const jwt = require("jsonwebtoken");
 
 const auth = (req: Request, res: Response, next: NextFunction) => {
   try {
-    
-    const { xcommerce } = req.cookies;
-    if (!xcommerce) {
+    const { token } = req.cookies;
+    if (!token) {
       throw new BAD_REQUEST_ERROR("You are not logged in.");
     }
     next();
   } catch (err) {
+    console.log(err);
     throw new BAD_REQUEST_ERROR("Invalid Token");
   }
 };
