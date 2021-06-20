@@ -10,6 +10,24 @@ import CategorySchema from "../validators/CategoryValidator";
 
 const Router = express.Router();
 
+// fetch all categories
+Router.get(
+  "/",
+  auth,
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const categories = await prisma.category.findMany();
+
+      return res
+        .status(HttpStatusCode.OK)
+        .send(new OK_REQUEST("Categories fetched successfully", categories));
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  }
+);
+
 // create a category
 Router.post(
   "/",
