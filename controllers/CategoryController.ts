@@ -39,15 +39,16 @@ Router.get(
 
 // fetch all subcategories for a category
 Router.get(
-  "/subcategories/:categoryUid",
+  "/subcategories/:categoryName",
   auth,
   async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { categoryUid } = req.params;
+      const { categoryName } = req.params;
+      console.log(categoryName);
 
       const category = await prisma.category.findFirst({
         where: {
-          uid: categoryUid,
+          name: categoryName,
         },
         include: {
           subCategories: true,

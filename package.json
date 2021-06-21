@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "nodemon --exec ts-node --files index.ts",
+    "dev": "nodemon --exec ts-node  index.ts",
     "start": "node dist/index.ts",
     "build": "tsc"
   },
