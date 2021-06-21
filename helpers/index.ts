@@ -1,4 +1,5 @@
 import transformJoiErrors from "./TransformJoiErrors";
+import transformPrismaErrors from "./TransformPrismaErrors";
 import {
   BAD_REQUEST_ERROR,
   BaseError,
@@ -10,6 +11,7 @@ import sendMail from "./SendMail";
 
 export {
   transformJoiErrors,
+  transformPrismaErrors,
   BAD_REQUEST_ERROR,
   BaseError,
   INTERNAL_SERVER_ERROR,

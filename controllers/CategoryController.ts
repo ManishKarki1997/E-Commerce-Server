@@ -1,10 +1,16 @@
 require("dotenv").config();
 import express, { Request, Response, NextFunction } from "express";
-import { nextTick } from "process";
+
 import { HttpStatusCode } from "../constants/HttpStatusCodes";
+import { PrismaErrorCodes } from "../constants/PrismaErrorCodes";
 import { UserRoles } from "../constants/UserRoles";
 import prisma from "../db/prisma";
-import { BAD_REQUEST_ERROR, OK_REQUEST, transformJoiErrors } from "../helpers";
+import {
+  BAD_REQUEST_ERROR,
+  OK_REQUEST,
+  transformJoiErrors,
+  transformPrismaErrors,
+} from "../helpers";
 import { UNAUTHORIZED_ERROR } from "../helpers/Error";
 
 import { auth } from "../middlewares";
@@ -78,7 +84,7 @@ Router.post(
         .send(new OK_REQUEST("Category created successfully", { category }));
     } catch (error) {
       console.log(error);
-      nextTick(error);
+      next(error);
     }
   }
 );
@@ -113,11 +119,9 @@ Router.put(
         })
       );
     } catch (error) {
-      let errors: { [k: string]: any } = {};
-      if (error.code === "P2002") {
-        error.meta.target.forEach((m: string | number) => {
-          errors[m] = `Category with that ${m} already exists`;
-        });
+      if (error.code === PrismaErrorCodes.UNIQUE_CONSTRAINT_VIOLATION_CODE) {
+        const errors = transformPrismaErrors(error, "Category");
+
         next({
           ...error,
           payload: { errors },
