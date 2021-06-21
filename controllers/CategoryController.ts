@@ -44,7 +44,6 @@ Router.get(
   async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { categoryName } = req.params;
-      console.log(categoryName);
 
       const category = await prisma.category.findFirst({
         where: {

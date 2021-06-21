@@ -25,7 +25,7 @@ Router.post(
   checkIfAdmin,
   async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { name, description, iconName, categoryUid } = req.body;
+      const { name, description, iconName, categoryName } = req.body;
 
       const subCategory = await prisma.subCategory.create({
         data: {
@@ -34,7 +34,7 @@ Router.post(
           iconName,
           category: {
             connect: {
-              uid: categoryUid,
+              name: categoryName,
             },
           },
         },
@@ -46,7 +46,7 @@ Router.post(
         })
       );
     } catch (error) {
-      const errors = transformPrismaErrors(error, "SubCategory");
+      const errors = transformPrismaErrors(error, "Sub category");
       next({
         ...error,
         payload: { errors },
