@@ -13,7 +13,7 @@ import {
 } from "../helpers";
 import { UNAUTHORIZED_ERROR } from "../helpers/Error";
 
-import { auth } from "../middlewares";
+import { auth, checkIfAdmin } from "../middlewares";
 import CategorySchema from "../validators/CategoryValidator";
 
 const Router = express.Router();
@@ -22,14 +22,10 @@ const Router = express.Router();
 Router.post(
   "/",
   auth,
+  checkIfAdmin,
   async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { name, description, iconName, categoryUid } = req.body;
-
-      const { role } = (req as any).user;
-      if (role === UserRoles.USER) {
-        throw new UNAUTHORIZED_ERROR("Operation Not Allowed");
-      }
 
       const subCategory = await prisma.subCategory.create({
         data: {
@@ -50,16 +46,53 @@ Router.post(
         })
       );
     } catch (error) {
-      if (error.code === PrismaErrorCodes.UNIQUE_CONSTRAINT_VIOLATION_CODE) {
-        const errors = transformPrismaErrors(error, "SubCategory");
-        next({
-          ...error,
-          payload: { errors },
-          httpCode: HttpStatusCode.BAD_REQUEST,
-        });
-        return;
-      }
-      next(error);
+      const errors = transformPrismaErrors(error, "SubCategory");
+      next({
+        ...error,
+        payload: { errors },
+        httpCode: HttpStatusCode.BAD_REQUEST,
+      });
+    }
+  }
+);
+
+// update sub category
+Router.put(
+  "/",
+  auth,
+  checkIfAdmin,
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { name, description, iconName, categoryUid, uid } = req.body;
+
+      const updatedSubCategory = await prisma.subCategory.update({
+        where: {
+          uid,
+        },
+        data: {
+          name,
+          description,
+          iconName,
+          category: {
+            connect: {
+              uid: categoryUid,
+            },
+          },
+        },
+      });
+
+      return res.status(HttpStatusCode.OK).send(
+        new OK_REQUEST("SubCategory updated successfully", {
+          subCategory: updatedSubCategory,
+        })
+      );
+    } catch (error) {
+      const errors = transformPrismaErrors(error, "SubCategory");
+      next({
+        ...error,
+        payload: { errors },
+        httpCode: HttpStatusCode.BAD_REQUEST,
+      });
     }
   }
 );

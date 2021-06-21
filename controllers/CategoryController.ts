@@ -152,18 +152,13 @@ Router.put(
         })
       );
     } catch (error) {
-      if (error.code === PrismaErrorCodes.UNIQUE_CONSTRAINT_VIOLATION_CODE) {
-        const errors = transformPrismaErrors(error, "Category");
+      const errors = transformPrismaErrors(error, "Category");
 
-        next({
-          ...error,
-          payload: { errors },
-          httpCode: HttpStatusCode.BAD_REQUEST,
-        });
-        return;
-      }
-
-      next(error);
+      next({
+        ...error,
+        payload: { errors },
+        httpCode: HttpStatusCode.BAD_REQUEST,
+      });
     }
   }
 );
