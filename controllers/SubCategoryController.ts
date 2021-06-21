@@ -63,7 +63,7 @@ Router.put(
   checkIfAdmin,
   async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { name, description, iconName, categoryUid, uid } = req.body;
+      const { name, description, iconName, categoryName, uid } = req.body;
 
       const updatedSubCategory = await prisma.subCategory.update({
         where: {
@@ -75,7 +75,7 @@ Router.put(
           iconName,
           category: {
             connect: {
-              uid: categoryUid,
+              name: categoryName,
             },
           },
         },
