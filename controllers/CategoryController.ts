@@ -11,7 +11,7 @@ import {
   transformJoiErrors,
   transformPrismaErrors,
 } from "../helpers";
-import { UNAUTHORIZED_ERROR } from "../helpers/Error";
+import { NOT_FOUND_ERROR, UNAUTHORIZED_ERROR } from "../helpers/Error";
 
 import { auth } from "../middlewares";
 import CategorySchema from "../validators/CategoryValidator";
@@ -33,6 +33,39 @@ Router.get(
     } catch (error) {
       console.log(error);
       next(error);
+    }
+  }
+);
+
+// fetch all subcategories for a category
+Router.get(
+  "/subcategories/:categoryUid",
+  auth,
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { categoryUid } = req.params;
+
+      const category = await prisma.category.findFirst({
+        where: {
+          uid: categoryUid,
+        },
+        include: {
+          subCategories: true,
+        },
+      });
+
+      if (!category) {
+        next(new NOT_FOUND_ERROR("Category with that id not found"));
+        return;
+      }
+
+      return res.status(HttpStatusCode.OK).send(
+        new OK_REQUEST("SubCategories fetched successfully", {
+          subCategories: category?.subCategories,
+        })
+      );
+    } catch (error) {
+      console.log(error);
     }
   }
 );
