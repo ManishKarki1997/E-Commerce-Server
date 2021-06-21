@@ -40,6 +40,21 @@ model Category{
   iconName                  String      
   totalProducts             Int         @default(0)
   totalSubCategories        Int         @default(0)
+  subCategories             SubCategory[]
+  createdAt                 DateTime    @default(now())
+  updatedAt                 DateTime    @updatedAt
+  isDeleted                 Boolean     @default(false)
+}
+
+model SubCategory{
+  @@map("subcategories")
+  id                        Int         @id @default(autoincrement())
+  uid                       String      @unique @default(uuid())
+  name                      String      @unique
+  description               String?      
+  iconName                  String?      
+  category                  Category    @relation(fields: [categoryId], references:[id])
+  categoryId                Int
   createdAt                 DateTime    @default(now())
   updatedAt                 DateTime    @updatedAt
   isDeleted                 Boolean     @default(false)
