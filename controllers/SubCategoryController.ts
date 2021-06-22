@@ -15,6 +15,7 @@ import { UNAUTHORIZED_ERROR } from "../helpers/Error";
 
 import { auth, checkIfAdmin } from "../middlewares";
 import CategorySchema from "../validators/CategoryValidator";
+import SubCategorySchema from "../validators/SubCategoryValidator";
 
 const Router = express.Router();
 
@@ -26,6 +27,19 @@ Router.post(
   async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { name, description, iconName, categoryName } = req.body;
+
+      const isValidSchema = await SubCategorySchema.validate(req.body, {
+        stripUnknown: true,
+      });
+
+      if (isValidSchema.error) {
+        return next(
+          new BAD_REQUEST_ERROR(
+            "Invalid subcategory data",
+            transformJoiErrors(isValidSchema.error)
+          )
+        );
+      }
 
       const subCategory = await prisma.subCategory.create({
         data: {

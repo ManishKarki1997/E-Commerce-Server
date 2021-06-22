@@ -8,6 +8,7 @@ import {
   OK_REQUEST,
 } from "./Error";
 import sendMail from "./SendMail";
+import generateSlug from "./GenerateSlug";
 
 export {
   transformJoiErrors,
@@ -18,4 +19,5 @@ export {
   NOT_FOUND_ERROR,
   OK_REQUEST,
   sendMail,
+  generateSlug,
 };

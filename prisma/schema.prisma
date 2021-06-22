@@ -41,6 +41,7 @@ model Category{
   totalProducts             Int         @default(0)
   totalSubCategories        Int         @default(0)
   subCategories             SubCategory[]
+  products                  Product[]
   createdAt                 DateTime    @default(now())
   updatedAt                 DateTime    @updatedAt
   isDeleted                 Boolean     @default(false)
@@ -55,7 +56,35 @@ model SubCategory{
   iconName                  String?      
   category                  Category    @relation(fields: [categoryId], references:[id])
   categoryId                Int
+  products                  Product[]
   createdAt                 DateTime    @default(now())
   updatedAt                 DateTime    @updatedAt
   isDeleted                 Boolean     @default(false)
+}
+
+model Product{
+  @@map("products")
+  id                        Int         @id @default(autoincrement())
+  uid                       String      @unique @default(uuid())
+  slug                      String      @unique()
+  name                      String      
+  description               String
+  editorDescription         String?
+  price                     Float
+  subCategory               SubCategory?    @relation(fields: [subCategoryId], references:[id])
+  subCategoryId             Int?
+  category                  Category    @relation(fields: [categoryId], references:[id])
+  categoryId                Int
+  categoryName              String
+  subCategoryName           String
+  images                    Images[]
+}
+
+model Images{
+  @@map("images")
+
+  id                        Int         @id @default(autoincrement())
+  productId                 Int
+  product                   Product    @relation(fields: [productId], references:[id])
+  imageUrl                  String
 }
