@@ -38,6 +38,7 @@ model Category{
   name                      String      @unique
   description               String?      
   iconName                  String      
+  imageUrl                  String      @default("https://initiate.alphacoders.com/images/879/cropped-1920-1200-879280.jpg?711")
   totalProducts             Int         @default(0)
   totalSubCategories        Int         @default(0)
   subCategories             SubCategory[]
@@ -76,7 +77,7 @@ model Product{
   category                  Category    @relation(fields: [categoryId], references:[id])
   categoryId                Int
   categoryName              String
-  subCategoryName           String
+  subCategoryName           String?
   images                    Images[]
 }
 
