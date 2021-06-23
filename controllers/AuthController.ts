@@ -67,7 +67,7 @@ Router.post("/", async (req: Request, res: Response, next: NextFunction) => {
     );
 
     await sendEmail(
-      "manishkarki247@gmail.com",
+      email,
       "Activate your X-Commerce Account",
       `
     <div>
