@@ -24,6 +24,7 @@ const confirmAccountExpiryInHours = 24;
 // register user
 Router.post("/", async (req: Request, res: Response, next: NextFunction) => {
   const { name, email, avatar, password } = req.body;
+  console.log(req.body);
   try {
     const isValidSchema = UserSchema.validate(req.body, {
       stripUnknown: true,
@@ -66,20 +67,20 @@ Router.post("/", async (req: Request, res: Response, next: NextFunction) => {
       activationExpiryDate.getHours() + confirmAccountExpiryInHours
     );
 
-    await sendEmail(
-      req.body.email,
-      "Activate your X-Commerce Account",
-      `
-    <div>
-    <h4>Please activate your account </h4>
-    <a href="http://localhost:4000/api/users/activateAccount?token=${accountActivationToken}" target="_blank" >Click here to activate your account</a>
-    
-    <p>Can't click on the link?</p>
-    
-    <p>Manually copy the link <span>http://localhost:4000/api/users/activateAccount?token=${accountActivationToken}</span> </p>
-  </div>
-    `
-    );
+    //   await sendEmail(
+    //     req.body.email,
+    //     "Activate your X-Commerce Account",
+    //     `
+    //   <div>
+    //   <h4>Please activate your account </h4>
+    //   <a href="http://localhost:4000/api/users/activateAccount?token=${accountActivationToken}" target="_blank" >Click here to activate your account</a>
+
+    //   <p>Can't click on the link?</p>
+
+    //   <p>Manually copy the link <span>http://localhost:4000/api/users/activateAccount?token=${accountActivationToken}</span> </p>
+    // </div>
+    //   `
+    //   );
 
     const user = await prisma.user.create({
       data: {
@@ -87,6 +88,7 @@ Router.post("/", async (req: Request, res: Response, next: NextFunction) => {
         email,
         password: hashedPassword,
         avatar,
+        isActivated: true,
         accountActivationToken,
         activationExpiryDate,
       },
@@ -236,18 +238,6 @@ Router.get(
   auth,
   async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const xcommerceToken = req.cookies.xcommerceToken;
-
-      // const decodedToken = await jwt.decode(
-      //   xcommerceToken!,
-      //   process.env.JWT_SECRET_KEY
-      // );
-
-      // if (!decodedToken.email) {
-      //   next(new BAD_REQUEST_ERROR("Invalid Token"));
-      //   return;
-      // }
-
       const { email }: { email: string } = (req as any).user;
 
       const user = await prisma.user.findFirst({

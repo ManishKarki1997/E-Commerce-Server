@@ -25,7 +25,7 @@ model User {
   email                  String   @unique
   name                   String
   password               String
-  avatar                 String   @default("https://initiate.alphacoders.com/images/879/cropped-1920-1200-879280.jpg?711")
+  avatar                 String   @default("https://wallpapercave.com/uwp/uwp580682.jpeg")
   isActivated            Boolean  @default(false)
   role                   UserRole @default(USER)
   createdAt              DateTime @default(now())
@@ -37,6 +37,27 @@ model User {
 
   @@map("users")
 }
+
+
+model Category {
+  id                 Int        @id @default(autoincrement())
+  uid                String     @unique @default(uuid())
+  name               String     @unique
+  description        String?  
+  imageUrl           String     @default("https://wallpaperset.com/w/full/1/a/6/52649.jpg")
+  totalProducts      Int        @default(0)
+  totalSubCategories Int        @default(0)
+  parentName         String?
+  parent             Category?  @relation("CategorySubCategories", fields: [parentId], references: [id])
+  parentId           Int?
+  subCategories      Category[] @relation("CategorySubCategories")
+  createdAt          DateTime   @default(now())
+  updatedAt          DateTime   @updatedAt
+  isDeleted          Boolean    @default(false)
+
+  @@map("categories")
+}
+
 
 
 model Images {
