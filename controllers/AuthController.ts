@@ -216,7 +216,7 @@ Router.post(
         cookie.serialize("xcommerceToken", String(token), {
           path: "/",
           httpOnly: true,
-          secure: true,
+          secure: false,
           sameSite: "none",
           maxAge: 60 * 60 * 24 * cookieAgeInDays, // 1 day
         })

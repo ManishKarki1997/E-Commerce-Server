@@ -1,3 +1,4 @@
 import UserSchema from "./UserValidator";
+import CategorySchema from "./CategoryValidator";
 
-export { UserSchema };
+export { UserSchema, CategorySchema };
