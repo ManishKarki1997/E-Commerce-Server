@@ -18,6 +18,40 @@ import prisma from "../db/prisma";
 
 const Router = express.Router();
 
+// fetch all categories
+Router.get("/", async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    const {
+      includeSubCategories = false,
+      take = 10,
+      skip = 0,
+    } = (req as any).query;
+
+    const categories = await prisma.category.findMany({
+      take,
+      skip,
+      where: {
+        parentId: includeSubCategories
+          ? {
+              not: null,
+            }
+          : {
+              equals: null,
+            },
+      },
+    });
+
+    return res.status(HttpStatusCode.OK).send(
+      new OK_REQUEST("Categories fetched successfully", {
+        categories,
+      })
+    );
+  } catch (error) {
+    console.log(error);
+    next(error);
+  }
+});
+
 // create a category
 Router.post(
   "/",
