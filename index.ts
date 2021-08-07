@@ -2,7 +2,11 @@ import express from "express";
 import cookieParser from "cookie-parser";
 import errorHandler from "./middlewares/errorHandler";
 
-import { AuthController, CategoryController } from "./controllers";
+import {
+  AuthController,
+  CategoryController,
+  ProductController,
+} from "./controllers";
 import cors from "cors";
 
 const app = express();
@@ -19,6 +23,7 @@ app.use(cookieParser());
 
 app.use("/api/users", AuthController);
 app.use("/api/categories", CategoryController);
+app.use("/api/products", ProductController);
 
 app.use(errorHandler);
 

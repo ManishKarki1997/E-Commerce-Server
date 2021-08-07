@@ -1,4 +1,5 @@
 import AuthController from "./AuthController";
 import CategoryController from "./CategoryController";
+import ProductController from "./ProductController";
 
-export { AuthController, CategoryController };
+export { AuthController, CategoryController, ProductController };

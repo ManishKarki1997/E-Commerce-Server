@@ -1,4 +1,8 @@
 import categories from "./seedData/categories";
+import products from "./seedData/products";
+import filters from "./seedData/filters";
+import filterOptions from "./seedData/filterOptions";
+import users from "./seedData/users";
 
 import { PrismaClient, UserRole } from "@prisma/client";
 import { generateSlug } from "../helpers";
@@ -17,14 +21,106 @@ async function main() {
         subCategories: {
           create: [
             ...category.subCategories.map((s: any) => {
+              const subCategoryFilters = filters.filter(
+                (f: any) => f.subCategoryName === s.name
+              );
+
               return {
                 name: s.name,
                 description: s.description,
                 imageUrl: s.imageUrl,
                 parentName: category.name,
-                totalProducts: 0,
+                totalProducts: products.filter(
+                  (p: any) => p.subCategoryName === s.name
+                ).length,
+                filters: {
+                  create: [
+                    ...subCategoryFilters.map((x: any, idx: number) => ({
+                      name: x.name,
+                      productId: null,
+                      parentCategoryName: category.name,
+                      filterType: x.filterType,
+                      categoryName: s.name,
+                      filterOptions: {
+                        create: [
+                          ...filterOptions
+                            .filter(
+                              (o: any) =>
+                                o.subCategoryName.includes(s.name) &&
+                                o.filterId === idx + 1
+                            )
+                            .map((m: any) => ({
+                              name: m.name,
+                            })),
+                        ],
+                      },
+                    })),
+                  ],
+                },
               };
             }),
+          ],
+        },
+      },
+    });
+  }
+
+  for (let user of users) {
+    await prisma.user.create({
+      data: {
+        name: user.name,
+        avatar: user.avatar,
+        isActivated: user.isActivated,
+        password: user.password,
+        email: user.email,
+        role: user.role,
+        accountActivationToken: "",
+      },
+    });
+  }
+
+  for (let product of products) {
+    await prisma.product.create({
+      data: {
+        name: product.name,
+        slug: generateSlug(product.name, product.categoryName),
+        shortInfo: product.description,
+        description: product.description,
+        price: product.price,
+        categoryName: product.categoryName,
+        subCategoryName: product.subCategoryName,
+        pricing: {
+          create: {
+            basePrice: product.price,
+          },
+        },
+        category: {
+          connect: {
+            name: product.categoryName,
+          },
+        },
+        filters: {
+          create: [
+            ...product.filters.map((f: any) => ({
+              name: f.name,
+              value: f.value,
+              filterType: f.filterType,
+              parentCategoryName: product.categoryName,
+              categoryName: product.subCategoryName,
+              category: {
+                connect: {
+                  name: product.categoryName,
+                },
+              },
+            })),
+          ],
+        },
+        images: {
+          create: [
+            ...product.images.map((i: any) => ({
+              imageUrl: i.imageUrl,
+              isDefaultImage: i.isDefaultImage,
+            })),
           ],
         },
       },

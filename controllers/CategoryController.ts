@@ -7,6 +7,7 @@ import {
   INTERNAL_SERVER_ERROR,
   NOT_FOUND_ERROR,
   OK_REQUEST,
+  UNAUTHORIZED_ERROR,
 } from "../helpers/Error";
 import { HttpStatusCode } from "../constants/HttpStatusCodes";
 import sendEmail from "../helpers/SendMail";
@@ -15,6 +16,7 @@ import { CategorySchema, UserSchema } from "../validators";
 import { transformJoiErrors, transformPrismaErrors } from "../helpers";
 
 import prisma from "../db/prisma";
+import { UserRoles } from "../constants/UserRoles";
 
 const Router = express.Router();
 
@@ -28,16 +30,17 @@ Router.get("/", async (req: Request, res: Response, next: NextFunction) => {
     } = (req as any).query;
 
     const categories = await prisma.category.findMany({
-      take,
-      skip,
+      take: parseInt(take),
+      skip: parseInt(skip),
       where: {
-        parentId: includeSubCategories
-          ? {
-              not: null,
-            }
-          : {
-              equals: null,
-            },
+        parentId:
+          includeSubCategories !== "false"
+            ? {
+                not: null,
+              }
+            : {
+                equals: null,
+              },
       },
     });
 
@@ -51,6 +54,39 @@ Router.get("/", async (req: Request, res: Response, next: NextFunction) => {
     next(error);
   }
 });
+
+// fetch subcategories for a category
+Router.get(
+  "/:categoryName",
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { take = 10, skip = 0 } = (req as any).query;
+      const { categoryName } = (req as any).params;
+
+      console.log({
+        take,
+        skip,
+      });
+
+      const subCategories = await prisma.category.findMany({
+        take: parseInt(take),
+        skip: parseInt(skip),
+        where: {
+          parentName: categoryName,
+        },
+      });
+
+      return res.status(HttpStatusCode.OK).send(
+        new OK_REQUEST("Subcategories fetched successfully", {
+          subCategories,
+        })
+      );
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  }
+);
 
 // create a category
 Router.post(
@@ -119,6 +155,50 @@ Router.post(
         isSubCategory ? "SubCategory" : "Category"
       );
       next(errors);
+    }
+  }
+);
+
+// edit a category
+Router.put(
+  "/",
+  auth,
+  // checkIfAdmin,
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { uid } = req.body;
+
+      // declaration merging is not working
+      // add middleware to check if the role is admin/superadmin
+      // const { role } = (req as any).user;
+
+      // if (role === UserRoles.USER) {
+      //   throw new UNAUTHORIZED_ERROR("Permission Denied");
+      // }
+
+      const category = await prisma.category.update({
+        where: {
+          uid,
+        },
+        data: {
+          ...req.body,
+        },
+      });
+
+      return res.status(HttpStatusCode.OK).send(
+        new OK_REQUEST("Category updated successfully", {
+          category,
+        })
+      );
+    } catch (error) {
+      console.log(error);
+      const errors = transformPrismaErrors(error, "Category");
+
+      next({
+        ...error,
+        payload: { errors },
+        httpCode: HttpStatusCode.BAD_REQUEST,
+      });
     }
   }
 );
