@@ -63,11 +63,6 @@ Router.get(
       const { take = 10, skip = 0 } = (req as any).query;
       const { categoryName } = (req as any).params;
 
-      console.log({
-        take,
-        skip,
-      });
-
       const subCategories = await prisma.category.findMany({
         take: parseInt(take),
         skip: parseInt(skip),
@@ -121,11 +116,16 @@ Router.post(
 
       if (existingCategory) {
         next(
-          new BAD_REQUEST_ERROR("Category with that name already exists", {
-            errors: {
-              name: "Category with that name already exists",
-            },
-          })
+          new BAD_REQUEST_ERROR(
+            `${
+              isSubCategory ? "SubCategory" : "Category"
+            } with that name already exists`,
+            {
+              errors: {
+                name: "Category with that name already exists",
+              },
+            }
+          )
         );
         return;
       }
@@ -148,7 +148,14 @@ Router.post(
 
       return res
         .status(HttpStatusCode.OK)
-        .send(new OK_REQUEST("Category created successfully", { category }));
+        .send(
+          new OK_REQUEST(
+            `${
+              isSubCategory ? "SubCategory" : "Category"
+            } created successfully`,
+            { category }
+          )
+        );
     } catch (error) {
       const errors = transformPrismaErrors(
         error,
