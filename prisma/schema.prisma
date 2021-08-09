@@ -165,6 +165,7 @@ model Filter {
   category           Category?      @relation(fields: [categoryId], references: [id])
   categoryId         Int?
   value              String?
+  isVisibleToVisitors Boolean     @default(true)
   filterOptions      FilterOption[]
   createdAt          DateTime       @default(now())
   updatedAt          DateTime       @updatedAt

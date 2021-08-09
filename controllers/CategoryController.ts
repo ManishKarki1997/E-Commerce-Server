@@ -57,18 +57,32 @@ Router.get(
   "/minimalCategories",
   async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const categories = await prisma.category.findMany({
-        select: {
-          id: true,
-          uid: true,
-          name: true,
-          imageUrl: true,
-        },
-        where: {
-          parentName: null,
-        },
-      });
+      const { includeSubCategories = false } = (req as any).query;
 
+      let categories = [];
+
+      if (!includeSubCategories) {
+        categories = await prisma.category.findMany({
+          select: {
+            id: true,
+            uid: true,
+            name: true,
+            imageUrl: true,
+          },
+          where: {
+            parentName: null,
+          },
+        });
+      } else {
+        categories = await prisma.category.findMany({
+          select: {
+            id: true,
+            uid: true,
+            name: true,
+            imageUrl: true,
+          },
+        });
+      }
       return res.status(HttpStatusCode.OK).send(
         new OK_REQUEST("Minimal categories fetched successfully", {
           categories,
@@ -86,16 +100,34 @@ Router.get(
   "/:categoryName",
   async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { take = 10, skip = 0 } = (req as any).query;
+      const { take = 10, skip = 0, minimal = false } = (req as any).query;
       const { categoryName } = (req as any).params;
 
-      const subCategories = await prisma.category.findMany({
-        take: parseInt(take),
-        skip: parseInt(skip),
-        where: {
-          parentName: categoryName,
-        },
-      });
+      let subCategories = [];
+
+      if (minimal) {
+        subCategories = await prisma.category.findMany({
+          take: parseInt(take),
+          skip: parseInt(skip),
+          where: {
+            parentName: categoryName,
+          },
+          select: {
+            id: true,
+            uid: true,
+            imageUrl: true,
+            name: true,
+          },
+        });
+      } else {
+        subCategories = await prisma.category.findMany({
+          take: parseInt(take),
+          skip: parseInt(skip),
+          where: {
+            parentName: categoryName,
+          },
+        });
+      }
 
       return res.status(HttpStatusCode.OK).send(
         new OK_REQUEST("Subcategories fetched successfully", {
