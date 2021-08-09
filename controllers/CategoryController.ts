@@ -1,7 +1,4 @@
 import express, { NextFunction, Request, Response } from "express";
-import cookie from "cookie";
-const jwt = require("jsonwebtoken");
-import bcrypt from "bcryptjs";
 import {
   BAD_REQUEST_ERROR,
   INTERNAL_SERVER_ERROR,
@@ -55,6 +52,35 @@ Router.get("/", async (req: Request, res: Response, next: NextFunction) => {
   }
 });
 
+// fetch minimal categories
+Router.get(
+  "/minimalCategories",
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const categories = await prisma.category.findMany({
+        select: {
+          id: true,
+          uid: true,
+          name: true,
+          imageUrl: true,
+        },
+        where: {
+          parentName: null,
+        },
+      });
+
+      return res.status(HttpStatusCode.OK).send(
+        new OK_REQUEST("Minimal categories fetched successfully", {
+          categories,
+        })
+      );
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  }
+);
+
 // fetch subcategories for a category
 Router.get(
   "/:categoryName",
@@ -86,7 +112,7 @@ Router.get(
 // create a category
 Router.post(
   "/",
-  auth,
+  // auth,
   async (req: Request, res: Response, next: NextFunction) => {
     const isSubCategory = req.body.categoryName ? true : false;
     try {
@@ -169,7 +195,7 @@ Router.post(
 // edit a category
 Router.put(
   "/",
-  auth,
+  // auth,
   // checkIfAdmin,
   async (req: Request, res: Response, next: NextFunction) => {
     try {
@@ -189,6 +215,7 @@ Router.put(
         },
         data: {
           ...req.body,
+          // parent:parentObj
         },
       });
 

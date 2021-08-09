@@ -5,6 +5,7 @@ import errorHandler from "./middlewares/errorHandler";
 import {
   AuthController,
   CategoryController,
+  FilterController,
   ProductController,
 } from "./controllers";
 import cors from "cors";
@@ -24,6 +25,7 @@ app.use(cookieParser());
 app.use("/api/users", AuthController);
 app.use("/api/categories", CategoryController);
 app.use("/api/products", ProductController);
+app.use("/api/filters", FilterController);
 
 app.use(errorHandler);
 
