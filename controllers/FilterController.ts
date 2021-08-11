@@ -152,4 +152,140 @@ Router.post(
   }
 );
 
+// update filter options
+Router.put("/", async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    const {
+      filters,
+      filterOptionsToAdd,
+      filtersToDelete,
+      filterOptionsToDelete,
+      filtersToAdd,
+      subCategoryName,
+      categoryName,
+    } = req.body;
+
+    // const existingCategoryFilter = await prisma.category
+    //   .findFirst({
+    //     where: {
+    //       name: subCategoryName,
+    //     },
+    //   })
+    //   .filters();
+
+    // if (existingCategoryFilter.length > 0) {
+    //   return next(
+    //     new BAD_REQUEST_ERROR(
+    //       "Filters for that category already exist. Update the existing ones instead."
+    //     )
+    //   );
+    // }
+
+    filterOptionsToDelete.length > 0 &&
+      (await prisma.filterOption.deleteMany({
+        where: {
+          id: {
+            in: filterOptionsToDelete.map((x: any) => x.id),
+          },
+        },
+      }));
+
+    filtersToDelete.length > 0 &&
+      (await prisma.filter.deleteMany({
+        where: {
+          id: {
+            in: filtersToDelete.map((x: any) => x.filterId),
+          },
+        },
+      }));
+
+    const handleSingleFilterAdd = async (filter: any) => {
+      return prisma.filter.create({
+        data: {
+          name: filter.name,
+          filterType: filter.filterType,
+          parentCategoryName: categoryName,
+          categoryName: filter.subCategoryName,
+          isVisibleToVisitors: filter.isVisibleToVisitors || false,
+          category: {
+            connect: {
+              name: filter.subCategoryName,
+            },
+          },
+          filterOptions: {
+            create: [
+              ...filter.filterOptions.map((option: any) => {
+                return {
+                  name: option.name,
+                };
+              }),
+            ],
+          },
+        },
+      });
+    };
+
+    const handleSingleFilterOptionAdd = async (option: any) => {
+      return prisma.filterOption.create({
+        data: {
+          name: option.name,
+          filter: {
+            connect: {
+              id: option.filterId,
+            },
+          },
+        },
+      });
+    };
+
+    // update function for single filter
+    const handleSingleFilterUpdate = async (filter: any) => {
+      return prisma.filter.update({
+        where: {
+          id: filter.id,
+        },
+        data: {
+          name: filter.name,
+          filterType: filter.filterType,
+          categoryName: subCategoryName,
+          parentCategoryName: categoryName,
+          isVisibleToVisitors: filter.isVisibleToVisitors || false,
+          category: {
+            connect: {
+              name: categoryName,
+            },
+          },
+        },
+      });
+    };
+
+    filtersToAdd.length > 0 &&
+      (await Promise.all(
+        filtersToAdd.map(async (f: any) => await handleSingleFilterAdd(f))
+      ));
+
+    await Promise.all(
+      filters
+        .filter((f: any) => f.id !== undefined)
+        .map(async (f: any) => await handleSingleFilterUpdate(f))
+    );
+
+    filterOptionsToAdd.length > 0 &&
+      (await Promise.all(
+        filterOptionsToAdd.map(
+          async (o: any) => await handleSingleFilterOptionAdd(o)
+        )
+      ));
+
+    return res.status(HttpStatusCode.OK).send(
+      new OK_REQUEST("Filter updated successfully", {
+        filter: {},
+      })
+    );
+  } catch (error) {
+    console.log(error);
+    next(error);
+  }
+});
+
 export default Router;
