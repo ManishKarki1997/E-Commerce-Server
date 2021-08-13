@@ -55,12 +55,11 @@ Router.get(
   async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { subCategoryName, categoryName } = (req as any).query;
-
       const filters = await prisma.filter.findMany({
         where: {
           productId: null,
-          subCategoryName: subCategoryName,
-          categoryName: categoryName,
+          subCategoryName,
+          categoryName,
         },
         include: {
           filterOptions: true,
