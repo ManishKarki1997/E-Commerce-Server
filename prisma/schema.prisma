@@ -160,8 +160,8 @@ model Filter {
   filterType         FilterType     @default(MULTIPLE_SELECT)
   product            Product?       @relation(fields: [productId], references: [id])
   productId          Int?
-  parentCategoryName String
-  categoryName       String
+  categoryName          String
+  subCategoryName       String
   category           Category?      @relation(fields: [categoryId], references: [id])
   categoryId         Int?
   value              String?

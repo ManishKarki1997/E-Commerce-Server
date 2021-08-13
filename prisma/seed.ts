@@ -38,9 +38,9 @@ async function main() {
                     ...subCategoryFilters.map((x: any, idx: number) => ({
                       name: x.name,
                       productId: null,
-                      parentCategoryName: category.name,
+                      categoryName: category.name,
+                      subCategoryName: s.name,
                       filterType: x.filterType,
-                      categoryName: s.name,
                       filterOptions: {
                         create: [
                           ...filterOptions
@@ -105,8 +105,8 @@ async function main() {
               name: f.name,
               value: f.value,
               filterType: f.filterType,
-              parentCategoryName: product.categoryName,
-              categoryName: product.subCategoryName,
+              categoryName: product.categoryName,
+              subCategoryName: product.subCategoryName,
               category: {
                 connect: {
                   name: product.categoryName,

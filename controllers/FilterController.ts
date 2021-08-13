@@ -59,8 +59,8 @@ Router.get(
       const filters = await prisma.filter.findMany({
         where: {
           productId: null,
-          categoryName: subCategoryName,
-          parentCategoryName: categoryName,
+          subCategoryName: subCategoryName,
+          categoryName: categoryName,
         },
         include: {
           filterOptions: true,
@@ -89,12 +89,11 @@ Router.post(
   // checkIfAdmin,
   async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { filters, categoryName, parentCategoryName, isVisibleToVisitors } =
-        req.body;
+      const { filters, categoryName, subCategoryName } = req.body;
 
       const existingFilter = await prisma.filter.findFirst({
         where: {
-          categoryName,
+          subCategoryName,
         },
       });
 
@@ -111,11 +110,11 @@ Router.post(
           data: {
             name: filter.name,
             categoryName,
-            parentCategoryName: parentCategoryName,
+            subCategoryName,
             isVisibleToVisitors: filter.isVisibleToVisitors,
             category: {
               connect: {
-                name: categoryName,
+                name: subCategoryName,
               },
             },
             filterOptions: {
@@ -204,8 +203,8 @@ Router.put("/", async (req: Request, res: Response, next: NextFunction) => {
         data: {
           name: filter.name,
           filterType: filter.filterType,
-          parentCategoryName: categoryName,
-          categoryName: filter.subCategoryName,
+          categoryName: categoryName,
+          subCategoryName: filter.subCategoryName,
           isVisibleToVisitors: filter.isVisibleToVisitors || false,
           category: {
             connect: {
@@ -247,12 +246,12 @@ Router.put("/", async (req: Request, res: Response, next: NextFunction) => {
         data: {
           name: filter.name,
           filterType: filter.filterType,
-          categoryName: subCategoryName,
-          parentCategoryName: categoryName,
+          categoryName: categoryName,
+          subCategoryName,
           isVisibleToVisitors: filter.isVisibleToVisitors || false,
           category: {
             connect: {
-              name: categoryName,
+              name: subCategoryName,
             },
           },
         },
