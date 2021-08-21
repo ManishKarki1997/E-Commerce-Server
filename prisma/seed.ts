@@ -90,6 +90,11 @@ async function main() {
         description: product.description,
         price: product.price,
         categoryName: product.categoryName,
+        categorySlug: generateSlug(product.categoryName),
+        subCategorySlug: generateSlug(
+          product.subCategoryName,
+          product.categoryName
+        ),
         subCategoryName: product.subCategoryName,
         pricing: {
           create: {

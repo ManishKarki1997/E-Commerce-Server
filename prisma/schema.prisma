@@ -96,6 +96,8 @@ model Product {
   categoryId            Int
   categoryName          String
   subCategoryName       String?
+  categorySlug          String
+  subCategorySlug       String?
   pricing               ProductPricing[]
   images                Images[]
   filters               Filter[]

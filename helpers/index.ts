@@ -9,6 +9,7 @@ import {
 } from "./Error";
 import sendMail from "./SendMail";
 import generateSlug from "./GenerateSlug";
+import { reverseSluggify, getCategorySubCategoryNameFromSlug } from "./Slug";
 
 export {
   transformJoiErrors,
@@ -20,4 +21,6 @@ export {
   OK_REQUEST,
   sendMail,
   generateSlug,
+  reverseSluggify,
+  getCategorySubCategoryNameFromSlug,
 };

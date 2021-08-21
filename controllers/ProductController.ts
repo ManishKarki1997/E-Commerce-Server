@@ -14,6 +14,8 @@ import { auth } from "../middlewares";
 import { CategorySchema, UserSchema } from "../validators";
 import {
   generateSlug,
+  getCategorySubCategoryNameFromSlug,
+  reverseSluggify,
   transformJoiErrors,
   transformPrismaErrors,
 } from "../helpers";
@@ -75,7 +77,6 @@ Router.get(
           subCategoryName: subCategoryName.replace("*", " & "),
         };
       }
-      console.log({ subCategoryParam });
 
       const products = await prisma.product.findMany({
         take: parseInt(take),
@@ -115,15 +116,30 @@ Router.get(
         ...req.query,
       };
 
+      let tempSortParams =
+        (query as any).sort === undefined
+          ? {}
+          : JSON.parse((query as any).sort);
+
+      let sortParams = {};
+
+      if (Object.keys(tempSortParams).length > 0) {
+        sortParams = {
+          [tempSortParams.name]: tempSortParams.sortBy,
+        };
+
+        delete productParams.sort;
+      }
+
       delete productParams.categoryName;
       delete productParams.subCategoryName;
 
       const prismaParams = {
-        categoryName: {
+        categorySlug: {
           equals: (query as any).categoryName,
           mode: "insensitive",
         },
-        subCategoryName: {
+        subCategorySlug: {
           equals: (query as any).subCategoryName,
           mode: "insensitive",
         },
@@ -151,6 +167,9 @@ Router.get(
       const products = await prisma.product.findMany({
         // @ts-ignore: Unreachable code error
         where: { ...prismaParams },
+        orderBy: {
+          ...sortParams,
+        },
         include: {
           images: true,
           pricing: {
@@ -235,6 +254,8 @@ Router.post(
           editorDescription,
           categoryName,
           subCategoryName,
+          categorySlug: generateSlug(categoryName),
+          subCategorySlug: generateSlug(subCategoryName),
           price: parseFloat(price),
           images: {
             create: [...images],
