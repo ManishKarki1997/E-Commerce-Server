@@ -10,7 +10,11 @@ import { HttpStatusCode } from "../constants/HttpStatusCodes";
 import sendEmail from "../helpers/SendMail";
 import { auth } from "../middlewares";
 import { CategorySchema, UserSchema } from "../validators";
-import { transformJoiErrors, transformPrismaErrors } from "../helpers";
+import {
+  generateSlug,
+  transformJoiErrors,
+  transformPrismaErrors,
+} from "../helpers";
 
 import prisma from "../db/prisma";
 import { UserRoles } from "../constants/UserRoles";
@@ -31,7 +35,7 @@ Router.get("/", async (req: Request, res: Response, next: NextFunction) => {
       skip: parseInt(skip),
       where: {
         parentId:
-          includeSubCategories !== "false"
+          includeSubCategories === "false"
             ? {
                 not: null,
               }
@@ -51,6 +55,69 @@ Router.get("/", async (req: Request, res: Response, next: NextFunction) => {
     next(error);
   }
 });
+
+// fetch single category
+Router.get(
+  "/single/:categoryName",
+  async (req: Request, res: Response, next: NextFunction) => {
+    const { categoryName } = (req as any).params;
+
+    if (!categoryName) {
+      return next(new BAD_REQUEST_ERROR("Category name not provided"));
+    }
+
+    try {
+      const {
+        includeSubCategories = true,
+        includeProducts = false,
+        take = 10,
+        skip = 0,
+      } = (req as any).query;
+
+      const category = await prisma.category.findFirst({
+        take: parseInt(take),
+        skip: parseInt(skip),
+        where: {
+          name: categoryName,
+          parentId:
+            includeSubCategories === "false"
+              ? {
+                  not: null,
+                }
+              : {
+                  equals: null,
+                },
+        },
+        include: {
+          subCategories: {
+            include: {
+              _count: true,
+            },
+          },
+          products:
+            includeProducts === "true"
+              ? {
+                  include: {
+                    images: true,
+                    pricing: true,
+                    productDiscount: true,
+                  },
+                }
+              : false,
+        },
+      });
+
+      return res.status(HttpStatusCode.OK).send(
+        new OK_REQUEST("Category fetched successfully", {
+          category,
+        })
+      );
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  }
+);
 
 // fetch minimal categories
 Router.get(
@@ -102,7 +169,7 @@ Router.get(
     try {
       const { take = 10, skip = 0, minimal = false } = (req as any).query;
       const { categoryName } = (req as any).params;
-
+      console.log({ categoryName });
       let subCategories = [];
 
       if (minimal) {
@@ -191,6 +258,10 @@ Router.post(
       const category = await prisma.category.create({
         data: {
           name: req.body.name,
+          slug: generateSlug(
+            req.body.name,
+            isSubCategory ? req.body.categoryName : ""
+          ),
           description: req.body.description,
           imageUrl: req.body.imageUrl,
           parentName: isSubCategory ? req.body.categoryName : null,

@@ -23,28 +23,22 @@ import ProductSchema from "../validators/ProductValidator";
 
 const Router = express.Router();
 
-// get products for a category/subcategory
+// fetch products
 Router.get("/", async (req: Request, res: Response, next: NextFunction) => {
   try {
-    const {
-      categoryName,
-      subCategoryName,
-      take = 10,
-      skip = 0,
-    } = (req as any).query;
+    const { take = 10, skip = 0 } = (req as any).query;
 
     const totalProductsCount = await prisma.product.count();
 
     const products = await prisma.product.findMany({
       take: parseInt(take),
       skip: parseInt(skip),
-      where: {
-        categoryName,
-        subCategoryName,
-      },
       include: {
         images: true,
         pricing: true,
+      },
+      orderBy: {
+        createdAt: "desc",
       },
     });
 
@@ -59,6 +53,147 @@ Router.get("/", async (req: Request, res: Response, next: NextFunction) => {
     next(error);
   }
 });
+
+// get products for a category/subcategory
+Router.get(
+  "/category",
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const {
+        categoryName,
+        subCategoryName,
+        take = 10,
+        skip = 0,
+      } = (req as any).query;
+      const totalProductsCount = await prisma.product.count();
+
+      let subCategoryParam = {
+        subCategoryName,
+      };
+      if (subCategoryName && subCategoryName.includes("*")) {
+        subCategoryParam = {
+          subCategoryName: subCategoryName.replace("*", " & "),
+        };
+      }
+      console.log({ subCategoryParam });
+
+      const products = await prisma.product.findMany({
+        take: parseInt(take),
+        skip: parseInt(skip),
+        where: {
+          categoryName: categoryName.includes("*")
+            ? categoryName.replace("*", " & ")
+            : categoryName,
+          ...subCategoryParam,
+        },
+        include: {
+          images: true,
+          pricing: true,
+        },
+      });
+
+      return res.status(HttpStatusCode.OK).send(
+        new OK_REQUEST("Products fetched successfully", {
+          products,
+          totalProductsCount,
+        })
+      );
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  }
+);
+
+// fetch products using different query filters
+Router.get(
+  "/filtered",
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const query = req.query;
+      const productParams = {
+        ...req.query,
+      };
+
+      delete productParams.categoryName;
+      delete productParams.subCategoryName;
+
+      const prismaParams = {
+        categoryName: {
+          equals: (query as any).categoryName,
+          mode: "insensitive",
+        },
+        subCategoryName: {
+          equals: (query as any).subCategoryName,
+          mode: "insensitive",
+        },
+        // gives typescript error, couldn't disable
+        // i need case insensitivity for these product query params
+        // @ts-ignore: Unreachable code error
+        AND: [
+          ...Object.keys(productParams).map((x: string) => ({
+            filters: {
+              some: {
+                name: {
+                  equals: x,
+                  mode: "insensitive",
+                },
+                value: {
+                  equals: productParams[x]?.toString(),
+                  mode: "insensitive",
+                },
+              },
+            },
+          })),
+        ],
+      };
+
+      const products = await prisma.product.findMany({
+        // @ts-ignore: Unreachable code error
+        where: { ...prismaParams },
+        include: {
+          images: true,
+          pricing: {
+            take: 1,
+            orderBy: {
+              createdAt: "desc",
+            },
+          },
+          productDiscount: {
+            where: {
+              OR: [
+                {
+                  validUntil: {
+                    gt: new Date(),
+                  },
+                },
+                {
+                  validUntil: null,
+                },
+              ],
+            },
+          },
+          // _count: true,
+        },
+      });
+
+      const totalRows = await prisma.product.count({
+        // @ts-ignore: Unreachable code error
+        where: { ...prismaParams },
+      });
+
+      return res.status(HttpStatusCode.OK).send(
+        new OK_REQUEST("Products fetched successfully", {
+          products,
+          count: totalRows,
+        })
+      );
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  }
+);
 
 // create a product
 Router.post(
@@ -157,6 +292,7 @@ Router.get(
   async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { slug } = req.params;
+      console.log("slug");
       const product = await prisma.product.findFirst({
         where: {
           slug,

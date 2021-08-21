@@ -1,4 +1,4 @@
-const generateSlugFromName = (name: string, suffix:string) => {
+const generateSlugFromName = (name: string, suffix: string = "") => {
   const cleanedName = name
     .toString()
     .toLowerCase()
@@ -7,7 +7,7 @@ const generateSlugFromName = (name: string, suffix:string) => {
     .replace(/[\s\W-]+/g, "-")
     .replace(/-$/, "");
 
-    const cleanedSuffix = suffix
+  const cleanedSuffix = suffix
     .toString()
     .toLowerCase()
     .trim()
@@ -15,8 +15,7 @@ const generateSlugFromName = (name: string, suffix:string) => {
     .replace(/[\s\W-]+/g, "-")
     .replace(/-$/, "");
 
-    return `${cleanedName}-${cleanedSuffix}`
-
-}
+  return `${cleanedName}${cleanedSuffix && "-" + cleanedSuffix}`;
+};
 
 export default generateSlugFromName;

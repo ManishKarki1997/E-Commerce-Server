@@ -54,6 +54,7 @@ model Category {
   id                 Int                @id @default(autoincrement())
   uid                String             @unique @default(uuid())
   name               String             @unique
+  slug               String             @unique
   description        String?
   imageUrl           String             @default("https://wallpaperset.com/w/full/1/a/6/52649.jpg")
   totalProducts      Int                @default(0)

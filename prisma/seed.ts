@@ -17,6 +17,7 @@ async function main() {
         description: category.description,
         imageUrl: category.imageUrl,
         totalSubCategories: category.subCategories.length,
+        slug: generateSlug(category.name),
         totalProducts: 0,
         subCategories: {
           create: [
@@ -27,6 +28,7 @@ async function main() {
 
               return {
                 name: s.name,
+                slug: generateSlug(s.name, category.name),
                 description: s.description,
                 imageUrl: s.imageUrl,
                 parentName: category.name,
@@ -119,7 +121,7 @@ async function main() {
           create: [
             ...product.images.map((i: any) => ({
               imageUrl: i.imageUrl,
-              isDefaultImage: i.isDefaultImage,
+              isDefaultImage: i.isDefaultImage || false,
             })),
           ],
         },
