@@ -118,7 +118,7 @@ model ProductPricing {
   id        Int       @id @default(autoincrement())
   productId Int
   product   Product   @relation(fields: [productId], references: [id])
-  basePrice Float
+  basePrice Decimal
   startDate DateTime  @default(now())
   endDate   DateTime?
   createdAt DateTime  @default(now())

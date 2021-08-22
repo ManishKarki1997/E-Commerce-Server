@@ -131,8 +131,11 @@ Router.get(
         delete productParams.sort;
       }
 
+      const priceParams = JSON.parse((query as any).price);
+
       delete productParams.categoryName;
       delete productParams.subCategoryName;
+      delete productParams.price;
 
       const prismaParams = {
         categorySlug: {
@@ -162,21 +165,39 @@ Router.get(
             },
           })),
         ],
+        pricing: {
+          every: {
+            AND: [
+              {
+                basePrice: {
+                  gte: parseInt(priceParams.min),
+                },
+              },
+              {
+                basePrice: {
+                  lte: parseFloat(priceParams.max),
+                },
+              },
+            ],
+          },
+        },
       };
 
       const products = await prisma.product.findMany({
         // @ts-ignore: Unreachable code error
-        where: { ...prismaParams },
+        where: {
+          ...prismaParams,
+        },
         orderBy: {
           ...sortParams,
         },
         include: {
           images: true,
           pricing: {
-            take: 1,
             orderBy: {
               createdAt: "desc",
             },
+            take: 1,
           },
           productDiscount: {
             where: {
