@@ -131,7 +131,9 @@ Router.get(
         delete productParams.sort;
       }
 
-      const priceParams = JSON.parse((query as any).price);
+      const priceParams = (query as any).price
+        ? JSON.parse((query as any).price)
+        : {};
 
       delete productParams.categoryName;
       delete productParams.subCategoryName;
@@ -167,18 +169,21 @@ Router.get(
         ],
         pricing: {
           every: {
-            AND: [
-              {
-                basePrice: {
-                  gte: parseInt(priceParams.min),
-                },
-              },
-              {
-                basePrice: {
-                  lte: parseFloat(priceParams.max),
-                },
-              },
-            ],
+            AND:
+              Object.keys(priceParams).length > 0
+                ? [
+                    {
+                      basePrice: {
+                        gte: parseInt(priceParams.min),
+                      },
+                    },
+                    {
+                      basePrice: {
+                        lte: parseFloat(priceParams.max),
+                      },
+                    },
+                  ]
+                : [],
           },
         },
       };

@@ -80,6 +80,14 @@ Router.get(
           slug,
         },
         include: {
+          filters: {
+            where: {
+              isVisibleToVisitors: true,
+            },
+            include: {
+              filterOptions: true,
+            },
+          },
           subCategories: {
             include: {
               _count: true,
