@@ -325,7 +325,7 @@ Router.post(
       console.log(error);
       const errors = transformPrismaErrors(error, "Product");
       next({
-        ...error,
+        ...{ error },
         payload: { errors },
         httpCode: HttpStatusCode.BAD_REQUEST,
       });
@@ -339,7 +339,6 @@ Router.get(
   async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { slug } = req.params;
-      console.log("slug");
       const product = await prisma.product.findFirst({
         where: {
           slug,
@@ -347,6 +346,14 @@ Router.get(
         include: {
           images: true,
           category: true,
+          qna: {
+            orderBy: {
+              createdAt: "desc",
+            },
+            include: {
+              user: true,
+            },
+          },
           filters: {
             include: {
               filterOptions: true,
@@ -378,7 +385,6 @@ Router.get(
             },
             include: { user: true },
           },
-          qna: true,
         },
       });
 
