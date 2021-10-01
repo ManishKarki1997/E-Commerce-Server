@@ -144,6 +144,7 @@ Router.delete(
   async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { questionId, answerId } = (req as any).query;
+      console.log({ questionId, answerId });
       const user = (req as any).user;
 
       const question = await prisma.qnA.findFirst({
@@ -164,7 +165,7 @@ Router.delete(
       });
 
       // answerId and questionId are stringified as req.query
-      if (answerId !== "null") {
+      if (answerId) {
         await prisma.qnA.delete({
           where: {
             id: parseInt(answerId),
