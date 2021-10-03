@@ -4,6 +4,7 @@ import { HttpStatusCode } from "../constants/HttpStatusCodes";
 
 import prisma from "../db/prisma";
 import { BAD_REQUEST_ERROR, OK_REQUEST, transformJoiErrors } from "../helpers";
+import { UNAUTHORIZED_ERROR } from "../helpers/Error";
 
 import { auth, checkIfAdmin } from "../middlewares";
 import ReviewSchema from "../validators/ReviewValidator";
@@ -147,5 +148,38 @@ Router.put(
     }
   }
 );
+
+
+// delete product review
+Router.delete("/:reviewId", auth, async(req:Request, res:Response, next:NextFunction)=>{
+    try {
+        const user = (req as any).user;
+        const {reviewId} = (req as any).params;
+
+        const review = await prisma.review.findFirst({
+            where:{
+                id: parseInt(reviewId)
+            }
+        })
+
+        // the user who requested to delete the review is not the author of
+        // the review
+        if(review?.userId !== user.id){
+            return next(new UNAUTHORIZED_ERROR("You are not authorized to perform this action"));
+        }
+
+        await prisma.review.delete({
+            where: {
+                id: parseInt(reviewId)
+            }
+        })
+
+        return next(new OK_REQUEST("Review deleted successfully"))
+
+    } catch (error) {
+        console.log(error);
+        next(error)
+    }
+})
 
 export default Router;
