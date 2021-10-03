@@ -3,6 +3,7 @@ import CategoryController from "./CategoryController";
 import ProductController from "./ProductController";
 import FilterController from "./FilterController";
 import QuestionController from "./QuestionController";
+import ReviewController from "./ReviewController";
 
 export {
   AuthController,
@@ -10,4 +11,5 @@ export {
   ProductController,
   FilterController,
   QuestionController,
+  ReviewController,
 };

@@ -379,11 +379,10 @@ Router.get(
               ],
             },
           },
-          reviews: {
-            orderBy: {
-              createdAt: "desc",
+          _count: {
+            select: {
+              reviews: true,
             },
-            include: { user: true },
           },
         },
       });

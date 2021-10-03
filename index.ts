@@ -7,7 +7,8 @@ import {
   CategoryController,
   FilterController,
   ProductController,
-  QuestionController
+  QuestionController,
+  ReviewController,
 } from "./controllers";
 import cors from "cors";
 
@@ -28,6 +29,7 @@ app.use("/api/categories", CategoryController);
 app.use("/api/products", ProductController);
 app.use("/api/filters", FilterController);
 app.use("/api/questions", QuestionController);
+app.use("/api/reviews", ReviewController);
 
 app.use(errorHandler);
 
