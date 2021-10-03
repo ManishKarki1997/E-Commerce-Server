@@ -3,9 +3,10 @@ import express, { Request, Response, NextFunction } from "express";
 import { HttpStatusCode } from "../constants/HttpStatusCodes";
 
 import prisma from "../db/prisma";
-import { BAD_REQUEST_ERROR, OK_REQUEST } from "../helpers";
+import { BAD_REQUEST_ERROR, OK_REQUEST, transformJoiErrors } from "../helpers";
 
 import { auth, checkIfAdmin } from "../middlewares";
+import ReviewSchema from "../validators/ReviewValidator";
 
 const Router = express.Router();
 
@@ -50,6 +51,18 @@ Router.post(
       const user = (req as any).user;
       const { comment, rating, productId } = req.body;
 
+      const isValidSchema = ReviewSchema.validate(req.body, {
+        stripUnknown: true,
+      });
+      if (isValidSchema.error) {
+        return next(
+          new BAD_REQUEST_ERROR(
+            "Invalid Review Data",
+            transformJoiErrors(isValidSchema.error)
+          )
+        );
+      }
+
       const review = await prisma.review.create({
         data: {
           comment,
@@ -69,6 +82,62 @@ Router.post(
 
       return res.status(HttpStatusCode.OK).send(
         new OK_REQUEST("Review posted successfully", {
+          review,
+        })
+      );
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  }
+);
+
+// update product review
+Router.put(
+  "/",
+  auth,
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const user = (req as any).user;
+      const { productId, reviewId, comment, rating } = req.body;
+
+      const isValidSchema = ReviewSchema.validate(req.body, {
+        stripUnknown: true,
+      });
+      if (isValidSchema.error) {
+        return next(
+          new BAD_REQUEST_ERROR(
+            "Invalid Review Data",
+            transformJoiErrors(isValidSchema.error)
+          )
+        );
+      }
+
+      const userHasPreviouslyReviewed = await prisma.review.findFirst({
+        where: {
+          productId: parseInt(productId),
+          userId: user.id,
+        },
+      });
+
+      if (!userHasPreviouslyReviewed) {
+        return next(
+          new BAD_REQUEST_ERROR("You haven't reviewed this product yet")
+        );
+      }
+
+      const review = await prisma.review.update({
+        where: {
+          id: parseInt(reviewId),
+        },
+        data: {
+          comment,
+          rating: parseInt(rating),
+        },
+      });
+
+      return res.status(HttpStatusCode.OK).send(
+        new OK_REQUEST("Review updated successfully", {
           review,
         })
       );
