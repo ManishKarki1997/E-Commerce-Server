@@ -10,6 +10,7 @@ import {
   ProductController,
   QuestionController,
   ReviewController,
+  WishlistController,
 } from "./controllers";
 import cors from "cors";
 
@@ -32,6 +33,7 @@ app.use("/api/filters", FilterController);
 app.use("/api/questions", QuestionController);
 app.use("/api/reviews", ReviewController);
 app.use("/api/cart", CartController);
+app.use("/api/wishlist", WishlistController);
 
 app.use(errorHandler);
 

@@ -9,14 +9,14 @@ import { auth, checkIfAdmin } from "../middlewares";
 
 const Router = express.Router();
 
-// fetch cart of a user
+// fetch wishlist items of a user
 Router.get(
   "/",
   auth,
   async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { email } = (req as any).user;
-      const cart = await prisma.cartItem.findMany({
+      const wishlist = await prisma.wishlist.findMany({
         where: {
           user: {
             email,
@@ -32,8 +32,8 @@ Router.get(
       });
 
       return res.status(HttpStatusCode.OK).send(
-        new OK_REQUEST("Cart fetched successfully", {
-          cart,
+        new OK_REQUEST("Wishlist items fetched successfully", {
+          wishlist,
         })
       );
     } catch (error) {
@@ -43,7 +43,7 @@ Router.get(
   }
 );
 
-// add a product to the cart
+// add a product to the wishhlist
 Router.post(
   "/",
   auth,
@@ -51,14 +51,14 @@ Router.post(
     try {
       const user = (req as any).user;
 
-      const { product, count, totalPrice } = req.body;
+      const { product } = req.body;
 
       if (!user) {
         return next(new BAD_REQUEST_ERROR("You're not logged in."));
       }
 
-      //   check if the item is already present in the cart
-      const isAlreadyPresent = await prisma.cartItem.findFirst({
+      //   check if the item is already present in the wishlist
+      const isAlreadyPresent = await prisma.wishlist.findFirst({
         where: {
           user: {
             email: user.email,
@@ -69,19 +69,19 @@ Router.post(
 
       if (isAlreadyPresent) {
         return next(
-          new BAD_REQUEST_ERROR("This product is already present in your cart")
+          new BAD_REQUEST_ERROR(
+            "This product is already present in your wishlist"
+          )
         );
       }
 
-      const cart = await prisma.cartItem.create({
+      const wishlist = await prisma.wishlist.create({
         data: {
           user: {
             connect: {
               email: user.email,
             },
           },
-          count: parseInt(count),
-          totalPrice: parseFloat(totalPrice),
           product: {
             connect: {
               uid: product.uid,
@@ -90,52 +90,20 @@ Router.post(
         },
       });
 
-      return res.status(HttpStatusCode.OK).send(
-        new OK_REQUEST("Product successfully added to the cart", {
-          cart: {
-            ...cart,
-            ...req.body,
-          },
-        })
-      );
-    } catch (error) {
-      console.log(error);
-      next(error);
-    }
-  }
-);
-
-// remove product from user's cart
-Router.delete(
-  "/",
-  auth,
-  async (req: Request, res: Response, next: NextFunction) => {
-    try {
-      const {
-        cartItemId,
-        productUid,
-      }: { cartItemId: string; productUid: string } = (req as any).query;
-
       await prisma.product.update({
         where: {
-          uid: productUid,
+          uid: product.uid,
         },
         data: {
           totalPeopleInterested: {
-            decrement: 1,
+            increment: 1,
           },
         },
       });
 
-      await prisma.cartItem.delete({
-        where: {
-          id: parseInt(cartItemId),
-        },
-      });
-
       return res.status(HttpStatusCode.OK).send(
-        new OK_REQUEST("Product removed successfully from the cart", {
-          cartItemId,
+        new OK_REQUEST("Product successfully added to the wishlist", {
+          wishlist,
         })
       );
     } catch (error) {

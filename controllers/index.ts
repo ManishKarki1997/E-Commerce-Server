@@ -5,6 +5,7 @@ import FilterController from "./FilterController";
 import QuestionController from "./QuestionController";
 import ReviewController from "./ReviewController";
 import CartController from "./CartController";
+import WishlistController from "./WishlistController";
 
 export {
   AuthController,
@@ -14,4 +15,5 @@ export {
   QuestionController,
   ReviewController,
   CartController,
+  WishlistController,
 };

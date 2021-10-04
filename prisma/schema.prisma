@@ -44,6 +44,7 @@ model User {
   reviews                Review[]
   qna                    QnA[]
   cart                   CartItem[]
+  wishlist               Wishlist[]
   orders                 Order[]
 
 
@@ -105,6 +106,7 @@ model Product {
   qna                   QnA[]
   productDiscount       ProductDiscount[]
   cartItem              CartItem[]
+  wishlist              Wishlist[]
   orders                Order[]
   totalPeopleInterested Int               @default(0)
   createdAt             DateTime          @default(now())
@@ -228,6 +230,18 @@ model CartItem {
   updatedAt  DateTime @updatedAt
 
   @@map("cartItems")
+}
+
+model Wishlist {
+  id         Int      @id @default(autoincrement())
+  user       User?    @relation(fields: [userId], references: [id])
+  userId     Int
+  product    Product? @relation(fields: [productId], references: [id])
+  productId  Int
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@map("wishlist")
 }
 
 model Order {

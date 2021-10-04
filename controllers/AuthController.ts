@@ -254,6 +254,15 @@ Router.get(
               },
             },
           },
+          wishlist: {
+            include: {
+              product: {
+                include: {
+                  images: true,
+                },
+              },
+            },
+          },
         },
       });
 
