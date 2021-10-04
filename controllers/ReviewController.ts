@@ -28,6 +28,9 @@ Router.get(
         include: {
           user: true,
         },
+        orderBy: {
+          createdAt: "desc",
+        },
       });
 
       return res.status(HttpStatusCode.OK).send(
@@ -149,37 +152,43 @@ Router.put(
   }
 );
 
-
 // delete product review
-Router.delete("/:reviewId", auth, async(req:Request, res:Response, next:NextFunction)=>{
+Router.delete(
+  "/:reviewId",
+  auth,
+  async (req: Request, res: Response, next: NextFunction) => {
     try {
-        const user = (req as any).user;
-        const {reviewId} = (req as any).params;
+      const user = (req as any).user;
+      const { reviewId } = (req as any).params;
 
-        const review = await prisma.review.findFirst({
-            where:{
-                id: parseInt(reviewId)
-            }
-        })
+      const review = await prisma.review.findFirst({
+        where: {
+          id: parseInt(reviewId),
+        },
+      });
 
-        // the user who requested to delete the review is not the author of
-        // the review
-        if(review?.userId !== user.id){
-            return next(new UNAUTHORIZED_ERROR("You are not authorized to perform this action"));
-        }
+      // the user who requested to delete the review is not the author of
+      // the review
+      if (review?.userId !== user.id) {
+        return next(
+          new UNAUTHORIZED_ERROR(
+            "You are not authorized to perform this action"
+          )
+        );
+      }
 
-        await prisma.review.delete({
-            where: {
-                id: parseInt(reviewId)
-            }
-        })
+      await prisma.review.delete({
+        where: {
+          id: parseInt(reviewId),
+        },
+      });
 
-        return next(new OK_REQUEST("Review deleted successfully"))
-
+      return next(new OK_REQUEST("Review deleted successfully"));
     } catch (error) {
-        console.log(error);
-        next(error)
+      console.log(error);
+      next(error);
     }
-})
+  }
+);
 
 export default Router;

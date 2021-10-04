@@ -4,6 +4,7 @@ import ProductController from "./ProductController";
 import FilterController from "./FilterController";
 import QuestionController from "./QuestionController";
 import ReviewController from "./ReviewController";
+import CartController from "./CartController";
 
 export {
   AuthController,
@@ -12,4 +13,5 @@ export {
   FilterController,
   QuestionController,
   ReviewController,
+  CartController,
 };

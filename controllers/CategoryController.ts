@@ -161,6 +161,38 @@ Router.get(
   }
 );
 
+Router.get(
+  "/subcategories/:categoryName",
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { categoryName } = req.params;
+
+      const subCategories = await prisma.category.findMany({
+        where: {
+          parentName: {
+            equals: categoryName,
+            mode: "insensitive",
+          },
+        },
+      });
+
+      if (!subCategories) {
+        next(new NOT_FOUND_ERROR("Category with that name not found"));
+        return;
+      }
+
+      return res.status(HttpStatusCode.OK).send(
+        new OK_REQUEST("SubCategories fetched successfully", {
+          subCategories,
+        })
+      );
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  }
+);
+
 // create a category
 Router.post(
   "/",
@@ -285,7 +317,7 @@ Router.put(
       const errors = transformPrismaErrors(error, "Category");
 
       next({
-        ...error,
+        ...{ error },
         payload: { errors },
         httpCode: HttpStatusCode.BAD_REQUEST,
       });

@@ -244,6 +244,17 @@ Router.get(
         where: {
           email,
         },
+        include: {
+          cart: {
+            include: {
+              product: {
+                include: {
+                  images: true,
+                },
+              },
+            },
+          },
+        },
       });
 
       if (!user) {

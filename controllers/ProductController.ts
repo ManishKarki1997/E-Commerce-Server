@@ -382,6 +382,7 @@ Router.get(
           _count: {
             select: {
               reviews: true,
+              qna: true,
             },
           },
         },
