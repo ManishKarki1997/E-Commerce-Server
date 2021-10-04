@@ -100,4 +100,44 @@ Router.post(
   }
 );
 
+// remove product from user's cart
+Router.delete(
+  "/",
+  auth,
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const {
+        cartItemId,
+        productUid,
+      }: { cartItemId: string; productUid: string } = (req as any).query;
+
+      await prisma.product.update({
+        where: {
+          uid: productUid,
+        },
+        data: {
+          totalPeopleInterested: {
+            decrement: 1,
+          },
+        },
+      });
+
+      await prisma.cartItem.delete({
+        where: {
+          id: parseInt(cartItemId),
+        },
+      });
+
+      return res.status(HttpStatusCode.OK).send(
+        new OK_REQUEST("Product removed successfully from the cart", {
+          cartItemId,
+        })
+      );
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  }
+);
+
 export default Router;
