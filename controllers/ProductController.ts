@@ -28,7 +28,7 @@ const Router = express.Router();
 // fetch products
 Router.get("/", async (req: Request, res: Response, next: NextFunction) => {
   try {
-    const { take = 10, skip = 0 } = (req as any).query;
+    const { take = 10, skip = 0, orderBy } = (req as any).query;
 
     const totalProductsCount = await prisma.product.count();
 
@@ -40,7 +40,7 @@ Router.get("/", async (req: Request, res: Response, next: NextFunction) => {
         pricing: true,
       },
       orderBy: {
-        createdAt: "desc",
+        createdAt: orderBy || "desc",
       },
     });
 

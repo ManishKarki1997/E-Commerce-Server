@@ -168,6 +168,9 @@ Router.get(
             },
           },
         },
+        orderBy: {
+          createdAt: "desc",
+        },
       });
 
       return res.status(HttpStatusCode.OK).send(

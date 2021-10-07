@@ -24,7 +24,6 @@ const confirmAccountExpiryInHours = 24;
 // register user
 Router.post("/", async (req: Request, res: Response, next: NextFunction) => {
   const { name, email, avatar, password } = req.body;
-  console.log(req.body);
   try {
     const isValidSchema = UserSchema.validate(req.body, {
       stripUnknown: true,
@@ -225,6 +224,32 @@ Router.post(
       return res
         .status(HttpStatusCode.OK)
         .send(new OK_REQUEST("Logged in successfully", { user: existingUser }));
+    } catch (error) {
+      // console.log(error);
+      next(error);
+    }
+  }
+);
+
+// logout
+Router.post(
+  "/logout",
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      res.setHeader(
+        "Set-Cookie",
+        cookie.serialize("xcommerceToken", "", {
+          path: "/",
+          httpOnly: true,
+          secure: true,
+          sameSite: "none",
+          maxAge: 0,
+        })
+      );
+
+      return res
+        .status(HttpStatusCode.OK)
+        .send(new OK_REQUEST("Logged out successfully"));
     } catch (error) {
       // console.log(error);
       next(error);
