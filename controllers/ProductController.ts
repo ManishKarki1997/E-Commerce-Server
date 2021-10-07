@@ -240,6 +240,53 @@ Router.get(
   }
 );
 
+// fetch related products for the single product view
+Router.get(
+  "/relatedProducts/:slug",
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { slug } = req.params;
+
+      if (!slug) {
+        return next(new BAD_REQUEST_ERROR("Invalid product slug."));
+      }
+
+      const product = await prisma.product.findFirst({
+        where: {
+          slug,
+        },
+      });
+
+      if (!product) {
+        return next(new BAD_REQUEST_ERROR("Product does not exist."));
+      }
+
+      const products = await prisma.product.findMany({
+        include: {
+          images: true,
+          pricing: true,
+          productDiscount: true,
+        },
+        where: {
+          subCategoryName: product?.subCategoryName,
+        },
+        take: 4,
+      });
+
+      const relatedProducts = products.filter((p) => p.slug !== slug);
+
+      return next(
+        new OK_REQUEST("Related products fetched successfully", {
+          relatedProducts,
+        })
+      );
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  }
+);
+
 // create a product
 Router.post(
   "/",
