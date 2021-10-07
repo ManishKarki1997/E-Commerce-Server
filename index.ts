@@ -7,6 +7,7 @@ import {
   CartController,
   CategoryController,
   FilterController,
+  OrderController,
   ProductController,
   QuestionController,
   ReviewController,
@@ -34,6 +35,7 @@ app.use("/api/questions", QuestionController);
 app.use("/api/reviews", ReviewController);
 app.use("/api/cart", CartController);
 app.use("/api/wishlist", WishlistController);
+app.use("/api/orders", OrderController);
 
 app.use(errorHandler);
 

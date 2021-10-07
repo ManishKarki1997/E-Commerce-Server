@@ -256,6 +256,9 @@ model Order {
   perItemPrice Float
   totalPrice   Float
 
+  // stripe unique payment Id
+  paymentIntentId String
+
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 

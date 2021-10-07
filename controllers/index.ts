@@ -6,6 +6,7 @@ import QuestionController from "./QuestionController";
 import ReviewController from "./ReviewController";
 import CartController from "./CartController";
 import WishlistController from "./WishlistController";
+import OrderController from "./OrderController";
 
 export {
   AuthController,
@@ -16,4 +17,5 @@ export {
   ReviewController,
   CartController,
   WishlistController,
+  OrderController,
 };

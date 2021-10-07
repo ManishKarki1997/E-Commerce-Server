@@ -113,4 +113,44 @@ Router.post(
   }
 );
 
+// remove product from user's cart
+Router.delete(
+  "/",
+  auth,
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const {
+        wishlistId,
+        productUid,
+      }: { wishlistId: string; productUid: string } = (req as any).query;
+
+      await prisma.product.update({
+        where: {
+          uid: productUid,
+        },
+        data: {
+          totalPeopleInterested: {
+            decrement: 1,
+          },
+        },
+      });
+
+      await prisma.wishlist.delete({
+        where: {
+          id: parseInt(wishlistId),
+        },
+      });
+
+      return res.status(HttpStatusCode.OK).send(
+        new OK_REQUEST("Product removed successfully from the wishlist", {
+          wishlistId,
+        })
+      );
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  }
+);
+
 export default Router;
