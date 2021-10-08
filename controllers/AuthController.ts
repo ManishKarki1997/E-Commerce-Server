@@ -310,4 +310,79 @@ Router.get(
   }
 );
 
+// update user profile info
+Router.put(
+  "/",
+  auth,
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { isUpdatingPasswordField } = req.body;
+
+      let payload = {};
+
+      if (isUpdatingPasswordField) {
+        const {
+          email,
+          currentPlainTxtPassword,
+          newPlainTxtPassword,
+          newPlainTxtConfirmPassword,
+        } = req.body;
+
+        if (newPlainTxtPassword !== newPlainTxtConfirmPassword) {
+          return next(new BAD_REQUEST_ERROR("Passwords do not match"));
+        }
+
+        const user = await prisma.user.findFirst({
+          where: {
+            email,
+          },
+        });
+
+        if (!user) {
+          return next(new NOT_FOUND_ERROR("User not found"));
+        }
+
+        const isPasswordValid = await bcrypt.compare(
+          currentPlainTxtPassword,
+          user.password
+        );
+
+        if (!isPasswordValid) {
+          return next(new BAD_REQUEST_ERROR("Invalid Password."));
+        }
+
+        const salt = await bcrypt.genSalt(10);
+        const hashedPassword = await bcrypt.hash(newPlainTxtPassword, salt);
+
+        payload = {
+          password: hashedPassword,
+        };
+      } else {
+        payload = {
+          name: req.body.name,
+          avatar: req.body.avatar || undefined,
+        };
+      }
+
+      const updatedUser = await prisma.user.update({
+        where: {
+          email: req.body.email,
+        },
+        data: {
+          ...payload,
+        },
+      });
+
+      return next(
+        new OK_REQUEST("Profile updated successfully", {
+          user: updatedUser,
+        })
+      );
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  }
+);
+
 export default Router;
