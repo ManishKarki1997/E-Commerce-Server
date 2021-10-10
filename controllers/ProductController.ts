@@ -562,4 +562,133 @@ Router.put(
   }
 );
 
+// search functionality
+Router.get(
+  "/search",
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const query = req.query;
+      const { searchQuery } = query;
+      const productParams = {
+        ...req.query,
+      };
+
+      let tempSortParams =
+        (query as any).sort === undefined
+          ? {}
+          : JSON.parse((query as any).sort);
+
+      let sortParams = {};
+      if (Object.keys(tempSortParams).length > 0) {
+        sortParams = {
+          [tempSortParams.name]: tempSortParams.sortBy,
+        };
+
+        delete productParams.sort;
+      }
+
+      const priceParams = (query as any).price
+        ? JSON.parse((query as any).price)
+        : {};
+
+      delete productParams.categoryName;
+      delete productParams.price;
+
+      const prismaParams = {
+        categorySlug: {
+          equals: (query as any).categorySlug,
+          mode: "insensitive",
+        },
+
+        name: {
+          contains: searchQuery,
+          mode: "insensitive",
+        },
+        pricing: {
+          every: {
+            AND:
+              Object.keys(priceParams).length > 0
+                ? [
+                    {
+                      basePrice: {
+                        gte: parseInt(priceParams.min),
+                      },
+                    },
+                    {
+                      basePrice: {
+                        lte: parseFloat(priceParams.max),
+                      },
+                    },
+                  ]
+                : [],
+          },
+        },
+      };
+
+      if (query.categorySlug === undefined || query.categorySlug === "") {
+        delete (prismaParams as any).categorySlug;
+      }
+
+      const products = await prisma.product.findMany({
+        // @ts-ignore: Unreachable code error
+        where: {
+          OR: [
+            { ...(prismaParams as any) },
+            {
+              filters: {
+                some: {
+                  name: {
+                    equals: "Brand",
+                    mode: "insensitive",
+                  },
+                  value: {
+                    contains: searchQuery as string,
+                    mode: "insensitive",
+                  },
+                },
+              },
+            },
+          ],
+        },
+        orderBy: {
+          ...sortParams,
+        },
+        include: {
+          images: true,
+          pricing: {
+            orderBy: {
+              createdAt: "desc",
+            },
+            take: 1,
+          },
+          productDiscount: {
+            where: {
+              OR: [
+                {
+                  validUntil: {
+                    gt: new Date(),
+                  },
+                },
+                {
+                  validUntil: null,
+                },
+              ],
+            },
+          },
+          // _count: true,
+        },
+      });
+
+      return res.status(HttpStatusCode.OK).send(
+        new OK_REQUEST("Products fetched successfully", {
+          products,
+        })
+      );
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  }
+);
+
 export default Router;
