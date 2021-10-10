@@ -1,0 +1,42 @@
+[
+    {
+        "name":"Laptops",
+        "order":1,
+        "isCategory":true,
+        "isMegaMenu":true,
+        "categories":[
+            {
+                "order":1,
+                "subCategoryName":"Gaming Laptops"
+            },
+            {
+                "order":2,
+                "subCategoryName":"Ultrabooks"
+            },
+            {
+                "order":3,
+                "subCategoryName":"Traditional Laptops"
+            }
+        ]
+    },
+    {
+        "name":"Consoles",
+        "order":1,
+        "isCategory":true,
+        "isMegaMenu":true,
+        "categories":[
+            {
+                "order":1,
+                "subCategoryName":"Gaming Laptops"
+            },
+            {
+                "order":2,
+                "subCategoryName":"Ultrabooks"
+            },
+            {
+                "order":3,
+                "subCategoryName":"Traditional Laptops"
+            }
+        ]
+    }
+]

@@ -1,0 +1,243 @@
+[
+  {
+    "filterName": "RAM",
+    "values": ["2GB", "4GB", "8GB", "16GB", "32GB", "64GB", "128GB"],
+    "subCategories": [
+      "Playstation",
+      "XBox",
+      "Nintendo Switch",
+      "Steam Deck",
+      "Gaming Laptops",
+      "Ultrabooks",
+      "Traditional Laptops",
+      "Smartphones",
+      "SmartWatch",
+      "Smart TV"
+    ]
+  },
+  {
+    "filterName": "Storage",
+    "values": ["128GB", "250GB", "512GB", "1TB", "2TB"],
+    "subCategories": [
+      "Playstation",
+      "XBox",
+      "Nintendo Switch",
+      "Steam Deck",
+      "Gaming Laptops",
+      "Ultrabooks",
+      "Traditional Laptops",
+      "Smartphones",
+      "SmartWatch",
+      "Smart TV"
+    ]
+  },
+  {
+    "filterName": "SSD",
+    "values": ["128GB", "250GB", "512GB", "1TB", "2TB"],
+    "subCategories": [
+      "Playstation",
+      "XBox",
+      "Nintendo Switch",
+      "Steam Deck",
+      "Gaming Laptops",
+      "Ultrabooks",
+      "Traditional Laptops"
+    ]
+  },
+  {
+    "filterName": "Graphics Card",
+    "values": [
+      "Intel Dedicated",
+      "AMD Dedicated",
+      "NVIDIA MX 350",
+      "NVIDIA MX 450",
+      "NVIDIA GTX 1650",
+      "NVIDIA GTX 1650TI",
+      "NVIDIA GTX 1660TI",
+      "NVIDIA RTX 2060",
+      "NVIDIA RTX 2070",
+      "NVIDIA RTX 2080",
+      "NVIDIA RTX 3050",
+      "NVIDIA RTX 3050TI",
+      "NVIDIA RTX 3060",
+      "NVIDIA RTX 3070",
+      "AMD VEGA"
+    ],
+    "subCategories": [
+      "Playstation",
+      "XBox",
+      "Nintendo Switch",
+      "Steam Deck",
+      "Gaming Laptops",
+      "Ultrabooks",
+      "Traditional Laptops"
+    ]
+  },
+  {
+    "filterName": "Processor",
+    "values": [
+      "Intel Core i5 9th Gen",
+      "Intel Core i5 10th Gen",
+      "Intel Core i7 9th Gen",
+      "Intel Core i7 10th Gen",
+      "Intel Core i9 11900H",
+      "Intel Core i9 10980HK",
+      "AMD Ryzen 5 4500U",
+      "AMD Ryzen 7 4700U",
+      "AMD Ryzen 7 5800H",
+      "AMD Ryzen 9 5900HX",
+      "AMD Ryzen 7 4800H",
+      "AMD Ryzen 9 5900HS",
+      "AMD Ryzen 5 5600H",
+      "AMD Ryzen 9 5900HX"
+    ],
+    "subCategories": [
+      "Playstation",
+      "XBox",
+      "Nintendo Switch",
+      "Steam Deck",
+      "Gaming Laptops",
+      "Ultrabooks",
+      "Traditional Laptops",
+      "Smartphones",
+      "SmartWatch"
+    ]
+  },
+  {
+    "filterName": "Brand",
+    "values": [
+      "Asus",
+      "Dell",
+      "Lenovo",
+      "Apple",
+      "Acer",
+      "Sony",
+      "Microsoft",
+      "Nintendo",
+      "Valve",
+      "Razer",
+      "Reddragon",
+      "Keypro",
+      "Logitech",
+      "HP",
+      "BaseUS",
+      "Samsung",
+      "Xiaomi",
+      "LG",
+      "MSI"
+    ],
+    "subCategories": [
+      "Playstation",
+      "XBox",
+      "Nintendo Switch",
+      "Steam Deck",
+      "Gaming Laptops",
+      "Ultrabooks",
+      "Traditional Laptops",
+      "Smartphones",
+      "SmartWatch",
+      "Smart TV",
+      "Gaming Monitors",
+      "4k Monitors",
+      "Curved Monitors",
+      "Headphones",
+      "Speakers",
+      "Keyboard",
+      "Mouse",
+      "Webcam",
+      "Cables",
+      "Memory Card",
+      "USB",
+      "HDD",
+      "SSD"
+    ]
+  },
+  {
+    "filterName": "Color",
+    "values": [
+      "Black",
+      "White",
+      "Green",
+      "Red",
+      "Yellow",
+      "Blue",
+      "Pink",
+      "Gray"
+    ],
+    "subCategories": [
+      "Playstation",
+      "XBox",
+      "Nintendo Switch",
+      "Steam Deck",
+      "Gaming Laptops",
+      "Ultrabooks",
+      "Traditional Laptops",
+      "Smartphones",
+      "SmartWatch",
+      "Smart TV",
+      "Gaming Monitors",
+      "4k Monitors",
+      "Curved Monitors",
+      "Headphones",
+      "Speakers",
+      "Keyboard",
+      "Mouse",
+      "Webcam"
+    ]
+  },
+  {
+    "filterName": "Guarantee",
+    "values": [
+      "1 Month",
+      "3 Month",
+      "6 Month",
+      "1 Years",
+      "2 Years",
+      "3 Years",
+      "4 Years"
+    ],
+    "subCategories": [
+      "Playstation",
+      "XBox",
+      "Nintendo Switch",
+      "Steam Deck",
+      "Gaming Laptops",
+      "Ultrabooks",
+      "Traditional Laptops",
+      "Smartphones",
+      "SmartWatch",
+      "Smart TV",
+      "Gaming Monitors",
+      "4k Monitors",
+      "Curved Monitors",
+      "Headphones",
+      "Speakers",
+      "Keyboard",
+      "Mouse",
+      "Webcam",
+      "Cables",
+      "Memory Card",
+      "USB",
+      "HDD",
+      "SSD"
+    ]
+  },
+  {
+    "filterName": "Size",
+    "values": ["13''", "14''", "15''"],
+    "subCategories": [
+      "Gaming Laptops",
+      "Ultrabooks",
+      "Traditional Laptops",
+      "SmartWatch",
+      "Smart TV",
+      "Gaming Monitors",
+      "4k Monitors",
+      "Curved Monitors",
+      "Speakers",
+      "Keyboard",
+      "Mouse",
+      "Webcam"
+    ]
+  }
+]

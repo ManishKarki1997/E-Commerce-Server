@@ -264,3 +264,23 @@ model Order {
 
   @@map("orders")
 }
+
+
+
+model NavigationMenu{
+  id     Int   @id @default(autoincrement())
+
+  name  String?
+  order  Int
+  parent             NavigationMenu?          @relation("NavigationMenuSubMenus", fields: [parentId], references: [id])
+  parentId           Int?
+  subMenus            NavigationMenu[]      @relation("NavigationMenuSubMenus")
+  isMegaMenu      Boolean @default(false)
+  linkName        String?
+  linkPath        String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  @@map("navigationMenu")
+}
+

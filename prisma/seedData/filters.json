@@ -1,0 +1,166 @@
+[
+  {
+    "name": "RAM",
+    "subCategories": [
+      "Playstation",
+      "XBox",
+      "Nintendo Switch",
+      "Steam Deck",
+      "Gaming Laptops",
+      "Ultrabooks",
+      "Traditional Laptops",
+      "Smartphones",
+      "SmartWatch",
+      "Smart TV"
+    ]
+  },
+  {
+    "name": "Storage",
+    "subCategories": [
+      "Playstation",
+      "XBox",
+      "Nintendo Switch",
+      "Steam Deck",
+      "Gaming Laptops",
+      "Ultrabooks",
+      "Traditional Laptops",
+      "Smartphones",
+      "SmartWatch",
+      "Smart TV"
+    ]
+  },
+  {
+    "name": "SSD",
+    "subCategories": [
+      "Playstation",
+      "XBox",
+      "Nintendo Switch",
+      "Steam Deck",
+      "Gaming Laptops",
+      "Ultrabooks",
+      "Traditional Laptops"
+    ]
+  },
+  {
+    "name": "Graphics Card",
+    "subCategories": [
+      "Playstation",
+      "XBox",
+      "Nintendo Switch",
+      "Steam Deck",
+      "Gaming Laptops",
+      "Ultrabooks",
+      "Traditional Laptops"
+    ]
+  },
+  {
+    "name": "Processor",
+    "subCategories": [
+      "Playstation",
+      "XBox",
+      "Nintendo Switch",
+      "Steam Deck",
+      "Gaming Laptops",
+      "Ultrabooks",
+      "Traditional Laptops",
+      "Smartphones",
+      "SmartWatch"
+    ]
+  },
+  {
+    "name": "Brand",
+    "subCategories": [
+      "Playstation",
+      "XBox",
+      "Nintendo Switch",
+      "Steam Deck",
+      "Gaming Laptops",
+      "Ultrabooks",
+      "Traditional Laptops",
+      "Smartphones",
+      "SmartWatch",
+      "Smart TV",
+      "Gaming Monitors",
+      "4k Monitors",
+      "Curved Monitors",
+      "Headphones",
+      "Speakers",
+      "Keyboard",
+      "Mouse",
+      "Webcam",
+      "Cables",
+      "Memory Card",
+      "USB",
+      "HDD",
+      "SSD"
+    ]
+  },
+  {
+    "name": "Color",
+    "subCategories": [
+      "Playstation",
+      "XBox",
+      "Nintendo Switch",
+      "Steam Deck",
+      "Gaming Laptops",
+      "Ultrabooks",
+      "Traditional Laptops",
+      "Smartphones",
+      "SmartWatch",
+      "Smart TV",
+      "Gaming Monitors",
+      "4k Monitors",
+      "Curved Monitors",
+      "Headphones",
+      "Speakers",
+      "Keyboard",
+      "Mouse",
+      "Webcam"
+    ]
+  },
+  {
+    "name": "Guarantee",
+    "subCategories": [
+      "Playstation",
+      "XBox",
+      "Nintendo Switch",
+      "Steam Deck",
+      "Gaming Laptops",
+      "Ultrabooks",
+      "Traditional Laptops",
+      "Smartphones",
+      "SmartWatch",
+      "Smart TV",
+      "Gaming Monitors",
+      "4k Monitors",
+      "Curved Monitors",
+      "Headphones",
+      "Speakers",
+      "Keyboard",
+      "Mouse",
+      "Webcam",
+      "Cables",
+      "Memory Card",
+      "USB",
+      "HDD",
+      "SSD"
+    ]
+  },
+  {
+    "name": "Size",
+    "subCategories": [
+      "Gaming Laptops",
+      "Ultrabooks",
+      "Traditional Laptops",
+      "SmartWatch",
+      "Smart TV",
+      "Gaming Monitors",
+      "4k Monitors",
+      "Curved Monitors",
+      "Speakers",
+      "Keyboard",
+      "Mouse",
+      "Webcam"
+    ]
+  }
+]

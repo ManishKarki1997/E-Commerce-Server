@@ -1,0 +1,2739 @@
+[
+  {
+    "name": "ROG Zephyrus G15 GA503",
+    "slug": "rog-zephyrus-g15-ga503-laptops",
+    "description": " ASUS ROG Zephyrus G15 turned out to be a very pleasing gaming device combining powerful hardware, beautiful design, good battery life, high-quality screen, and acoustics.",
+    "editorDescription": "",
+    "price": 1600,
+    "categoryName": "Laptops",
+    "subCategoryName": "Gaming Laptops",
+    "images": [
+      {
+        "imageUrl": "https://i1.wp.com/www.smartprix.com/bytes/wp-content/uploads/2021/07/Asus-ROG-Zephyrus-G15-Review-10-scaled.jpg?resize=1068%2C801&ssl=1",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://i1.wp.com/www.smartprix.com/bytes/wp-content/uploads/2021/07/Asus-ROG-Zephyrus-G15-Review-3-scaled.jpg?resize=1068%2C801&ssl=1",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://www.notebookcheck.net/fileadmin/Notebooks/Asus/ROG_Zephyrus_G15_GA503Q/G15_7.JPG",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "32GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "500GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA RTX 3070",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i9 10980HK",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Asus",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "ROG Zephyrus Duo 15 SE GX551",
+    "slug": "rog-zephyrus-duo-15-se-gx551-laptops",
+    "description": "Work and play on the cutting-edge with up to a AMD Ryzen™ 9 5900HX CPU and NVIDIA® GeForce RTX™ 3080 GPU. The overclockable CPU offers serious speed for intensive tasks like photo editing, 3D rendering, and streaming, running on up to 50W of sustained power when the GPU is active and 90W on its own.",
+    "editorDescription": "",
+    "price": 2100,
+    "categoryName": "Laptops",
+    "subCategoryName": "Gaming Laptops",
+    "images": [
+      {
+        "imageUrl": "https://growgrab.com/wp-content/uploads/2021/05/cover.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://root-nation.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/03/asus-rog-zephyrus-15-1.jpg.webp",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://root-nation.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/03/asus-rog-zephyrus-15-1-1.jpg.webp",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "32GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "500GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA RTX 3060",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i9 10980HK",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Asus",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Legion 7i Gen 6 Intel (16'') with RTX 3060",
+    "slug": "legion-7i-gen6-intel-16''-with-rtx-3060-gaming-laptop",
+    "description": "Gaming will never be the same after experiencing 11th Generation Intel® Core™ H-Series processors. Play and stream the latest AAA Titles at their absolute best with up to 5GHz clock speeds on multiple cores, enhanced overclocking, 45 Watts of dedicated processing power, up to 8 cores and 24MB of Intel® Smart Cache.",
+    "editorDescription": "",
+    "price": 1799.99,
+    "categoryName": "Laptops",
+    "subCategoryName": "Gaming Laptops",
+    "images": [
+      {
+        "imageUrl": "https://www.notebookcheck.net/fileadmin/_processed_/b/b/csm_Lenovo_Legion_7_AMD_16_Zoll_Storm_Grey_07_8a05c18b7f.png",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://i.gadgets360cdn.com/large/Lenovo_legion_2021_launch_1610524507873.jpg?downsize=950:*",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/Legion7_3.JPG",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "16GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "500GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA RTX 2080",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i7 10th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Lenovo",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Alienware M15 Ryzen™ Edition R5 Gaming Laptop",
+    "slug": "alienware-m15-ryzen-edition-r5-gaming-laptop",
+    "description": "Whether you're gaming at your leisure or in the thick of battle, never miss any critical details thanks to smoother gameplay. A result of our deliberate engineering decisions, the latest m15 is incredibly fast starting from 165Hz.",
+    "editorDescription": "",
+    "price": 1499.99,
+    "categoryName": "Laptops",
+    "subCategoryName": "Gaming Laptops",
+    "images": [
+      {
+        "imageUrl": "https://i.dell.com/is/image/DellContent//content/dam/global-site-design/product_images/dell_client_products/notebooks/alienware_notebooks/m15_r5_ryzen_edition/media_gallery/alienware-m15r5-ryze-edition-notebook-awm15-r5-15-cnb-00000ff090-5000x5000.psd?fmt=pjpg&pscan=auto&scl=1&wid=5000&hei=5000&qlt=100,0&resMode=sharp2&size=5000,5000",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://i0.wp.com/laptopmedia.com/wp-content/uploads/2021/05/2-8.jpg?resize=1000%2C750&ssl=1",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://www.techadvisor.com/cmsdata/reviews/3805712/alienware_m15_ryzen_edition_r5_02_thumb800.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "16GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "500GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA RTX 2070",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i7 10th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Dell",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "Asus Zenbook 14 UX433",
+    "slug": "asus-zenbook-14-ux433-ultrabook",
+    "description": "Creativity. Style. Innovation. These are the qualities that define the elegant new ZenBook 14. It’s one of the world’s smallest 14-inch laptops, and features the breathtaking frameless NanoEdge display and the exclusive NumberPad to give you the freedom to discover your creative power.",
+    "editorDescription": "",
+    "price": 1299.99,
+    "categoryName": "Laptops",
+    "subCategoryName": "Ultrabooks",
+    "images": [
+      {
+        "imageUrl": "https://dlcdnwebimgs.asus.com/gain/720d2121-9da7-4e16-b440-3d8d5cccb48c/w800",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://dlcdnwebimgs.asus.com/gain/7c7f225a-1ca7-49eb-8c74-30c028dc0bb7/w800",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://dlcdnwebimgs.asus.com/gain/78373abc-0d69-4660-badb-4d1d04ea7ba6/w800",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "8GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "250GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA MX 450",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i7 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Asus",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Lenovo ThinkPad X380 Yoga",
+    "slug": "lenovo-thinkpad-x380-yoga-ultrabook",
+    "description": "The sleek ThinkPad X380 Yoga is designed for you. This stylish powerhouse adapts to work with you—as a laptop, tablet, or anything in between. Moreover, hardware-level security features provide peace of mind when you're on-the-go.",
+    "editorDescription": "",
+    "price": 1099.99,
+    "categoryName": "Laptops",
+    "subCategoryName": "Ultrabooks",
+    "images": [
+      {
+        "imageUrl": "https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x380-2-in-1-feature-4.jpg?context=bWFzdGVyfHJvb3R8NjM0NTB8aW1hZ2UvanBnfGgxMS9oYTMvOTYxNzc5MTA1Nzk1MC5qcGd8OWQ4ZDlkYWRlNjA4NTc4NzQ5YThhNWEzMGI0OGFmODJkNGMwY2YzOWRiNzdmOTdiNjJmNTgyMzgzNjNmODZjZA&w=1920",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x380-2-in-1-feature-2.jpg?context=bWFzdGVyfHJvb3R8NzI5MDZ8aW1hZ2UvanBnfGg4ZC9oMmEvOTYxNzc5MDk5MjQxNC5qcGd8ZTZiZWZhNmMyMzhlNTdhNTI0NjYwMjZiMmFkODg1NGE3Y2Q2MzdiYzk4MmJiYTdiY2M3YzM2Y2NjOGFhMmIyMw&w=1920",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x380-2-in-1-feature-1.jpg?context=bWFzdGVyfHJvb3R8NzkxMTN8aW1hZ2UvanBnfGg0NS9oYmMvOTYxNzc5MDg2MTM0Mi5qcGd8OTA5ODU5NGZjZjM1ZmRmYjYwMWFhNWRlNGNjMmEyM2FiZGUyNmU1ZDdiOWU4ZTRjZjQ3ZDBhMzc3Zjc2ZGM2MA&w=1920",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "8GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "250GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA MX 450",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i7 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Lenovo",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Lenovo IdeaPad 5i (15'')",
+    "slug": "lenovo-ideapad-5i-15''",
+    "description": "The IdeaPad 5i (15'') Intel boasts an enticing list of included and optional features, making it a powerful combination of performance, connectivity, and entertainment with up to 10th Gen Intel® Core™ i7 processing.",
+    "editorDescription": "",
+    "price": 1199.99,
+    "categoryName": "Laptops",
+    "subCategoryName": "Ultrabooks",
+    "images": [
+      {
+        "imageUrl": "https://www.lenovo.com/medias/lenovo-laptops-ideapad-5-15in-intel-hero.png?context=bWFzdGVyfHJvb3R8Mjk0NTYxfGltYWdlL3BuZ3xoNzcvaGNhLzEwNzQ2MjI0OTM0OTQyLnBuZ3wzYmE2NzQ5MmY0ZmM0NzNiMjI4YmJkNjNmZDlhMTQ3YWM3NzBhZTNlNDAyMmM2M2RmZGJkNDI0NjBjYWY1ZWJk",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://www.lenovo.com/medias/lenovo-laptops-ideapad-5-15in-intel-gallery-1.png?context=bWFzdGVyfHJvb3R8MjgwNDc0fGltYWdlL3BuZ3xoOGQvaDU5LzEwNzQ2MjIyNzA2NzE4LnBuZ3w5NTBjYTA2ODkwZWQ2Yzk3OGQ0Y2M5MjRiOWZkNTNlMDJiOWQ4MDlmMGNlM2U5Mzc1ODkzYzhmNTRiYzNlYTIx",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://www.lenovo.com/medias/lenovo-laptops-ideapad-5-15in-intel-gallery-4.jpg?context=bWFzdGVyfHJvb3R8MjIyMTUxfGltYWdlL2pwZ3xoMzQvaDgwLzEwNzQ2MjIzNDI3NjE0LmpwZ3xjYzZkZWIwZWExOTFlMDRmZGM5ZTgwNzE0Y2MyMmQ3YzI1YWNlYjRkNjRjN2Y2NDg4NWRhN2FiNzFiYTYyNDY2",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "8GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "250GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA MX 350",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i5 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Lenovo",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "Macbook Pro 13''",
+    "slug": "macbook-pro-13''-traditional-laptops",
+    "description": "The Apple M1 chip gives the 13‑inch MacBook Pro speed and power beyond belief.",
+    "editorDescription": "",
+    "price": 1699.99,
+    "categoryName": "Laptops",
+    "subCategoryName": "Traditional Laptops",
+    "images": [
+      {
+        "imageUrl": "https://www.apple.com/v/macbook-pro-13/h/images/overview/hero_endframe__bsza6x4fldiq_large.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://www.apple.com/v/macbook-pro-13/h/images/overview/retina_hero_screen__gddr9b8m4kuq_large.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://www.apple.com/v/macbook-pro-13/h/images/overview/magic_keyboard__brx9diaauwaa_large.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "8GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "500GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "500GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "Intel Dedicated",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i5 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Apple",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Acer Swift 5",
+    "slug": "acer-swift-5-traditional-laptops",
+    "description": "Designed on the Intel® Evo™ platform for an exceptional experience anywhere, the Swift 5 weighs in at around 1 kg, is just 14.95 mm thin, and boasts an incredible 90% screen-to-body ratio. With up to 17 hours of battery, stay mobile and stay productive.",
+    "editorDescription": "",
+    "price": 999.99,
+    "categoryName": "Laptops",
+    "subCategoryName": "Traditional Laptops",
+    "images": [
+      {
+        "imageUrl": "https://static.acer.com/up/Resource/Acer/Laptops/Swift_5/SF514_55/20200824/Swift-5_ksp_03_large.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://static.acer.com/up/Resource/Acer/Laptops/Swift_5/SF514_55/20200824/Swift-5_ksp_05.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://static.acer.com/up/Resource/Acer/Laptops/Swift_5/SF514_55/20210416/Swift-5_ksp_04.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "8GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "250GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA MX 450",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i5 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Acer",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "Playstation",
+    "slug": "playstation-5-consoles",
+    "description": "Experience lightning-fast loading with an ultra-high speed SSD, deeper immersion with support for haptic feedback, adaptive triggers and 3D Audio*, and an all-new generation of incredible PlayStation® games.",
+    "editorDescription": "",
+    "price": 549.99,
+    "categoryName": "Consoles",
+    "subCategoryName": "Playstation",
+    "images": [
+      {
+        "imageUrl": "https://images.pexels.com/photos/5961216/pexels-photo-5961216.jpeg?auto=compress",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://images.pexels.com/photos/5961235/pexels-photo-5961235.jpeg?auto=compress",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://images.pexels.com/photos/3945673/pexels-photo-3945673.jpeg?auto=compress",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "32GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "2TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "250GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA RTX 2080",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i7 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Sony",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "Playstation 4",
+    "slug": "playstation-4-consoles",
+    "description": "The PS4 console, delivering awesome gaming power, incredible entertainment and vibrant HDR technology",
+    "editorDescription": "",
+    "price": 349.99,
+    "categoryName": "Consoles",
+    "subCategoryName": "Playstation",
+    "images": [
+      {
+        "imageUrl": "https://images.unsplash.com/photo-1518908336710-4e1cf821d3d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://images.unsplash.com/photo-1486401899868-0e435ed85128?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://images.unsplash.com/photo-1507457379470-08b800bebc67?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "32GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "250GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA GTX 1660TI",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i5 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Sony",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "Playstation 4",
+    "slug": "playstation-4-pro-consoles",
+    "description": "Blur the lines of reality with the PlayStation®4 Pro console. Faster, more powerful and with 4K TV gaming.",
+    "editorDescription": "",
+    "price": 399.99,
+    "categoryName": "Consoles",
+    "subCategoryName": "Playstation",
+    "images": [
+      {
+        "imageUrl": "https://wallpapercave.com/wp/wp1841725.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://wallpapercave.com/wp/wp3589270.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://wallpapercave.com/wp/wp3589275.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "32GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "250GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA GTX 1660TI",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i5 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Sony",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "XBox Series X",
+    "slug": "xbox-series-x-consoles",
+    "description": "The Xbox Series X delivers sensationally smooth frame rates of up to 120FPS with the visual pop of HDR. Immerse yourself with sharper characters, brighter worlds, and impossible details with true-to-life 4K.",
+    "editorDescription": "",
+    "price": 499.99,
+    "categoryName": "Consoles",
+    "subCategoryName": "XBox",
+    "images": [
+      {
+        "imageUrl": "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://images.unsplash.com/photo-1621259182228-4d6861278090?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://www.renderhub.com/dinapixstudio/xbox-series-x-3d-wallpaper/xbox-series-x-3d-wallpaper_1920x1080.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "32GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "2TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "500GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA RTX 2080",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i7 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Microsoft",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "XBox Series S",
+    "slug": "xbox-series-s-consoles",
+    "description": "The next generation of gaming brings our largest digital launch library yet to our smallest Xbox ever. With more dynamic worlds, faster load times, and the addition of Xbox Game Pass (sold separately), the all-digital Xbox Series S is the best value in gaming.",
+    "editorDescription": "",
+    "price": 399.99,
+    "categoryName": "Consoles",
+    "subCategoryName": "XBox",
+    "images": [
+      {
+        "imageUrl": "https://compass-ssl.xbox.com/assets/c9/82/c9827ca6-83ee-457e-b33b-1c1a350efb57.png?n=0202999-BuyBox01_Image-D.png",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://cutewallpaper.org/22/xbox-series-s-wallpapers/111479882.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://cutewallpaper.org/22/xbox-series-s-wallpapers/56931854.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "32GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "2TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "500GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA RTX 2070",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i7 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Microsoft",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "3 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "XBox One X S",
+    "slug": "xbox-one-x-consoles",
+    "description": "Experience immersive 4K gaming, where action is brought to life with 2160p frame buffers and 6 Teraflops of graphical processing power.",
+    "editorDescription": "",
+    "price": 450,
+    "categoryName": "Consoles",
+    "subCategoryName": "XBox",
+    "images": [
+      {
+        "imageUrl": "https://cdn.mos.cms.futurecdn.net/c2f3BWwansb8rQ5d8bAAqb-1024-80.jpeg.webp",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://news.microsoft.com/wp-content/uploads/sites/68/2017/06/Xbox-One-X_Console-Controller_FrontTilt-Top-960x640.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://news.microsoft.com/wp-content/uploads/sites/68/2017/09/Xbox-One-X_CnslCntlr_Hrz_ANRTlt_GrdBG_96PPI_V2_RGB-960x640.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "32GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "500GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA GTX 1660TI",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i7 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Microsoft",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "Nintendo Switch – OLED Model",
+    "slug": "nintendo-switch-olen-model-consoles",
+    "description": "The new system features a vibrant 7-inch OLED screen, a wide adjustable stand, a dock with a wired LAN port, 64 GB of internal storage, and enhanced audio.",
+    "editorDescription": "",
+    "price": 349.99,
+    "categoryName": "Consoles",
+    "subCategoryName": "Nintendo",
+    "images": [
+      {
+        "imageUrl": "https://assets.nintendo.com/image/upload/f_auto,h_813,q_auto,w_1440/ncom/en_US/switch/site-design-update/mode-1?v=2021100904",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://c0.wallpaperflare.com/preview/49/314/574/nintendo-switch-switch-nintendo-console.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://c4.wallpaperflare.com/wallpaper/18/289/77/nintendo-switch-review-console-wallpaper-preview.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "8GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "500GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA GTX 1650",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i5 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Nintendo",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Nintendo Switch – OLED Model",
+    "slug": "nintendo-switch-olen-model-consoles",
+    "description": "Nintendo Switch is designed to fit your life, transforming from home console to portable system in a snap.",
+    "editorDescription": "",
+    "price": 299.99,
+    "categoryName": "Consoles",
+    "subCategoryName": "Nintendo",
+    "images": [
+      {
+        "imageUrl": "https://c0.wallpaperflare.com/preview/49/314/574/nintendo-switch-switch-nintendo-console.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://www.trustedreviews.com/wp-content/uploads/sites/54/2020/09/750027-920x518.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://gamingbolt.com/wp-content/uploads/2020/10/nintendo-switch-image-1536x864.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "16GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "500GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA GTX 1660TI",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i7 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Nintendo",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "Steam Deck",
+    "slug": "steam-deck-consoles",
+    "description": "The Steam Deck was built for extended play sessions—whether you're using thumbsticks or trackpads—with full-size controls positioned perfectly within your reach",
+    "editorDescription": "",
+    "price": 499.99,
+    "categoryName": "Consoles",
+    "subCategoryName": "Steam Deck",
+    "images": [
+      {
+        "imageUrl": "https://www.screenhub.com.au/wp-content/uploads/sites/4/2021/07/steam-deck.jpg?resize=1536,864",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://jeuxvideo.rds.ca/wp-content/uploads/sites/2/2021/07/steamdeck_photo_skus-1920x1080.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://i0.wp.com/m2now.com/wp-content/uploads/2021/07/Steam-Deck.jpg?resize=1200%2C600&ssl=1",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "16GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "500GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA GTX 1660TI",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i7 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Valve",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "RAZER HUNTSMAN V2",
+    "slug": "razer-huntsman-v2-accessories",
+    "description": "If all-out advantage is more your speed, arm yourself with responsiveness that’s second to none. Meet the Razer Huntsman V2— an optical gaming keyboard with near-zero input latency and fully geared out with other high-end features to make it the complete package.",
+    "editorDescription": "",
+    "price": 199.99,
+    "categoryName": "Accessories",
+    "subCategoryName": "Keyboard",
+    "images": [
+      {
+        "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/1ab71e5ea9f9b8db8fc014cf8d767732/razer-huntsman-v2-hero-desktop.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://www.xda-developers.com/files/2021/09/Huntsman-V2-Tenkeyless.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://www.noobs2pro.com/wp-content/uploads/2020/08/razer-keyboard-1.jpg?ezimgfmt=ng:webp/ngcb110",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Razer",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Color",
+        "value": "Black",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Year",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "RAZER BlackWidow Mini V2",
+    "slug": "razer-blackwidow-mini-accessories",
+    "description": "Compact enough for any space, and versatile enough for all setups—this is the Razer BlackWidow V3 Mini HyperSpeed. Enjoy seamless gaming in a sleek package with a wireless 65% mechanical gaming keyboard that’s the perfect balance of form and function.",
+    "editorDescription": "",
+    "price": 120,
+    "categoryName": "Accessories",
+    "subCategoryName": "Keyboard",
+    "images": [
+      {
+        "imageUrl": "https://i2.wp.com/www.tech-critter.com/wp-content/uploads/2021/02/Razer-Huntsman-V2-Analog.jpg?resize=1024%2C545&ssl=1",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/46a5058bf208af0c9f25d9575359fd6d/blackwidow-v3-mini-hyperspeed-available-desktop.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/e36ecbd1b3cf8451f4581518ecfb4ffe/hyperspeed.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Razer",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Color",
+        "value": "Black",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Year",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Redragon K552 Mechanical Keyboard",
+    "slug": "reddragon-k552-mechanical-keyboard-accessories",
+    "description": "Tenkeyless compact mechanical gaming keyboard Redragon k552 tkl small compact with dust proof mechanical switches cherry blue equivalent Linear switches quiet click sound fast action with minimal resistance without a tactile bump feel.",
+    "editorDescription": "",
+    "price": 150,
+    "categoryName": "Accessories",
+    "subCategoryName": "Keyboard",
+    "images": [
+      {
+        "imageUrl": "https://i0.wp.com/redragonepal.com/wp-content/uploads/2020/12/kumara-k552-rgb.jpg?fit=800%2C800&ssl=1",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://i0.wp.com/redragonepal.com/wp-content/uploads/2020/12/71mj0h5JgyL._AC_SL1500_.jpg?fit=1500%2C1500&ssl=1",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://i2.wp.com/redragonepal.com/wp-content/uploads/2020/12/81Ys8qu3D2L._AC_SL1500_.jpg?fit=1500%2C1500&ssl=1",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Reddragon",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Color",
+        "value": "Black",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Year",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Keypro Macaron Mechanical Keyboard",
+    "slug": "keypro-macaron-mechanical-keyboard-accessories",
+    "description": "Minimal Mechanical Keyboard.",
+    "editorDescription": "",
+    "price": 80,
+    "categoryName": "Accessories",
+    "subCategoryName": "Keyboard",
+    "images": [
+      {
+        "imageUrl": "https://ae01.alicdn.com/kf/Hd6b5da808b7b4525baa62d0b97cfb517r.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://ae01.alicdn.com/kf/H9bf377b3f55b4d42934c3d798d6a6bbbh.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://ae01.alicdn.com/kf/H5ec4609b07b6467caaf99002b0a01d79I.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Keypro",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Color",
+        "value": "Black",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Year",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "Razer Basilisk V3",
+    "slug": "razer-basilisk-v3-accessories",
+    "description": "Create, control, and champion your playstyle with the new Razer Basilisk V3—the quintessential ergonomic gaming mouse for customized performance.",
+    "editorDescription": "",
+    "price": 130,
+    "categoryName": "Accessories",
+    "subCategoryName": "Mouse",
+    "images": [
+      {
+        "imageUrl": "https://assets2.razerzone.com/pages/basilisk-v3-4D578898E8144Le8da21dde32b7a9f5f/chroma-rgb.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://assets2.razerzone.com/pages/basilisk-v3-4D578898E8144Le8da21dde32b7a9f5f/power-beyond-logic-3.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://assets2.razerzone.com/pages/basilisk-v3-4D578898E8144Le8da21dde32b7a9f5f/power-beyond-logic-1.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Razer",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Color",
+        "value": "Black",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Year",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "LOGITECH PEBBLE WIRELESS MOUSE M350",
+    "slug": "logitech-pebble-wireless-mouse-m350-accessories",
+    "description": "Make any space minimalist, modern, and silent with Logitech Pebble – the portable mouse that fits your curated lifestyle and goes wherever life takes you.",
+    "editorDescription": "",
+    "price": 29.99,
+    "categoryName": "Accessories",
+    "subCategoryName": "Mouse",
+    "images": [
+      {
+        "imageUrl": "https://resource.logitech.com/w_900,h_900,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/products/logitech/mice/m350-pebble-wireless-mouse/910-005770/logitech-pebble-m35065685.png?v=1",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://resource.logitech.com/w_900,h_900,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/products/logitech/mice/m350-pebble-wireless-mouse/910-005770/logitech-pebble-m3502.png?v=1",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://resource.logitech.com/w_900,h_900,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/products/logitech/mice/m350-pebble-wireless-mouse/910-005770/logitech-pebble-m3504.png?v=1",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Logitech",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Color",
+        "value": "Black",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Year",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "MX Master 3",
+    "slug": "mx-master-3-accessories",
+    "description": "MX Master 3 is instant precision and infinite potential. It’s the most advanced Master Series mouse yet – designed for creatives and engineered for coders. If you can think it, you can master it.",
+    "editorDescription": "",
+    "price": 99.99,
+    "categoryName": "Accessories",
+    "subCategoryName": "Mouse",
+    "images": [
+      {
+        "imageUrl": "https://cdn57.androidauthority.net/wp-content/uploads/2021/06/MX-Master-3-feat-img-scaled-e1625070890608-1000x563.jpg.webp",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://resource.logitech.com/w_900,h_900,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-master-3/gallery/mx-master-product-gallery-mild-grey-3-4-front.png?v=1",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://resource.logitech.com/w_900,h_900,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-master-3/gallery/mx-master-product-gallery-mild-grey-front.png?v=1",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Logitech",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Color",
+        "value": "Black",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Year",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "Adesso CyberTrack H4 1080P USB Webcam",
+    "slug": "adesso-cybertrack-h4-1080p-usb-webcam-accessories",
+    "description": "Adesso's CyberTrack H4 High Resolution Desktop Webcam features 1080p HD Video Resolution that allows you to record and share colorful HD quality video with ne detail.",
+    "editorDescription": "",
+    "price": 49.99,
+    "categoryName": "Accessories",
+    "subCategoryName": "Webcam",
+    "images": [
+      {
+        "imageUrl": "https://www.adesso.com/wp-content/uploads/2020/04/CyberTrack-H4-1.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://static.bhphoto.com/images/multiple_images/images500x500/1591198218_IMG_1368933.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://static.bhphoto.com/images/images500x500/adesso_cybertrackh4_cybertrack_h4_1080p_desktop_1591198526_1567510.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Adesso",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Color",
+        "value": "Black",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Year",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Logitech C920 Webcam",
+    "slug": "logitech-c920-webcam-accessories",
+    "description": "First webcam with UVC H.264 technology - the only webcam that enables true HD 1080p video on Skype.",
+    "editorDescription": "",
+    "price": 49.99,
+    "categoryName": "Accessories",
+    "subCategoryName": "Webcam",
+    "images": [
+      {
+        "imageUrl": "https://cdn.mos.cms.futurecdn.net/LUxZJTSqXRKXgeLb4dtUsS-1200-80.jpg.webp",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://i0.wp.com/comboblogger.com/wp-content/uploads/2021/05/Screenshot-639.jpg?fit=1171%2C701&ssl=1",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://www.windowscentral.com/sites/wpcentral.com/files/styles/large_wm_brw/public/field/image/2016/08/logitech-c920-2_0.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Logitech",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Color",
+        "value": "Black",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Year",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "Baseus 5-Port USB 3.0 Hub",
+    "slug": "baseus-5-port-usb-3.0-hub-accessories",
+    "description": "Easy Expansion HUB - 5-in-1 USB 3.0 Hub adapter with 3 USB3.0 ports, 2 USB2.0 ports",
+    "editorDescription": "",
+    "price": 49.99,
+    "categoryName": "Accessories",
+    "subCategoryName": "Cables",
+    "images": [
+      {
+        "imageUrl": "https://m.media-amazon.com/images/I/61bllI3Yx9S._AC_SL1500_.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://m.media-amazon.com/images/I/71qPEdH6RLS._AC_SL1500_.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://m.media-amazon.com/images/I/61D5vpo125S._AC_SL1500_.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "BaseUS",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Color",
+        "value": "Black",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Year",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Baseus USB C to USB 3.0 HDMI-compatible Adapter for MacBook Pro Air",
+    "slug": "baseus-usb-c-to-usb-3.0-hdmi-compatible-adapter-for-macbook-pro-accessories",
+    "description": "7 in 1 Smart Docking Station for Macbook Pro",
+    "editorDescription": "",
+    "price": 28.99,
+    "categoryName": "Accessories",
+    "subCategoryName": "Cables",
+    "images": [
+      {
+        "imageUrl": "https://ae01.alicdn.com/kf/HTB1oMegeW5s3KVjSZFNq6AD3FXa9.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://ae01.alicdn.com/kf/Hc54071b51e504a8daf68003b84a986a8o.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://ae01.alicdn.com/kf/HTB1WoN_e9SD3KVjSZFKq6z10VXa5.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "BaseUS",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Color",
+        "value": "Black",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Year",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "Razer BlackShark V2 Pro - White",
+    "slug": "razer-blackshark-v2-pro-white-audio-devices",
+    "description": "THE SOUND OF ESPORTS. UNLEASHED.",
+    "editorDescription": "",
+    "price": 179.99,
+    "categoryName": "Audio Devices",
+    "subCategoryName": "Headphones",
+    "images": [
+      {
+        "imageUrl": "https://assets3.razerzone.com/wjsZ9TzLHDcWGmXorV1A_QQBrZI=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhee%2Fhba%2F9242824081438%2F210928-blackshark-v2-pro-white-1500x1000-1-v2.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://assets3.razerzone.com/h4hJM3I5YlsTcbDROj6jv-r3hxw=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh42%2Fhbe%2F9242824179742%2F210928-blackshark-v2-pro-white-1500x1000-2.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://assets3.razerzone.com/JaW7pxFx5VHaC_rpTSbpBWGEow4=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fheb%2Fhbd%2F9242824146974%2F210928-blackshark-v2-pro-white-1500x1000-4.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Razer",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Color",
+        "value": "Black",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Year",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "PRO X WIRELESS",
+    "slug": "pro-x-wireless-headphone-audio-devices",
+    "description": "Step up to the pro-grade communications and precision audio you need to win, all with the freedom and mobility of LIGHTSPEED wireless.",
+    "editorDescription": "",
+    "price": 199.99,
+    "categoryName": "Audio Devices",
+    "subCategoryName": "Headphones",
+    "images": [
+      {
+        "imageUrl": "https://www.itnetwork.rs/wp-content/uploads/2020/08/High_Resolution_PNG-Logitech-G-PRO-Wireless-Headset-3QTR-ENVIRO.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://www.itnetwork.rs/wp-content/uploads/2020/08/High_Resolution_PNG-Logitech-G-PRO-Wireless-Headset-FOB.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://www.itnetwork.rs/wp-content/uploads/2020/08/High_Resolution_PNG-Logitech-G-PRO-Wireless-Headset-3QTRTOP.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Logitech",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Color",
+        "value": "Black",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Year",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "Razer Leviathan",
+    "slug": "razer-leviathan-audio-devices",
+    "description": "The All-In-One Desktop Bluetooth Soundbar with Subwoofer",
+    "editorDescription": "",
+    "price": 206.99,
+    "categoryName": "Audio Devices",
+    "subCategoryName": "Speakers",
+    "images": [
+      {
+        "imageUrl": "https://assets3.razerzone.com/5wu4MPouK0R9avGYeOEyQKPOa1Y=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh63%2Fh85%2F9081229410334%2FRazer-Leviathan-51-Channel-Surround-Movies-and-Gaming-Sound-Bar.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://assets3.razerzone.com/NxJAQBT0GeXupsDAyC6NCLZ1znM=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh77%2Fh8c%2F9081229639710%2FRazer-Leviathan-Desktop-Bluetooth-Speaker-Sound-Bar.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://assets3.razerzone.com/i5QwQZlHc2OmpuX4gW19Tck1dps=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh11%2Fh86%2F9081229475870%2FRazer-Leviathan-Bluetooth-Speaker-Sound-Bar.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Razer",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Color",
+        "value": "Black",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Year",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Logitech Z200 STEREO SPEAKERS",
+    "slug": "logitech-z200-stereo-speakers-audio-devices",
+    "description": "Enrich your music and movie experience with room-filling sound and adjustable bass. Simple controls allow you to access everything on the right speaker.",
+    "editorDescription": "",
+    "price": 29.99,
+    "categoryName": "Audio Devices",
+    "subCategoryName": "Speakers",
+    "images": [
+      {
+        "imageUrl": "https://resource.logitech.com/w_1001,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/speakers/computer-speakers/z200/z200-feature-01-desktop.png?v=1",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://resource.logitech.com/w_797,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/speakers/computer-speakers/z200/z200-feature-03-new.jpg?v=1",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://resource.logitech.com/w_900,h_900,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/speakers/computer-speakers/z200/gallery/z200-gallery-2.png?v=1",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Logitech",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Color",
+        "value": "Black",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Year",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "Samsung Galaxy S20",
+    "slug": "samsung-galaxy-s20-smart-devices",
+    "description": "The phone comes with a 6.20-inch touchscreen display with a resolution of 1440x3200 pixels and an aspect ratio of 20:9.",
+    "editorDescription": "",
+    "price": 1099.99,
+    "categoryName": "Smart Devices",
+    "subCategoryName": "Smartphones",
+    "images": [
+      {
+        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/A_O31IDntOwCRLtBpNQ_UA--~B/aD0xMDY4O3c9MTYwMDthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/uu/api/res/1.2/z_dYt_9Asi6R69NFVLQ12Q--~B/aD0xMDY4O3c9MTYwMDthcHBpZD15dGFjaHlvbg--/https://o.aolcdn.com/images/dims?crop=1600%2C1068%2C0%2C0&quality=85&format=jpg&resize=1600%2C1068&image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2020-03%2Fb99b3af0-67ae-11ea-afff-fab97db8ae72&client=a1acac3e1b3290917d92&signature=26ef6bf3d32929d9010c3fe0427e7f6877babda9.cf.webp",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://cdn.pocket-lint.com/r/s/970x/assets/images/151021-phones-review-hands-on-samsung-galaxy-s20-ultra-review-image1-mxudkxs4gf-jpg.webp",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://i.pcmag.com/imagery/reviews/00bTyFN4pGOEYuGN1d3fbd6-48.1582659225.fit_scale.size_1028x578.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "32GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Samsung",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 12",
+    "slug": "iPhone-12-smart-devices",
+    "description": "There’s no phone like iPhone.",
+    "editorDescription": "",
+    "price": 1199.99,
+    "categoryName": "Smart Devices",
+    "subCategoryName": "Smartphones",
+    "images": [
+      {
+        "imageUrl": "https://images.moneycontrol.com/static-mcnews/2020/11/apple-iPhone-12-10-770x433.png?impolicy=website&width=770&height=431",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://images.moneycontrol.com/static-mcnews/2020/11/apple-iPhone-12-1.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://images.moneycontrol.com/static-mcnews/2020/11/apple-iPhone-12-2.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "8GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Apple",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Galaxy Z Fold3 ",
+    "slug": "galaxy-z-fold3-smart-devices",
+    "description": "This is everything you'd want in a premium, durable, 5G smartphone.1 Then we made it unfold—revealing a massive screen so you can watch, work and play like never before.",
+    "editorDescription": "",
+    "price": 1900,
+    "categoryName": "Smart Devices",
+    "subCategoryName": "Smartphones",
+    "images": [
+      {
+        "imageUrl": "https://cdn.pocket-lint.com/r/s/970x/assets/images/157961-phones-review-hands-on-samsung-galaxy-z-fold-3-review-image1-coz70vermc-jpg.webp",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2021/08/CMC_0073.jpg?w=1390&crop=1",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://cdn.pocket-lint.com/r/s/970x/assets/images/147776-phones-review-review-galaxy-fold-full-review-image1-vl1ff9ji0x-jpg.webp",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "128GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Samsung",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Xiaomi 11T Pro",
+    "slug": "xiaomi-11t-pro-smart-devices",
+    "description": "The highest-end 11T Pro is the most compelling phone of the trio, and lets Xiaomi offer a more budget-friendly alternative to the Chinese phone-maker's pricier Mi 11 flagship series.",
+    "editorDescription": "",
+    "price": 799.99,
+    "categoryName": "Smart Devices",
+    "subCategoryName": "Smartphones",
+    "images": [
+      {
+        "imageUrl": "https://cdn57.androidauthority.net/wp-content/uploads/2021/09/Xiaomi-11T-official-1000w-563h.jpg.webp",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://cdn57.androidauthority.net/wp-content/uploads/2021/09/Xiaomi-11T-Lite-5G-NE-1000w-563h.jpg.webp",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://fscl01.fonpit.de/userfiles/7687254/image/Xiaomi_Launch_15_September/Xiaomi_11T_Pro_One_Pager-w810h462.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "16GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Xiaomi",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "Mi Watch Revolve",
+    "slug": "mi-watch-revolve-smart-devices",
+    "description": "Xiaomi Watch Revolve",
+    "editorDescription": "",
+    "price": 799.99,
+    "categoryName": "Smart Devices",
+    "subCategoryName": "SmartWatch",
+    "images": [
+      {
+        "imageUrl": "https://i01.appmifile.com/webfile/globalimg/7/05C870D9-8E6B-1FCE-1EE8-C988901DC1D1.png",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://www.gizmochina.com/wp-content/uploads/2020/09/Xiaomi-Mi-Watch-1-500x500.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://cdn.pocket-lint.com/r/s/1200x/assets/images/156523-fitness-trackers-review-xiaomi-mi-watch-review-image20-agjdnxxhmy.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Color",
+        "value": "White",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Xiaomi",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Apple Watch Series 7",
+    "slug": "apple-watch-series-7-smart-devices",
+    "description": "The larger display enhances the entire experience, making Apple Watch easier to use and read. Series 7 represents our biggest and brightest thinking yet.",
+    "editorDescription": "",
+    "price": 799.99,
+    "categoryName": "Smart Devices",
+    "subCategoryName": "SmartWatch",
+    "images": [
+      {
+        "imageUrl": "https://fdn.gsmarena.com/imgroot/news/21/09/apple-watch-series-7/-1200/gsmarena_001.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://m-cdn.phonearena.com/images/article/134659-wide-two_1200/Apple-Watch-Series-7-new-design-revealed-in-stunning-renders.webp?1630327018",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://m-cdn.phonearena.com/images/articles/378715-940/Apple-Watch-Series-7-flat-frame-white.webp",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Color",
+        "value": "White",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Apple",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Galaxy Watch4",
+    "slug": "galaxy-watch4-smart-devices",
+    "description": "Push yourself to the next level. Crush workouts, health goals and your to-do list with Galaxy Watch4.",
+    "editorDescription": "",
+    "price": 499.99,
+    "categoryName": "Smart Devices",
+    "subCategoryName": "SmartWatch",
+    "images": [
+      {
+        "imageUrl": "https://fscl01.fonpit.de/userfiles/7446224/image/galaxy-watch-3-vs-galaxy-watch-4-w810h462.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://fscl01.fonpit.de/userfiles/7446224/image/samsung-galaxy-watch-4-classic/NextPit-samsung-galaxy-watch-4-classic-front-w782.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://www.sammobile.com/wp-content/uploads/2021/08/Galaxy-Watch-4-Classic-review-1.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Color",
+        "value": "White",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Samsung",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "LG 4k Ultra HD",
+    "slug": "lg-4k-ultra-hd-smart-devices",
+    "description": "With a resolution which is four times higher than Full HD and with 8.3 million pixels, this TV delivers detailed and flawless image quality.",
+    "editorDescription": "",
+    "price": 450.99,
+    "categoryName": "Smart Devices",
+    "subCategoryName": "Smart TV",
+    "images": [
+      {
+        "imageUrl": "https://www.lg.com/uk/images/tvs/md05808241/gallery/UJ63_A_65_60_55_49_Large1.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://www.lg.com/uk/images/tvs/md05808241/gallery/UJ63_A_65_60_55_49_Large2.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://www.lg.com/uk/images/tvs/md05808241/gallery/UJ63_A_65_60_55_49_Large3.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "LG",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Samsung 80cm (32'') T4450 Smart HD TV",
+    "slug": "samsung-80cm-32''-t4450-smart-hd-tv",
+    "description": "High-Dynamic Range levels up bright expression of your TV, so you can enjoy an immense spectrum of colors and visual details, even in dark scenes.",
+    "editorDescription": "",
+    "price": 410,
+    "categoryName": "Smart Devices",
+    "subCategoryName": "Smart TV",
+    "images": [
+      {
+        "imageUrl": "https://images.samsung.com/is/image/samsung/p6pim/in/feature/129057498/in-feature-hd-tv-435895561?$FB_TYPE_A_JPG$",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://images.samsung.com/is/image/samsung/p6pim/in/feature/129057491/in-feature-hd-tv-435895547",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://images.samsung.com/is/image/samsung/p6pim/in/feature/129057490/in-feature-hd-tv-435895545",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Samsung",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Mi QLED TV 4K 55",
+    "slug": "mi-qled-tv-4k-55-smart-hd-tv",
+    "description": "Experience The Magic of QLED Display in 4K Resolution",
+    "editorDescription": "",
+    "price": 500,
+    "categoryName": "Smart Devices",
+    "subCategoryName": "Smart TV",
+    "images": [
+      {
+        "imageUrl": "https://i01.appmifile.com/webfile/globalimg/7/866DB24B-DDE1-A9C4-6CC8-E9F8CFDB6766.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://i01.appmifile.com/webfile/globalimg/7/77CF50A1-B9AC-078A-05E1-B4FCE05B18A3.png",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://i01.appmifile.com/webfile/globalimg/7/21DBD13D-F837-3836-ABB5-B8053256A121.png",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Xiaomi",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "ASUS CG32UQ",
+    "slug": "asus-cg32uq-monitors",
+    "description": "ASUS CG32UQ delivers superior picture quality with 4K resolution, HDR10 support and VESA DisplayHDR 600 certified",
+    "editorDescription": "",
+    "price": 499,
+    "categoryName": "Monitors",
+    "subCategoryName": "Gaming Monitors",
+    "images": [
+      {
+        "imageUrl": "https://www.asus.com/media/global/products/mthq6edpbdyrhsbv/P_setting_xxx_0_90_end_692.png",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://cdn.mos.cms.futurecdn.net/KV5oSukJpHjEuwg2QTkSGc-1200-80.jpg.webp",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://uae.microless.com/cdn/category_files/85476f10b88b550caeb9ff9cb34105a9.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Asus",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "49'' Odyssey Neo G9 Gaming DQHD Quantum Mini-LED Monitor",
+    "slug": "49''-odyssey-neo-g9-gaming-dqhd-quantum-mini-led-monitors",
+    "description": "An industry defining 49” 1000R curved screen, equipped with a cutting edge Quantum Matrix HDR2000 panel, 240hz refresh rate, G-Sync and FreeSync Premium Pro support, 1ms response rates, and fully customizable Odyssey Infinity Core lighting.",
+    "editorDescription": "",
+    "price": 1299,
+    "categoryName": "Monitors",
+    "subCategoryName": "Gaming Monitors",
+    "images": [
+      {
+        "imageUrl": "https://image-us.samsung.com/SamsungUS/home/computing/monitors/07-15-2021/S49AG950NM_001_Front1_Whtie.jpg?$product-details-jpg$",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://image-us.samsung.com/SamsungUS/home/computing/monitors/all/pdp/S49AG950NM_008_L-Dynamic_White.jpg?$product-details-jpg$",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://image-us.samsung.com/SamsungUS/home/computing/monitors/all/pdp/01_2021_Odyssey_G95NA_49_KV_PC.jpg?$feature-benefit-bottom-jpg$",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Samsung",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "24'' CRG5 Gaming Monitor",
+    "slug": "49''-odyssey-neo-g9-gaming-dqhd-quantum-mini-led-monitors",
+    "description": "An 1800R curved screen pulls you in and immerses you in the action• 144Hz Refresh rate gives you clear images even in fast action scenes",
+    "editorDescription": "",
+    "price": 199,
+    "categoryName": "Monitors",
+    "subCategoryName": "Gaming Monitors",
+    "images": [
+      {
+        "imageUrl": "https://image-us.samsung.com/SamsungUS/home/computing/monitors/gaming/03242021/Asset01.jpg?$product-details-jpg$",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://image-us.samsung.com/SamsungUS/home/computing/monitors/gaming/03242021/Asset03.jpg?$product-details-jpg$",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://image-us.samsung.com/SamsungUS/home/computing/monitors/gaming/03242021/Asset06.jpg?$product-details-jpg$",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Samsung",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "Samsung - UR55 Series 28'' IPS 4K UHD Monitor",
+    "slug": "samsung-ur55-28''-ips-4k-uhd-monitor",
+    "description": "The Samsung UR55 IPS 4K UHD monitor delivers stunning images composed of 8 million pixels for even more intricate detail. Experience unparalleled realism when gaming or enjoying movies.",
+    "editorDescription": "",
+    "price": 329.99,
+    "categoryName": "Monitors",
+    "subCategoryName": "4k Monitors",
+    "images": [
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6386/6386391_sd.jpg;maxHeight=640;maxWidth=550",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6386/6386391cv16d.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6386/6386391cv19d.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Samsung",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Samsung - AM702 Series LS43AM702UNXZA 43'' Smart Tizen 4K UHD Monitor - Black",
+    "slug": "samsung-am702-series-ls43am702unxza-43''-smart-tizen-4k-uhd-monitor",
+    "description": "Go bigger, work smarter, and enjoy more – with a versatile screen that maximizes productivity and enhances entertainment.",
+    "editorDescription": "",
+    "price": 549.99,
+    "categoryName": "Monitors",
+    "subCategoryName": "4k Monitors",
+    "images": [
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6463/6463479cv11d.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6463/6463479cv14d.jpg;maxHeight=1000;maxWidth=1000",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6463/6463479cv21d.jpg;maxHeight=1000;maxWidth=1000",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Samsung",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "LG 27” IPS 4K UHD Monitor with VESA Display HDR 400",
+    "slug": "lg-27''-ips-4k-uhd-monitor-with-vesa-display-hdr-400",
+    "description": "Innovation powers your productivity and entertainment. LG UltraFine™ Monitors are known for immersive viewing, but they also shine as productivity powerhouses, delivering a flexible workstation experience and easy setup.",
+    "editorDescription": "",
+    "price": 429.99,
+    "categoryName": "Monitors",
+    "subCategoryName": "4k Monitors",
+    "images": [
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6451/6451083_sd.jpg;maxHeight=1000;maxWidth=1000",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6451/6451083ld.jpg;maxHeight=1000;maxWidth=1000",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6451/6451083cv12d.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "LG",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "MSI - Optix 27'' LED Curved QHD FreeSync Monitor (DisplayPort, HDMI, DVI) - Black",
+    "slug": "msi-optix-27''-led-curved-qhd-freesync-monitor",
+    "description": "Enjoy detailed visuals while gaming with this curved 27-inch MSI Optix QHD (2560 x 1440) monitor. The 1 ms response time minimizes blurring, streaking and ghosting for smooth gameplay, while AMD FreeSync technology eliminates input lag for stutter-free and tear-free visuals.",
+    "editorDescription": "",
+    "price": 269.99,
+    "categoryName": "Monitors",
+    "subCategoryName": "Curved Monitors",
+    "images": [
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6211/6211722_sd.jpg;maxHeight=1000;maxWidth=1000",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6211/6211722cv1d.jpg;maxHeight=1000;maxWidth=1000",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6211/6211722_bd.jpg;maxHeight=1000;maxWidth=1000",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "MSI",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Dell - S3220DGF 32'' LED Curved QHD FreeSync Monitor with HDR",
+    "slug": "dell-s3220dgf-32''-led-curved-qhd-freesync-monitor-with-hdr",
+    "description": "Enjoy stunning panoramic views during gameplay with this Dell 32-inch curved gaming monitor. A vibrant 2560 x 1440 resolution coupled with a contrast ratio of 3000:1 delivers precise colors for an immersive gaming experience.",
+    "editorDescription": "",
+    "price": 349.99,
+    "categoryName": "Monitors",
+    "subCategoryName": "Curved Monitors",
+    "images": [
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6375/6375331_sd.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6375/6375331ld.jpg;maxHeight=1000;maxWidth=1000",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6375/6375331cv11d.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Dell",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Samsung - CHG9 Series C49HG90DMN 49'' HDR LED Curved FHD FreeSync Monitor",
+    "slug": "samsung-chg9-series-c49hg90dmn-49''-hrd-led-curved-fhd-freesync-monitor",
+    "description": "Enhance your gaming experience with this 49-inch Samsung curved gaming monitor. Quantum Dot technology delivers 1 billion shades of color with extra deep blacks and a black equalizer to let you see what's lurking in every corner. The superfast response time of this Samsung curved gaming monitor reduces motion blur to support your play.",
+    "editorDescription": "",
+    "price": 899.99,
+    "categoryName": "Monitors",
+    "subCategoryName": "Curved Monitors",
+    "images": [
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6115/6115611_sd.jpg;maxHeight=1000;maxWidth=1000",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6115/6115611ld.jpg;maxHeight=1000;maxWidth=1000",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6115/6115611cv16d.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Samsung",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "NETGEAR - AC1750 Dual-Band Wi-Fi 5 Router - Black",
+    "slug": "netgear-ac1750-dual-band-wi-fi-5-router-black",
+    "description": "The NETGEAR AC1750 Smart WiFi 5 Router with external antennas delivers extremely fast WiFi. With AC1750 WiFi, Gigabit Ethernet speeds, and high-powered external antennas, this router offers ultimate performance in wireless coverage for large homes with 12 or more wireless devices. It gets 3x faster access than similar 802.11n.",
+    "editorDescription": "",
+    "price": 99.99,
+    "categoryName": "Peripherals",
+    "subCategoryName": "Routers",
+    "images": [
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/9054/9054017_sd.jpg;maxHeight=1000;maxWidth=1000",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/9054/9054017_rd.jpg;maxHeight=1000;maxWidth=1000",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/9054/9054017cv14d.jpg;maxHeight=1000;maxWidth=1000",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Netgear",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "ASUS AX5400 Dual Band Mesh WiFi 6 Gaming Router",
+    "slug": "asus-ax5400-dual-band-mesh-wifi-6-gaming-router",
+    "description": "The NETGEAR AC1750 Smart WiFi 5 Router with external antennas delivers extremely fast WiFi. With AC1750 WiFi, Gigabit Ethernet speeds, and high-powered external antennas, this router offers ultimate performance in wireless coverage for large homes with 12 or more wireless devices. It gets 3x faster access than similar 802.11n.",
+    "editorDescription": "",
+    "price": 217.99,
+    "categoryName": "Peripherals",
+    "subCategoryName": "Routers",
+    "images": [
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6428/6428132_sd.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6428/6428132cv14d.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6428/6428132_rd.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Asus",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "ASUS - ROG Rapture AX11000 Tri-Band Wi-Fi 6 Router",
+    "slug": "asus-rog-rapture-ax11000-tri-band-wi-fi-6-router",
+    "description": "The NETGEAR AC1750 Smart WiFi 5 Router with external antennas delivers extremely fast WiFi. With AC1750 WiFi, Gigabit Ethernet speeds, and high-powered external antennas, this router offers ultimate performance in wireless coverage for large homes with 12 or more wireless devices. It gets 3x faster access than similar 802.11n.",
+    "editorDescription": "",
+    "price": 428.99,
+    "categoryName": "Peripherals",
+    "subCategoryName": "Routers",
+    "images": [
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6321/6321917_rd.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6321/6321917cv14d.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6321/6321917cv11d.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Asus",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "Epson - EX3280 3LCD XGA Projector with Built-in Speaker",
+    "slug": "epson-ex3280-3lcd-xga-projector-with-built-in-speaker",
+    "description": "Impress your audience and own the room with the ultra bright EX3280 projector, offering 3,600 lumens of color and white brightness1 to deliver crisp, detailed presentations, spreadsheets and videos – even in well-lit spaces.",
+    "editorDescription": "",
+    "price": 449.99,
+    "categoryName": "Peripherals",
+    "subCategoryName": "Projectors",
+    "images": [
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6444/6444700_sd.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6444/6444700cv12d.jpg;maxHeight=1000;maxWidth=1000",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6444/6444700cv15d.jpg;maxHeight=1000;maxWidth=1000",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Epson",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Vankyo - Leisure 470 Wireless Mini Projector",
+    "slug": "vankyo-leisure-470-wireless-mini-projector",
+    "description": "VANKYO Leisure 470 mini projector is full HD 1080P supported. Synchornize your smartphone screen on the up to 250’’ Display. This wifi enabled, portable projector is compatible with TV Sticks, PS4, HDMI, VGA, TF, AV, and USB.",
+    "editorDescription": "",
+    "price": 129.99,
+    "categoryName": "Peripherals",
+    "subCategoryName": "Projectors",
+    "images": [
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6424/6424701cv11d.jpg;maxHeight=1000;maxWidth=1000",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6424/6424701cv15d.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6424/6424701cv16d.jpg;maxHeight=1000;maxWidth=1000",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Vankyo",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "LG - CineBeam PH30N 720p Wireless DLP Projector",
+    "slug": "lg-cinebeam-ph30n-720p-wireless-dlp-projector",
+    "description": "Achieve a movie theater viewing experience using this LG CineBeam LED projector. A built-in battery provides up to 2 hours of video playback, while Miracast technology lets you mirror portable smart devices. This LG CineBeam LED projector delivers HD resolution for crisp images, and integrated USB and HDMI inputs allow quick connections with external hardware.",
+    "editorDescription": "",
+    "price": 399.99,
+    "categoryName": "Peripherals",
+    "subCategoryName": "Projectors",
+    "images": [
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6412/6412842_sd.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6412/6412842_bd.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6412/6412842cv12d.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "LG",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "HP - LaserJet Pro M283fdw Wireless Color All-In-One Laser Printer",
+    "slug": "hp-laserjet-pro-m283fdw-wireless-color-all-in-one-laser-printer",
+    "description": "An efficient, wireless MFP with fax for high-quality color and productivity. Save time with Smart Tasks in the HP Smart app, and print and scan from your phone.* Get seamless connections and strong security designed to help detect and stop attacks.",
+    "editorDescription": "",
+    "price": 489.99,
+    "categoryName": "Peripherals",
+    "subCategoryName": "Printers",
+    "images": [
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401096_sd.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401096cv13d.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401096cv14d.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "HP",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Epson - EcoTank Pro ET-5800 Wireless All-In-One Inkjet Printer",
+    "slug": "epson-ecotank-pro-et-5800-wireless-all-in-one-inkjet-printer",
+    "description": "Produce high-quality documents with this Epson EcoTank Pro multifunction printer. Print speeds up to 25 ISO ppm* make short work of large jobs, and the maximum resolution of 4800 x 2400 dpi ensures clear text and crisp images. This Epson EcoTank Pro multifunction printer produces up to 23 copies per minute.",
+    "editorDescription": "",
+    "price": 799.99,
+    "categoryName": "Peripherals",
+    "subCategoryName": "Printers",
+    "images": [
+      {
+        "imageUrl": "https://i.rtings.com/assets/products/ORu3rySq/epson-ecotank-pro-et-5850/design-medium.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6405/6405195cv13d.jpg;maxHeight=1000;maxWidth=1000",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6405/6405195cv21d.jpg;maxHeight=1000;maxWidth=1000",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Epson",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "HP - OfficeJet Pro 8025e Wireless All-In-One Inkjet Printer",
+    "slug": "hp-officejet-pro-8025e-wireless-all-in-one-inkjet-printer",
+    "description": "The HP OfficeJet Pro 8025e delivers increased productivity with fast speeds and custom mobile shortcuts. It includes the optional HP+ Smart Printing System that keeps itself up to date, secure, and ready to print from virtually anywhere at any time. Optional HP+ system requires an HP account, internet connection, and use of only Original HP Ink for the life of the printer.",
+    "editorDescription": "",
+    "price": 189.99,
+    "categoryName": "Peripherals",
+    "subCategoryName": "Printers",
+    "images": [
+      {
+        "imageUrl": "https://i.rtings.com/assets/products/dRd2VVY8/hp-officejet-pro-8025e/design-medium.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6450/6450663cv17d.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6450/6450663cv18d.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "HP",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  }
+]

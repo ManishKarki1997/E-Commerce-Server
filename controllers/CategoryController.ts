@@ -161,6 +161,7 @@ Router.get(
   }
 );
 
+// fetch subcategories for a category
 Router.get(
   "/subcategories/:categoryName",
   async (req: Request, res: Response, next: NextFunction) => {
@@ -321,6 +322,43 @@ Router.put(
         payload: { errors },
         httpCode: HttpStatusCode.BAD_REQUEST,
       });
+    }
+  }
+);
+
+// fetch minimal categories and subcategories for header menu
+Router.get(
+  "/headerCategories",
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const headerCategories = await prisma.category.findMany({
+        where: {
+          parentName: null,
+        },
+        select: {
+          id: true,
+          uid: true,
+          name: true,
+          slug: true,
+          subCategories: {
+            select: {
+              id: true,
+              uid: true,
+              name: true,
+              slug: true,
+            },
+          },
+        },
+      });
+
+      return res.status(HttpStatusCode.OK).send(
+        new OK_REQUEST("Header categories fetched successfully", {
+          headerCategories,
+        })
+      );
+    } catch (error) {
+      console.log(error);
+      next(error);
     }
   }
 );
