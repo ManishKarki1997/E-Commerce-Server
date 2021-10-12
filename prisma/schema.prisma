@@ -41,6 +41,8 @@ model User {
   isDeleted              Boolean    @default(false)
   accountActivationToken String
   activationExpiryDate   DateTime   @default(now())
+  location                Location?
+  contactInfo             PhoneNumber?
   reviews                Review[]
   qna                    QnA[]
   cart                   CartItem[]
@@ -114,6 +116,8 @@ model Product {
   isDeleted             Boolean           @default(false)
 
   @@map("products")
+  locationId    Int?
+  phoneNumberId Int?
 }
 
 model ProductPricing {
@@ -160,21 +164,21 @@ model CategoryDiscount {
 }
 
 model Filter {
-  id                 Int            @id @default(autoincrement())
-  name               String
-  filterType         FilterType     @default(MULTIPLE_SELECT)
-  product            Product?       @relation(fields: [productId], references: [id])
-  productId          Int?
-  categoryName          String
-  subCategoryName       String
-  category           Category?      @relation(fields: [categoryId], references: [id])
-  categoryId         Int?
-  value              String?
-  isVisibleToVisitors Boolean     @default(true)
-  filterOptions      FilterOption[]
-  createdAt          DateTime       @default(now())
-  updatedAt          DateTime       @updatedAt
-  isDeleted          Boolean        @default(false)
+  id                  Int            @id @default(autoincrement())
+  name                String
+  filterType          FilterType     @default(MULTIPLE_SELECT)
+  product             Product?       @relation(fields: [productId], references: [id])
+  productId           Int?
+  categoryName        String
+  subCategoryName     String
+  category            Category?      @relation(fields: [categoryId], references: [id])
+  categoryId          Int?
+  value               String?
+  isVisibleToVisitors Boolean        @default(true)
+  filterOptions       FilterOption[]
+  createdAt           DateTime       @default(now())
+  updatedAt           DateTime       @updatedAt
+  isDeleted           Boolean        @default(false)
 
   @@map("filters")
 }
@@ -233,13 +237,13 @@ model CartItem {
 }
 
 model Wishlist {
-  id         Int      @id @default(autoincrement())
-  user       User?    @relation(fields: [userId], references: [id])
-  userId     Int
-  product    Product? @relation(fields: [productId], references: [id])
-  productId  Int
-  createdAt  DateTime @default(now())
-  updatedAt  DateTime @updatedAt
+  id        Int      @id @default(autoincrement())
+  user      User?    @relation(fields: [userId], references: [id])
+  userId    Int
+  product   Product? @relation(fields: [productId], references: [id])
+  productId Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   @@map("wishlist")
 }
@@ -265,22 +269,91 @@ model Order {
   @@map("orders")
 }
 
+model NavigationMenu {
+  id Int @id @default(autoincrement())
 
-
-model NavigationMenu{
-  id     Int   @id @default(autoincrement())
-
-  name  String?
-  order  Int
-  parent             NavigationMenu?          @relation("NavigationMenuSubMenus", fields: [parentId], references: [id])
-  parentId           Int?
-  subMenus            NavigationMenu[]      @relation("NavigationMenuSubMenus")
-  isMegaMenu      Boolean @default(false)
-  linkName        String?
-  linkPath        String?
+  name       String?
+  order      Int
+  parent     NavigationMenu?  @relation("NavigationMenuSubMenus", fields: [parentId], references: [id])
+  parentId   Int?
+  subMenus   NavigationMenu[] @relation("NavigationMenuSubMenus")
+  isMegaMenu Boolean          @default(false)
+  linkName   String?
+  linkPath   String?
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   @@map("navigationMenu")
 }
 
+model BrandInfo {
+  id          Int     @id @default(autoincrement())
+  name        String
+  subtitle    String?
+  description String?
+  logo        String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  @@map("brandInfo")
+}
+
+model SEO {
+  id              Int     @id @default(autoincrement())
+  metaTitle       String?
+  metaDescription String?
+  ogTitle         String?
+  ogDescription   String?
+  ogImage         String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  @@map("seo")
+}
+
+model ContactInfo {
+  id            Int           @id @default(autoincrement())
+  contactNumber PhoneNumber[]
+  location Location?
+  socialMedias  SocialMedia[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  @@map("contactInfo")
+}
+
+model PhoneNumber {
+  id Int @id @default(autoincrement())
+
+  contactInfo   ContactInfo? @relation(fields: [contactInfoId], references: [id])
+  contactInfoId Int?
+  userInfo      User?        @relation(fields: [userInfoId], references: [id])
+  userInfoId    Int?
+
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+  @@map("phoneNumber")
+}
+
+model SocialMedia {
+  id            Int          @id @default(autoincrement())
+  name          String
+  profileUrl    String
+  socialMediaIconUrl  String
+  contactInfo   ContactInfo? @relation(fields: [contactInfoId], references: [id])
+  contactInfoId Int?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  @@map("socialMedia")
+}
+
+model Location {
+  id            Int          @id @default(autoincrement())
+  contactInfo   ContactInfo? @relation(fields: [contactInfoId], references: [id])
+  contactInfoId Int?
+  userInfo      User?        @relation(fields: [userInfoId], references: [id])
+  userInfoId    Int?
+
+  @@map("location")
+}

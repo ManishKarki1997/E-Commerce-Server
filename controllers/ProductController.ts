@@ -611,12 +611,14 @@ Router.get(
                 ? [
                     {
                       basePrice: {
-                        gte: parseInt(priceParams.min),
+                        gte: parseFloat(priceParams.min || 0),
                       },
                     },
                     {
                       basePrice: {
-                        lte: parseFloat(priceParams.max),
+                        lte: parseFloat(
+                          priceParams.max || Number.POSITIVE_INFINITY
+                        ),
                       },
                     },
                   ]
