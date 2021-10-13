@@ -196,6 +196,31 @@ Router.put(
             seo: savedSeo,
           })
         );
+      } else if (schemaName === "BRAND_INFO") {
+        let savedBrandInfo;
+
+        if (alreadyPresentBrandInfo) {
+          savedBrandInfo = await prisma.brandInfo.update({
+            where: {
+              id: alreadyPresentBrandInfo.id,
+            },
+            data: {
+              ...payload,
+            },
+          });
+        } else {
+          savedBrandInfo = await prisma.brandInfo.create({
+            data: {
+              ...payload,
+            },
+          });
+        }
+
+        return next(
+          new OK_REQUEST("SEO updated successfully", {
+            brandInfo: savedBrandInfo,
+          })
+        );
       }
     } catch (error) {
       console.log(error);
