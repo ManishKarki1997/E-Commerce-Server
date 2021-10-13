@@ -42,7 +42,7 @@ model User {
   accountActivationToken String
   activationExpiryDate   DateTime   @default(now())
   location                Location?
-  contactInfo             PhoneNumber?
+  contactInfo             PhoneNumber[]
   reviews                Review[]
   qna                    QnA[]
   cart                   CartItem[]
@@ -292,6 +292,10 @@ model BrandInfo {
   subtitle    String?
   description String?
   logo        String
+  seo         SEO?
+  contactNumber PhoneNumber[]
+  location Location?
+  socialMedias  SocialMedia[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -306,27 +310,21 @@ model SEO {
   ogDescription   String?
   ogImage         String?
 
+  brandInfo   BrandInfo? @relation(fields: [brandInfoId], references: [id])
+  brandInfoId Int?
+
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   @@map("seo")
 }
 
-model ContactInfo {
-  id            Int           @id @default(autoincrement())
-  contactNumber PhoneNumber[]
-  location Location?
-  socialMedias  SocialMedia[]
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  @@map("contactInfo")
-}
 
 model PhoneNumber {
   id Int @id @default(autoincrement())
+  number  String @unique()
 
-  contactInfo   ContactInfo? @relation(fields: [contactInfoId], references: [id])
-  contactInfoId Int?
+   brandInfo   BrandInfo? @relation(fields: [brandInfoId], references: [id])
+  brandInfoId Int?
   userInfo      User?        @relation(fields: [userInfoId], references: [id])
   userInfoId    Int?
 
@@ -337,11 +335,11 @@ model PhoneNumber {
 
 model SocialMedia {
   id            Int          @id @default(autoincrement())
-  name          String
+  name          String  @unique
   profileUrl    String
   socialMediaIconUrl  String
-  contactInfo   ContactInfo? @relation(fields: [contactInfoId], references: [id])
-  contactInfoId Int?
+   brandInfo   BrandInfo? @relation(fields: [brandInfoId], references: [id])
+  brandInfoId Int?
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -350,8 +348,14 @@ model SocialMedia {
 
 model Location {
   id            Int          @id @default(autoincrement())
-  contactInfo   ContactInfo? @relation(fields: [contactInfoId], references: [id])
-  contactInfoId Int?
+  street        String? 
+  city          String
+  country       String
+  district      String?
+  zone          String?
+  state         String?
+  brandInfo   BrandInfo? @relation(fields: [brandInfoId], references: [id])
+  brandInfoId Int?
   userInfo      User?        @relation(fields: [userInfoId], references: [id])
   userInfoId    Int?
 

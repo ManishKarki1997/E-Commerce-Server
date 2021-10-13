@@ -4,6 +4,7 @@ import errorHandler from "./middlewares/errorHandler";
 
 import {
   AuthController,
+  BrandInfoController,
   CartController,
   CategoryController,
   FilterController,
@@ -36,6 +37,7 @@ app.use("/api/reviews", ReviewController);
 app.use("/api/cart", CartController);
 app.use("/api/wishlist", WishlistController);
 app.use("/api/orders", OrderController);
+app.use("/api/brand", BrandInfoController);
 
 app.use(errorHandler);
 
