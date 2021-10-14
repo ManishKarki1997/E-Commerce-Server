@@ -1,1376 +1,5 @@
 [
   {
-    "name": "ROG Zephyrus G15 GA503",
-    "slug": "rog-zephyrus-g15-ga503-laptops",
-    "description": " ASUS ROG Zephyrus G15 turned out to be a very pleasing gaming device combining powerful hardware, beautiful design, good battery life, high-quality screen, and acoustics.",
-    "editorDescription": "",
-    "price": 1600,
-    "categoryName": "Laptops",
-    "subCategoryName": "Gaming Laptops",
-    "images": [
-      {
-        "imageUrl": "https://i1.wp.com/www.smartprix.com/bytes/wp-content/uploads/2021/07/Asus-ROG-Zephyrus-G15-Review-10-scaled.jpg?resize=1068%2C801&ssl=1",
-        "isDefaultImage": true
-      },
-      {
-        "imageUrl": "https://i1.wp.com/www.smartprix.com/bytes/wp-content/uploads/2021/07/Asus-ROG-Zephyrus-G15-Review-3-scaled.jpg?resize=1068%2C801&ssl=1",
-        "isDefaultImage": false
-      },
-      {
-        "imageUrl": "https://www.notebookcheck.net/fileadmin/Notebooks/Asus/ROG_Zephyrus_G15_GA503Q/G15_7.JPG",
-        "isDefaultImage": false
-      }
-    ],
-    "filters": [
-      {
-        "name": "RAM",
-        "value": "32GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Storage",
-        "value": "1TB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "SSD",
-        "value": "500GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Graphics Card",
-        "value": "NVIDIA RTX 3070",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Processor",
-        "value": "Intel Core i9 10980HK",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Brand",
-        "value": "Asus",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Guarantee",
-        "value": "2 Years",
-        "filterType": "MULTIPLE_SELECT"
-      }
-    ]
-  },
-  {
-    "name": "ROG Zephyrus Duo 15 SE GX551",
-    "slug": "rog-zephyrus-duo-15-se-gx551-laptops",
-    "description": "Work and play on the cutting-edge with up to a AMD Ryzen™ 9 5900HX CPU and NVIDIA® GeForce RTX™ 3080 GPU. The overclockable CPU offers serious speed for intensive tasks like photo editing, 3D rendering, and streaming, running on up to 50W of sustained power when the GPU is active and 90W on its own.",
-    "editorDescription": "",
-    "price": 2100,
-    "categoryName": "Laptops",
-    "subCategoryName": "Gaming Laptops",
-    "images": [
-      {
-        "imageUrl": "https://growgrab.com/wp-content/uploads/2021/05/cover.jpg",
-        "isDefaultImage": true
-      },
-      {
-        "imageUrl": "https://root-nation.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/03/asus-rog-zephyrus-15-1.jpg.webp",
-        "isDefaultImage": false
-      },
-      {
-        "imageUrl": "https://root-nation.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/03/asus-rog-zephyrus-15-1-1.jpg.webp",
-        "isDefaultImage": false
-      }
-    ],
-    "filters": [
-      {
-        "name": "RAM",
-        "value": "32GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Storage",
-        "value": "1TB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "SSD",
-        "value": "500GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Graphics Card",
-        "value": "NVIDIA RTX 3060",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Processor",
-        "value": "Intel Core i9 10980HK",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Brand",
-        "value": "Asus",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Guarantee",
-        "value": "2 Years",
-        "filterType": "MULTIPLE_SELECT"
-      }
-    ]
-  },
-  {
-    "name": "Legion 7i Gen 6 Intel (16'') with RTX 3060",
-    "slug": "legion-7i-gen6-intel-16''-with-rtx-3060-gaming-laptop",
-    "description": "Gaming will never be the same after experiencing 11th Generation Intel® Core™ H-Series processors. Play and stream the latest AAA Titles at their absolute best with up to 5GHz clock speeds on multiple cores, enhanced overclocking, 45 Watts of dedicated processing power, up to 8 cores and 24MB of Intel® Smart Cache.",
-    "editorDescription": "",
-    "price": 1799.99,
-    "categoryName": "Laptops",
-    "subCategoryName": "Gaming Laptops",
-    "images": [
-      {
-        "imageUrl": "https://www.notebookcheck.net/fileadmin/_processed_/b/b/csm_Lenovo_Legion_7_AMD_16_Zoll_Storm_Grey_07_8a05c18b7f.png",
-        "isDefaultImage": true
-      },
-      {
-        "imageUrl": "https://i.gadgets360cdn.com/large/Lenovo_legion_2021_launch_1610524507873.jpg?downsize=950:*",
-        "isDefaultImage": false
-      },
-      {
-        "imageUrl": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/Legion7_3.JPG",
-        "isDefaultImage": false
-      }
-    ],
-    "filters": [
-      {
-        "name": "RAM",
-        "value": "16GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Storage",
-        "value": "1TB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "SSD",
-        "value": "500GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Graphics Card",
-        "value": "NVIDIA RTX 2080",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Processor",
-        "value": "Intel Core i7 10th Gen",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Brand",
-        "value": "Lenovo",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Guarantee",
-        "value": "1 Years",
-        "filterType": "MULTIPLE_SELECT"
-      }
-    ]
-  },
-  {
-    "name": "Alienware M15 Ryzen™ Edition R5 Gaming Laptop",
-    "slug": "alienware-m15-ryzen-edition-r5-gaming-laptop",
-    "description": "Whether you're gaming at your leisure or in the thick of battle, never miss any critical details thanks to smoother gameplay. A result of our deliberate engineering decisions, the latest m15 is incredibly fast starting from 165Hz.",
-    "editorDescription": "",
-    "price": 1499.99,
-    "categoryName": "Laptops",
-    "subCategoryName": "Gaming Laptops",
-    "images": [
-      {
-        "imageUrl": "https://i.dell.com/is/image/DellContent//content/dam/global-site-design/product_images/dell_client_products/notebooks/alienware_notebooks/m15_r5_ryzen_edition/media_gallery/alienware-m15r5-ryze-edition-notebook-awm15-r5-15-cnb-00000ff090-5000x5000.psd?fmt=pjpg&pscan=auto&scl=1&wid=5000&hei=5000&qlt=100,0&resMode=sharp2&size=5000,5000",
-        "isDefaultImage": true
-      },
-      {
-        "imageUrl": "https://i0.wp.com/laptopmedia.com/wp-content/uploads/2021/05/2-8.jpg?resize=1000%2C750&ssl=1",
-        "isDefaultImage": false
-      },
-      {
-        "imageUrl": "https://www.techadvisor.com/cmsdata/reviews/3805712/alienware_m15_ryzen_edition_r5_02_thumb800.jpg",
-        "isDefaultImage": false
-      }
-    ],
-    "filters": [
-      {
-        "name": "RAM",
-        "value": "16GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Storage",
-        "value": "1TB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "SSD",
-        "value": "500GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Graphics Card",
-        "value": "NVIDIA RTX 2070",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Processor",
-        "value": "Intel Core i7 10th Gen",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Brand",
-        "value": "Dell",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Guarantee",
-        "value": "1 Years",
-        "filterType": "MULTIPLE_SELECT"
-      }
-    ]
-  },
-
-  {
-    "name": "Asus Zenbook 14 UX433",
-    "slug": "asus-zenbook-14-ux433-ultrabook",
-    "description": "Creativity. Style. Innovation. These are the qualities that define the elegant new ZenBook 14. It’s one of the world’s smallest 14-inch laptops, and features the breathtaking frameless NanoEdge display and the exclusive NumberPad to give you the freedom to discover your creative power.",
-    "editorDescription": "",
-    "price": 1299.99,
-    "categoryName": "Laptops",
-    "subCategoryName": "Ultrabooks",
-    "images": [
-      {
-        "imageUrl": "https://dlcdnwebimgs.asus.com/gain/720d2121-9da7-4e16-b440-3d8d5cccb48c/w800",
-        "isDefaultImage": true
-      },
-      {
-        "imageUrl": "https://dlcdnwebimgs.asus.com/gain/7c7f225a-1ca7-49eb-8c74-30c028dc0bb7/w800",
-        "isDefaultImage": false
-      },
-      {
-        "imageUrl": "https://dlcdnwebimgs.asus.com/gain/78373abc-0d69-4660-badb-4d1d04ea7ba6/w800",
-        "isDefaultImage": false
-      }
-    ],
-    "filters": [
-      {
-        "name": "RAM",
-        "value": "8GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Storage",
-        "value": "1TB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "SSD",
-        "value": "250GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Graphics Card",
-        "value": "NVIDIA MX 450",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Processor",
-        "value": "Intel Core i7 9th Gen",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Brand",
-        "value": "Asus",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Guarantee",
-        "value": "1 Years",
-        "filterType": "MULTIPLE_SELECT"
-      }
-    ]
-  },
-  {
-    "name": "Lenovo ThinkPad X380 Yoga",
-    "slug": "lenovo-thinkpad-x380-yoga-ultrabook",
-    "description": "The sleek ThinkPad X380 Yoga is designed for you. This stylish powerhouse adapts to work with you—as a laptop, tablet, or anything in between. Moreover, hardware-level security features provide peace of mind when you're on-the-go.",
-    "editorDescription": "",
-    "price": 1099.99,
-    "categoryName": "Laptops",
-    "subCategoryName": "Ultrabooks",
-    "images": [
-      {
-        "imageUrl": "https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x380-2-in-1-feature-4.jpg?context=bWFzdGVyfHJvb3R8NjM0NTB8aW1hZ2UvanBnfGgxMS9oYTMvOTYxNzc5MTA1Nzk1MC5qcGd8OWQ4ZDlkYWRlNjA4NTc4NzQ5YThhNWEzMGI0OGFmODJkNGMwY2YzOWRiNzdmOTdiNjJmNTgyMzgzNjNmODZjZA&w=1920",
-        "isDefaultImage": true
-      },
-      {
-        "imageUrl": "https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x380-2-in-1-feature-2.jpg?context=bWFzdGVyfHJvb3R8NzI5MDZ8aW1hZ2UvanBnfGg4ZC9oMmEvOTYxNzc5MDk5MjQxNC5qcGd8ZTZiZWZhNmMyMzhlNTdhNTI0NjYwMjZiMmFkODg1NGE3Y2Q2MzdiYzk4MmJiYTdiY2M3YzM2Y2NjOGFhMmIyMw&w=1920",
-        "isDefaultImage": false
-      },
-      {
-        "imageUrl": "https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x380-2-in-1-feature-1.jpg?context=bWFzdGVyfHJvb3R8NzkxMTN8aW1hZ2UvanBnfGg0NS9oYmMvOTYxNzc5MDg2MTM0Mi5qcGd8OTA5ODU5NGZjZjM1ZmRmYjYwMWFhNWRlNGNjMmEyM2FiZGUyNmU1ZDdiOWU4ZTRjZjQ3ZDBhMzc3Zjc2ZGM2MA&w=1920",
-        "isDefaultImage": false
-      }
-    ],
-    "filters": [
-      {
-        "name": "RAM",
-        "value": "8GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Storage",
-        "value": "1TB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "SSD",
-        "value": "250GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Graphics Card",
-        "value": "NVIDIA MX 450",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Processor",
-        "value": "Intel Core i7 9th Gen",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Brand",
-        "value": "Lenovo",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Guarantee",
-        "value": "1 Years",
-        "filterType": "MULTIPLE_SELECT"
-      }
-    ]
-  },
-  {
-    "name": "Lenovo IdeaPad 5i (15'')",
-    "slug": "lenovo-ideapad-5i-15''",
-    "description": "The IdeaPad 5i (15'') Intel boasts an enticing list of included and optional features, making it a powerful combination of performance, connectivity, and entertainment with up to 10th Gen Intel® Core™ i7 processing.",
-    "editorDescription": "",
-    "price": 1199.99,
-    "categoryName": "Laptops",
-    "subCategoryName": "Ultrabooks",
-    "images": [
-      {
-        "imageUrl": "https://www.lenovo.com/medias/lenovo-laptops-ideapad-5-15in-intel-hero.png?context=bWFzdGVyfHJvb3R8Mjk0NTYxfGltYWdlL3BuZ3xoNzcvaGNhLzEwNzQ2MjI0OTM0OTQyLnBuZ3wzYmE2NzQ5MmY0ZmM0NzNiMjI4YmJkNjNmZDlhMTQ3YWM3NzBhZTNlNDAyMmM2M2RmZGJkNDI0NjBjYWY1ZWJk",
-        "isDefaultImage": true
-      },
-      {
-        "imageUrl": "https://www.lenovo.com/medias/lenovo-laptops-ideapad-5-15in-intel-gallery-1.png?context=bWFzdGVyfHJvb3R8MjgwNDc0fGltYWdlL3BuZ3xoOGQvaDU5LzEwNzQ2MjIyNzA2NzE4LnBuZ3w5NTBjYTA2ODkwZWQ2Yzk3OGQ0Y2M5MjRiOWZkNTNlMDJiOWQ4MDlmMGNlM2U5Mzc1ODkzYzhmNTRiYzNlYTIx",
-        "isDefaultImage": false
-      },
-      {
-        "imageUrl": "https://www.lenovo.com/medias/lenovo-laptops-ideapad-5-15in-intel-gallery-4.jpg?context=bWFzdGVyfHJvb3R8MjIyMTUxfGltYWdlL2pwZ3xoMzQvaDgwLzEwNzQ2MjIzNDI3NjE0LmpwZ3xjYzZkZWIwZWExOTFlMDRmZGM5ZTgwNzE0Y2MyMmQ3YzI1YWNlYjRkNjRjN2Y2NDg4NWRhN2FiNzFiYTYyNDY2",
-        "isDefaultImage": false
-      }
-    ],
-    "filters": [
-      {
-        "name": "RAM",
-        "value": "8GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Storage",
-        "value": "1TB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "SSD",
-        "value": "250GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Graphics Card",
-        "value": "NVIDIA MX 350",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Processor",
-        "value": "Intel Core i5 9th Gen",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Brand",
-        "value": "Lenovo",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Guarantee",
-        "value": "1 Years",
-        "filterType": "MULTIPLE_SELECT"
-      }
-    ]
-  },
-
-  {
-    "name": "Macbook Pro 13''",
-    "slug": "macbook-pro-13''-traditional-laptops",
-    "description": "The Apple M1 chip gives the 13‑inch MacBook Pro speed and power beyond belief.",
-    "editorDescription": "",
-    "price": 1699.99,
-    "categoryName": "Laptops",
-    "subCategoryName": "Traditional Laptops",
-    "images": [
-      {
-        "imageUrl": "https://www.apple.com/v/macbook-pro-13/h/images/overview/hero_endframe__bsza6x4fldiq_large.jpg",
-        "isDefaultImage": true
-      },
-      {
-        "imageUrl": "https://www.apple.com/v/macbook-pro-13/h/images/overview/retina_hero_screen__gddr9b8m4kuq_large.jpg",
-        "isDefaultImage": false
-      },
-      {
-        "imageUrl": "https://www.apple.com/v/macbook-pro-13/h/images/overview/magic_keyboard__brx9diaauwaa_large.jpg",
-        "isDefaultImage": false
-      }
-    ],
-    "filters": [
-      {
-        "name": "RAM",
-        "value": "8GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Storage",
-        "value": "500GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "SSD",
-        "value": "500GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Graphics Card",
-        "value": "Intel Dedicated",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Processor",
-        "value": "Intel Core i5 9th Gen",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Brand",
-        "value": "Apple",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Guarantee",
-        "value": "2 Years",
-        "filterType": "MULTIPLE_SELECT"
-      }
-    ]
-  },
-  {
-    "name": "Acer Swift 5",
-    "slug": "acer-swift-5-traditional-laptops",
-    "description": "Designed on the Intel® Evo™ platform for an exceptional experience anywhere, the Swift 5 weighs in at around 1 kg, is just 14.95 mm thin, and boasts an incredible 90% screen-to-body ratio. With up to 17 hours of battery, stay mobile and stay productive.",
-    "editorDescription": "",
-    "price": 999.99,
-    "categoryName": "Laptops",
-    "subCategoryName": "Traditional Laptops",
-    "images": [
-      {
-        "imageUrl": "https://static.acer.com/up/Resource/Acer/Laptops/Swift_5/SF514_55/20200824/Swift-5_ksp_03_large.jpg",
-        "isDefaultImage": true
-      },
-      {
-        "imageUrl": "https://static.acer.com/up/Resource/Acer/Laptops/Swift_5/SF514_55/20200824/Swift-5_ksp_05.jpg",
-        "isDefaultImage": false
-      },
-      {
-        "imageUrl": "https://static.acer.com/up/Resource/Acer/Laptops/Swift_5/SF514_55/20210416/Swift-5_ksp_04.jpg",
-        "isDefaultImage": false
-      }
-    ],
-    "filters": [
-      {
-        "name": "RAM",
-        "value": "8GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Storage",
-        "value": "1TB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "SSD",
-        "value": "250GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Graphics Card",
-        "value": "NVIDIA MX 450",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Processor",
-        "value": "Intel Core i5 9th Gen",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Brand",
-        "value": "Acer",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Guarantee",
-        "value": "1 Years",
-        "filterType": "MULTIPLE_SELECT"
-      }
-    ]
-  },
-
-  {
-    "name": "Playstation",
-    "slug": "playstation-5-consoles",
-    "description": "Experience lightning-fast loading with an ultra-high speed SSD, deeper immersion with support for haptic feedback, adaptive triggers and 3D Audio*, and an all-new generation of incredible PlayStation® games.",
-    "editorDescription": "",
-    "price": 549.99,
-    "categoryName": "Consoles",
-    "subCategoryName": "Playstation",
-    "images": [
-      {
-        "imageUrl": "https://images.pexels.com/photos/5961216/pexels-photo-5961216.jpeg?auto=compress",
-        "isDefaultImage": true
-      },
-      {
-        "imageUrl": "https://images.pexels.com/photos/5961235/pexels-photo-5961235.jpeg?auto=compress",
-        "isDefaultImage": false
-      },
-      {
-        "imageUrl": "https://images.pexels.com/photos/3945673/pexels-photo-3945673.jpeg?auto=compress",
-        "isDefaultImage": false
-      }
-    ],
-    "filters": [
-      {
-        "name": "RAM",
-        "value": "32GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Storage",
-        "value": "2TB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "SSD",
-        "value": "250GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Graphics Card",
-        "value": "NVIDIA RTX 2080",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Processor",
-        "value": "Intel Core i7 9th Gen",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Brand",
-        "value": "Sony",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Guarantee",
-        "value": "2 Years",
-        "filterType": "MULTIPLE_SELECT"
-      }
-    ]
-  },
-
-  {
-    "name": "Playstation 4",
-    "slug": "playstation-4-consoles",
-    "description": "The PS4 console, delivering awesome gaming power, incredible entertainment and vibrant HDR technology",
-    "editorDescription": "",
-    "price": 349.99,
-    "categoryName": "Consoles",
-    "subCategoryName": "Playstation",
-    "images": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1518908336710-4e1cf821d3d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
-        "isDefaultImage": true
-      },
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1486401899868-0e435ed85128?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
-        "isDefaultImage": false
-      },
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1507457379470-08b800bebc67?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
-        "isDefaultImage": false
-      }
-    ],
-    "filters": [
-      {
-        "name": "RAM",
-        "value": "32GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Storage",
-        "value": "1TB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "SSD",
-        "value": "250GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Graphics Card",
-        "value": "NVIDIA GTX 1660TI",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Processor",
-        "value": "Intel Core i5 9th Gen",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Brand",
-        "value": "Sony",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Guarantee",
-        "value": "2 Years",
-        "filterType": "MULTIPLE_SELECT"
-      }
-    ]
-  },
-
-  {
-    "name": "Playstation 4",
-    "slug": "playstation-4-pro-consoles",
-    "description": "Blur the lines of reality with the PlayStation®4 Pro console. Faster, more powerful and with 4K TV gaming.",
-    "editorDescription": "",
-    "price": 399.99,
-    "categoryName": "Consoles",
-    "subCategoryName": "Playstation",
-    "images": [
-      {
-        "imageUrl": "https://wallpapercave.com/wp/wp1841725.jpg",
-        "isDefaultImage": true
-      },
-      {
-        "imageUrl": "https://wallpapercave.com/wp/wp3589270.jpg",
-        "isDefaultImage": false
-      },
-      {
-        "imageUrl": "https://wallpapercave.com/wp/wp3589275.jpg",
-        "isDefaultImage": false
-      }
-    ],
-    "filters": [
-      {
-        "name": "RAM",
-        "value": "32GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Storage",
-        "value": "1TB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "SSD",
-        "value": "250GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Graphics Card",
-        "value": "NVIDIA GTX 1660TI",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Processor",
-        "value": "Intel Core i5 9th Gen",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Brand",
-        "value": "Sony",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Guarantee",
-        "value": "1 Years",
-        "filterType": "MULTIPLE_SELECT"
-      }
-    ]
-  },
-
-  {
-    "name": "XBox Series X",
-    "slug": "xbox-series-x-consoles",
-    "description": "The Xbox Series X delivers sensationally smooth frame rates of up to 120FPS with the visual pop of HDR. Immerse yourself with sharper characters, brighter worlds, and impossible details with true-to-life 4K.",
-    "editorDescription": "",
-    "price": 499.99,
-    "categoryName": "Consoles",
-    "subCategoryName": "XBox",
-    "images": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
-        "isDefaultImage": true
-      },
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1621259182228-4d6861278090?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
-        "isDefaultImage": false
-      },
-      {
-        "imageUrl": "https://www.renderhub.com/dinapixstudio/xbox-series-x-3d-wallpaper/xbox-series-x-3d-wallpaper_1920x1080.jpg",
-        "isDefaultImage": false
-      }
-    ],
-    "filters": [
-      {
-        "name": "RAM",
-        "value": "32GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Storage",
-        "value": "2TB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "SSD",
-        "value": "500GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Graphics Card",
-        "value": "NVIDIA RTX 2080",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Processor",
-        "value": "Intel Core i7 9th Gen",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Brand",
-        "value": "Microsoft",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Guarantee",
-        "value": "2 Years",
-        "filterType": "MULTIPLE_SELECT"
-      }
-    ]
-  },
-  {
-    "name": "XBox Series S",
-    "slug": "xbox-series-s-consoles",
-    "description": "The next generation of gaming brings our largest digital launch library yet to our smallest Xbox ever. With more dynamic worlds, faster load times, and the addition of Xbox Game Pass (sold separately), the all-digital Xbox Series S is the best value in gaming.",
-    "editorDescription": "",
-    "price": 399.99,
-    "categoryName": "Consoles",
-    "subCategoryName": "XBox",
-    "images": [
-      {
-        "imageUrl": "https://compass-ssl.xbox.com/assets/c9/82/c9827ca6-83ee-457e-b33b-1c1a350efb57.png?n=0202999-BuyBox01_Image-D.png",
-        "isDefaultImage": true
-      },
-      {
-        "imageUrl": "https://cutewallpaper.org/22/xbox-series-s-wallpapers/111479882.jpg",
-        "isDefaultImage": false
-      },
-      {
-        "imageUrl": "https://cutewallpaper.org/22/xbox-series-s-wallpapers/56931854.jpg",
-        "isDefaultImage": false
-      }
-    ],
-    "filters": [
-      {
-        "name": "RAM",
-        "value": "32GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Storage",
-        "value": "2TB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "SSD",
-        "value": "500GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Graphics Card",
-        "value": "NVIDIA RTX 2070",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Processor",
-        "value": "Intel Core i7 9th Gen",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Brand",
-        "value": "Microsoft",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Guarantee",
-        "value": "3 Years",
-        "filterType": "MULTIPLE_SELECT"
-      }
-    ]
-  },
-  {
-    "name": "XBox One X S",
-    "slug": "xbox-one-x-consoles",
-    "description": "Experience immersive 4K gaming, where action is brought to life with 2160p frame buffers and 6 Teraflops of graphical processing power.",
-    "editorDescription": "",
-    "price": 450,
-    "categoryName": "Consoles",
-    "subCategoryName": "XBox",
-    "images": [
-      {
-        "imageUrl": "https://cdn.mos.cms.futurecdn.net/c2f3BWwansb8rQ5d8bAAqb-1024-80.jpeg.webp",
-        "isDefaultImage": true
-      },
-      {
-        "imageUrl": "https://news.microsoft.com/wp-content/uploads/sites/68/2017/06/Xbox-One-X_Console-Controller_FrontTilt-Top-960x640.jpg",
-        "isDefaultImage": false
-      },
-      {
-        "imageUrl": "https://news.microsoft.com/wp-content/uploads/sites/68/2017/09/Xbox-One-X_CnslCntlr_Hrz_ANRTlt_GrdBG_96PPI_V2_RGB-960x640.jpg",
-        "isDefaultImage": false
-      }
-    ],
-    "filters": [
-      {
-        "name": "RAM",
-        "value": "32GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Storage",
-        "value": "1TB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "SSD",
-        "value": "500GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Graphics Card",
-        "value": "NVIDIA GTX 1660TI",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Processor",
-        "value": "Intel Core i7 9th Gen",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Brand",
-        "value": "Microsoft",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Guarantee",
-        "value": "2 Years",
-        "filterType": "MULTIPLE_SELECT"
-      }
-    ]
-  },
-
-  {
-    "name": "Nintendo Switch – OLED Model",
-    "slug": "nintendo-switch-olen-model-consoles",
-    "description": "The new system features a vibrant 7-inch OLED screen, a wide adjustable stand, a dock with a wired LAN port, 64 GB of internal storage, and enhanced audio.",
-    "editorDescription": "",
-    "price": 349.99,
-    "categoryName": "Consoles",
-    "subCategoryName": "Nintendo",
-    "images": [
-      {
-        "imageUrl": "https://assets.nintendo.com/image/upload/f_auto,h_813,q_auto,w_1440/ncom/en_US/switch/site-design-update/mode-1?v=2021100904",
-        "isDefaultImage": true
-      },
-      {
-        "imageUrl": "https://c0.wallpaperflare.com/preview/49/314/574/nintendo-switch-switch-nintendo-console.jpg",
-        "isDefaultImage": false
-      },
-      {
-        "imageUrl": "https://c4.wallpaperflare.com/wallpaper/18/289/77/nintendo-switch-review-console-wallpaper-preview.jpg",
-        "isDefaultImage": false
-      }
-    ],
-    "filters": [
-      {
-        "name": "RAM",
-        "value": "8GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Storage",
-        "value": "1TB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "SSD",
-        "value": "500GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Graphics Card",
-        "value": "NVIDIA GTX 1650",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Processor",
-        "value": "Intel Core i5 9th Gen",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Brand",
-        "value": "Nintendo",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Guarantee",
-        "value": "2 Years",
-        "filterType": "MULTIPLE_SELECT"
-      }
-    ]
-  },
-  {
-    "name": "Nintendo Switch – OLED Model",
-    "slug": "nintendo-switch-olen-model-consoles",
-    "description": "Nintendo Switch is designed to fit your life, transforming from home console to portable system in a snap.",
-    "editorDescription": "",
-    "price": 299.99,
-    "categoryName": "Consoles",
-    "subCategoryName": "Nintendo",
-    "images": [
-      {
-        "imageUrl": "https://c0.wallpaperflare.com/preview/49/314/574/nintendo-switch-switch-nintendo-console.jpg",
-        "isDefaultImage": true
-      },
-      {
-        "imageUrl": "https://www.trustedreviews.com/wp-content/uploads/sites/54/2020/09/750027-920x518.jpg",
-        "isDefaultImage": false
-      },
-      {
-        "imageUrl": "https://gamingbolt.com/wp-content/uploads/2020/10/nintendo-switch-image-1536x864.jpg",
-        "isDefaultImage": false
-      }
-    ],
-    "filters": [
-      {
-        "name": "RAM",
-        "value": "16GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Storage",
-        "value": "1TB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "SSD",
-        "value": "500GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Graphics Card",
-        "value": "NVIDIA GTX 1660TI",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Processor",
-        "value": "Intel Core i7 9th Gen",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Brand",
-        "value": "Nintendo",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Guarantee",
-        "value": "2 Years",
-        "filterType": "MULTIPLE_SELECT"
-      }
-    ]
-  },
-
-  {
-    "name": "Steam Deck",
-    "slug": "steam-deck-consoles",
-    "description": "The Steam Deck was built for extended play sessions—whether you're using thumbsticks or trackpads—with full-size controls positioned perfectly within your reach",
-    "editorDescription": "",
-    "price": 499.99,
-    "categoryName": "Consoles",
-    "subCategoryName": "Steam Deck",
-    "images": [
-      {
-        "imageUrl": "https://www.screenhub.com.au/wp-content/uploads/sites/4/2021/07/steam-deck.jpg?resize=1536,864",
-        "isDefaultImage": true
-      },
-      {
-        "imageUrl": "https://jeuxvideo.rds.ca/wp-content/uploads/sites/2/2021/07/steamdeck_photo_skus-1920x1080.jpg",
-        "isDefaultImage": false
-      },
-      {
-        "imageUrl": "https://i0.wp.com/m2now.com/wp-content/uploads/2021/07/Steam-Deck.jpg?resize=1200%2C600&ssl=1",
-        "isDefaultImage": false
-      }
-    ],
-    "filters": [
-      {
-        "name": "RAM",
-        "value": "16GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Storage",
-        "value": "1TB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "SSD",
-        "value": "500GB",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Graphics Card",
-        "value": "NVIDIA GTX 1660TI",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Processor",
-        "value": "Intel Core i7 9th Gen",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Brand",
-        "value": "Valve",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Guarantee",
-        "value": "2 Years",
-        "filterType": "MULTIPLE_SELECT"
-      }
-    ]
-  },
-
-  {
-    "name": "RAZER HUNTSMAN V2",
-    "slug": "razer-huntsman-v2-accessories",
-    "description": "If all-out advantage is more your speed, arm yourself with responsiveness that’s second to none. Meet the Razer Huntsman V2— an optical gaming keyboard with near-zero input latency and fully geared out with other high-end features to make it the complete package.",
-    "editorDescription": "",
-    "price": 199.99,
-    "categoryName": "Accessories",
-    "subCategoryName": "Keyboard",
-    "images": [
-      {
-        "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/1ab71e5ea9f9b8db8fc014cf8d767732/razer-huntsman-v2-hero-desktop.jpg",
-        "isDefaultImage": true
-      },
-      {
-        "imageUrl": "https://www.xda-developers.com/files/2021/09/Huntsman-V2-Tenkeyless.jpg",
-        "isDefaultImage": false
-      },
-      {
-        "imageUrl": "https://www.noobs2pro.com/wp-content/uploads/2020/08/razer-keyboard-1.jpg?ezimgfmt=ng:webp/ngcb110",
-        "isDefaultImage": false
-      }
-    ],
-    "filters": [
-      {
-        "name": "Brand",
-        "value": "Razer",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Color",
-        "value": "Black",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Guarantee",
-        "value": "1 Year",
-        "filterType": "MULTIPLE_SELECT"
-      }
-    ]
-  },
-  {
-    "name": "RAZER BlackWidow Mini V2",
-    "slug": "razer-blackwidow-mini-accessories",
-    "description": "Compact enough for any space, and versatile enough for all setups—this is the Razer BlackWidow V3 Mini HyperSpeed. Enjoy seamless gaming in a sleek package with a wireless 65% mechanical gaming keyboard that’s the perfect balance of form and function.",
-    "editorDescription": "",
-    "price": 120,
-    "categoryName": "Accessories",
-    "subCategoryName": "Keyboard",
-    "images": [
-      {
-        "imageUrl": "https://i2.wp.com/www.tech-critter.com/wp-content/uploads/2021/02/Razer-Huntsman-V2-Analog.jpg?resize=1024%2C545&ssl=1",
-        "isDefaultImage": true
-      },
-      {
-        "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/46a5058bf208af0c9f25d9575359fd6d/blackwidow-v3-mini-hyperspeed-available-desktop.jpg",
-        "isDefaultImage": false
-      },
-      {
-        "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/e36ecbd1b3cf8451f4581518ecfb4ffe/hyperspeed.jpg",
-        "isDefaultImage": false
-      }
-    ],
-    "filters": [
-      {
-        "name": "Brand",
-        "value": "Razer",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Color",
-        "value": "Black",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Guarantee",
-        "value": "1 Year",
-        "filterType": "MULTIPLE_SELECT"
-      }
-    ]
-  },
-  {
-    "name": "Redragon K552 Mechanical Keyboard",
-    "slug": "reddragon-k552-mechanical-keyboard-accessories",
-    "description": "Tenkeyless compact mechanical gaming keyboard Redragon k552 tkl small compact with dust proof mechanical switches cherry blue equivalent Linear switches quiet click sound fast action with minimal resistance without a tactile bump feel.",
-    "editorDescription": "",
-    "price": 150,
-    "categoryName": "Accessories",
-    "subCategoryName": "Keyboard",
-    "images": [
-      {
-        "imageUrl": "https://i0.wp.com/redragonepal.com/wp-content/uploads/2020/12/kumara-k552-rgb.jpg?fit=800%2C800&ssl=1",
-        "isDefaultImage": true
-      },
-      {
-        "imageUrl": "https://i0.wp.com/redragonepal.com/wp-content/uploads/2020/12/71mj0h5JgyL._AC_SL1500_.jpg?fit=1500%2C1500&ssl=1",
-        "isDefaultImage": false
-      },
-      {
-        "imageUrl": "https://i2.wp.com/redragonepal.com/wp-content/uploads/2020/12/81Ys8qu3D2L._AC_SL1500_.jpg?fit=1500%2C1500&ssl=1",
-        "isDefaultImage": false
-      }
-    ],
-    "filters": [
-      {
-        "name": "Brand",
-        "value": "Reddragon",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Color",
-        "value": "Black",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Guarantee",
-        "value": "1 Year",
-        "filterType": "MULTIPLE_SELECT"
-      }
-    ]
-  },
-  {
-    "name": "Keypro Macaron Mechanical Keyboard",
-    "slug": "keypro-macaron-mechanical-keyboard-accessories",
-    "description": "Minimal Mechanical Keyboard.",
-    "editorDescription": "",
-    "price": 80,
-    "categoryName": "Accessories",
-    "subCategoryName": "Keyboard",
-    "images": [
-      {
-        "imageUrl": "https://ae01.alicdn.com/kf/Hd6b5da808b7b4525baa62d0b97cfb517r.jpg",
-        "isDefaultImage": true
-      },
-      {
-        "imageUrl": "https://ae01.alicdn.com/kf/H9bf377b3f55b4d42934c3d798d6a6bbbh.jpg",
-        "isDefaultImage": false
-      },
-      {
-        "imageUrl": "https://ae01.alicdn.com/kf/H5ec4609b07b6467caaf99002b0a01d79I.jpg",
-        "isDefaultImage": false
-      }
-    ],
-    "filters": [
-      {
-        "name": "Brand",
-        "value": "Keypro",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Color",
-        "value": "Black",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Guarantee",
-        "value": "1 Year",
-        "filterType": "MULTIPLE_SELECT"
-      }
-    ]
-  },
-
-  {
-    "name": "Razer Basilisk V3",
-    "slug": "razer-basilisk-v3-accessories",
-    "description": "Create, control, and champion your playstyle with the new Razer Basilisk V3—the quintessential ergonomic gaming mouse for customized performance.",
-    "editorDescription": "",
-    "price": 130,
-    "categoryName": "Accessories",
-    "subCategoryName": "Mouse",
-    "images": [
-      {
-        "imageUrl": "https://assets2.razerzone.com/pages/basilisk-v3-4D578898E8144Le8da21dde32b7a9f5f/chroma-rgb.jpg",
-        "isDefaultImage": true
-      },
-      {
-        "imageUrl": "https://assets2.razerzone.com/pages/basilisk-v3-4D578898E8144Le8da21dde32b7a9f5f/power-beyond-logic-3.jpg",
-        "isDefaultImage": false
-      },
-      {
-        "imageUrl": "https://assets2.razerzone.com/pages/basilisk-v3-4D578898E8144Le8da21dde32b7a9f5f/power-beyond-logic-1.jpg",
-        "isDefaultImage": false
-      }
-    ],
-    "filters": [
-      {
-        "name": "Brand",
-        "value": "Razer",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Color",
-        "value": "Black",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Guarantee",
-        "value": "1 Year",
-        "filterType": "MULTIPLE_SELECT"
-      }
-    ]
-  },
-  {
-    "name": "LOGITECH PEBBLE WIRELESS MOUSE M350",
-    "slug": "logitech-pebble-wireless-mouse-m350-accessories",
-    "description": "Make any space minimalist, modern, and silent with Logitech Pebble – the portable mouse that fits your curated lifestyle and goes wherever life takes you.",
-    "editorDescription": "",
-    "price": 29.99,
-    "categoryName": "Accessories",
-    "subCategoryName": "Mouse",
-    "images": [
-      {
-        "imageUrl": "https://resource.logitech.com/w_900,h_900,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/products/logitech/mice/m350-pebble-wireless-mouse/910-005770/logitech-pebble-m35065685.png?v=1",
-        "isDefaultImage": true
-      },
-      {
-        "imageUrl": "https://resource.logitech.com/w_900,h_900,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/products/logitech/mice/m350-pebble-wireless-mouse/910-005770/logitech-pebble-m3502.png?v=1",
-        "isDefaultImage": false
-      },
-      {
-        "imageUrl": "https://resource.logitech.com/w_900,h_900,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/products/logitech/mice/m350-pebble-wireless-mouse/910-005770/logitech-pebble-m3504.png?v=1",
-        "isDefaultImage": false
-      }
-    ],
-    "filters": [
-      {
-        "name": "Brand",
-        "value": "Logitech",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Color",
-        "value": "Black",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Guarantee",
-        "value": "1 Year",
-        "filterType": "MULTIPLE_SELECT"
-      }
-    ]
-  },
-  {
-    "name": "MX Master 3",
-    "slug": "mx-master-3-accessories",
-    "description": "MX Master 3 is instant precision and infinite potential. It’s the most advanced Master Series mouse yet – designed for creatives and engineered for coders. If you can think it, you can master it.",
-    "editorDescription": "",
-    "price": 99.99,
-    "categoryName": "Accessories",
-    "subCategoryName": "Mouse",
-    "images": [
-      {
-        "imageUrl": "https://cdn57.androidauthority.net/wp-content/uploads/2021/06/MX-Master-3-feat-img-scaled-e1625070890608-1000x563.jpg.webp",
-        "isDefaultImage": true
-      },
-      {
-        "imageUrl": "https://resource.logitech.com/w_900,h_900,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-master-3/gallery/mx-master-product-gallery-mild-grey-3-4-front.png?v=1",
-        "isDefaultImage": false
-      },
-      {
-        "imageUrl": "https://resource.logitech.com/w_900,h_900,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-master-3/gallery/mx-master-product-gallery-mild-grey-front.png?v=1",
-        "isDefaultImage": false
-      }
-    ],
-    "filters": [
-      {
-        "name": "Brand",
-        "value": "Logitech",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Color",
-        "value": "Black",
-        "filterType": "MULTIPLE_SELECT"
-      },
-      {
-        "name": "Guarantee",
-        "value": "1 Year",
-        "filterType": "MULTIPLE_SELECT"
-      }
-    ]
-  },
-
-  {
     "name": "Adesso CyberTrack H4 1080P USB Webcam",
     "slug": "adesso-cybertrack-h4-1080p-usb-webcam-accessories",
     "description": "Adesso's CyberTrack H4 High Resolution Desktop Webcam features 1080p HD Video Resolution that allows you to record and share colorful HD quality video with ne detail.",
@@ -2727,6 +1356,1377 @@
       {
         "name": "Brand",
         "value": "HP",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "RAZER HUNTSMAN V2",
+    "slug": "razer-huntsman-v2-accessories",
+    "description": "If all-out advantage is more your speed, arm yourself with responsiveness that’s second to none. Meet the Razer Huntsman V2— an optical gaming keyboard with near-zero input latency and fully geared out with other high-end features to make it the complete package.",
+    "editorDescription": "",
+    "price": 199.99,
+    "categoryName": "Accessories",
+    "subCategoryName": "Keyboard",
+    "images": [
+      {
+        "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/1ab71e5ea9f9b8db8fc014cf8d767732/razer-huntsman-v2-hero-desktop.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://www.xda-developers.com/files/2021/09/Huntsman-V2-Tenkeyless.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://www.noobs2pro.com/wp-content/uploads/2020/08/razer-keyboard-1.jpg?ezimgfmt=ng:webp/ngcb110",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Razer",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Color",
+        "value": "Black",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Year",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "RAZER BlackWidow Mini V2",
+    "slug": "razer-blackwidow-mini-accessories",
+    "description": "Compact enough for any space, and versatile enough for all setups—this is the Razer BlackWidow V3 Mini HyperSpeed. Enjoy seamless gaming in a sleek package with a wireless 65% mechanical gaming keyboard that’s the perfect balance of form and function.",
+    "editorDescription": "",
+    "price": 120,
+    "categoryName": "Accessories",
+    "subCategoryName": "Keyboard",
+    "images": [
+      {
+        "imageUrl": "https://i2.wp.com/www.tech-critter.com/wp-content/uploads/2021/02/Razer-Huntsman-V2-Analog.jpg?resize=1024%2C545&ssl=1",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/46a5058bf208af0c9f25d9575359fd6d/blackwidow-v3-mini-hyperspeed-available-desktop.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/e36ecbd1b3cf8451f4581518ecfb4ffe/hyperspeed.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Razer",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Color",
+        "value": "Black",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Year",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Redragon K552 Mechanical Keyboard",
+    "slug": "reddragon-k552-mechanical-keyboard-accessories",
+    "description": "Tenkeyless compact mechanical gaming keyboard Redragon k552 tkl small compact with dust proof mechanical switches cherry blue equivalent Linear switches quiet click sound fast action with minimal resistance without a tactile bump feel.",
+    "editorDescription": "",
+    "price": 150,
+    "categoryName": "Accessories",
+    "subCategoryName": "Keyboard",
+    "images": [
+      {
+        "imageUrl": "https://i0.wp.com/redragonepal.com/wp-content/uploads/2020/12/kumara-k552-rgb.jpg?fit=800%2C800&ssl=1",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://i0.wp.com/redragonepal.com/wp-content/uploads/2020/12/71mj0h5JgyL._AC_SL1500_.jpg?fit=1500%2C1500&ssl=1",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://i2.wp.com/redragonepal.com/wp-content/uploads/2020/12/81Ys8qu3D2L._AC_SL1500_.jpg?fit=1500%2C1500&ssl=1",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Reddragon",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Color",
+        "value": "Black",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Year",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Keypro Macaron Mechanical Keyboard",
+    "slug": "keypro-macaron-mechanical-keyboard-accessories",
+    "description": "Minimal Mechanical Keyboard.",
+    "editorDescription": "",
+    "price": 80,
+    "categoryName": "Accessories",
+    "subCategoryName": "Keyboard",
+    "images": [
+      {
+        "imageUrl": "https://ae01.alicdn.com/kf/Hd6b5da808b7b4525baa62d0b97cfb517r.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://ae01.alicdn.com/kf/H9bf377b3f55b4d42934c3d798d6a6bbbh.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://ae01.alicdn.com/kf/H5ec4609b07b6467caaf99002b0a01d79I.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Keypro",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Color",
+        "value": "Black",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Year",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "Razer Basilisk V3",
+    "slug": "razer-basilisk-v3-accessories",
+    "description": "Create, control, and champion your playstyle with the new Razer Basilisk V3—the quintessential ergonomic gaming mouse for customized performance.",
+    "editorDescription": "",
+    "price": 130,
+    "categoryName": "Accessories",
+    "subCategoryName": "Mouse",
+    "images": [
+      {
+        "imageUrl": "https://assets2.razerzone.com/pages/basilisk-v3-4D578898E8144Le8da21dde32b7a9f5f/chroma-rgb.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://assets2.razerzone.com/pages/basilisk-v3-4D578898E8144Le8da21dde32b7a9f5f/power-beyond-logic-3.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://assets2.razerzone.com/pages/basilisk-v3-4D578898E8144Le8da21dde32b7a9f5f/power-beyond-logic-1.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Razer",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Color",
+        "value": "Black",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Year",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "LOGITECH PEBBLE WIRELESS MOUSE M350",
+    "slug": "logitech-pebble-wireless-mouse-m350-accessories",
+    "description": "Make any space minimalist, modern, and silent with Logitech Pebble – the portable mouse that fits your curated lifestyle and goes wherever life takes you.",
+    "editorDescription": "",
+    "price": 29.99,
+    "categoryName": "Accessories",
+    "subCategoryName": "Mouse",
+    "images": [
+      {
+        "imageUrl": "https://resource.logitech.com/w_900,h_900,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/products/logitech/mice/m350-pebble-wireless-mouse/910-005770/logitech-pebble-m35065685.png?v=1",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://resource.logitech.com/w_900,h_900,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/products/logitech/mice/m350-pebble-wireless-mouse/910-005770/logitech-pebble-m3502.png?v=1",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://resource.logitech.com/w_900,h_900,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/products/logitech/mice/m350-pebble-wireless-mouse/910-005770/logitech-pebble-m3504.png?v=1",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Logitech",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Color",
+        "value": "Black",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Year",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "MX Master 3",
+    "slug": "mx-master-3-accessories",
+    "description": "MX Master 3 is instant precision and infinite potential. It’s the most advanced Master Series mouse yet – designed for creatives and engineered for coders. If you can think it, you can master it.",
+    "editorDescription": "",
+    "price": 99.99,
+    "categoryName": "Accessories",
+    "subCategoryName": "Mouse",
+    "images": [
+      {
+        "imageUrl": "https://cdn57.androidauthority.net/wp-content/uploads/2021/06/MX-Master-3-feat-img-scaled-e1625070890608-1000x563.jpg.webp",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://resource.logitech.com/w_900,h_900,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-master-3/gallery/mx-master-product-gallery-mild-grey-3-4-front.png?v=1",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://resource.logitech.com/w_900,h_900,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-master-3/gallery/mx-master-product-gallery-mild-grey-front.png?v=1",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Brand",
+        "value": "Logitech",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Color",
+        "value": "Black",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Year",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "ROG Zephyrus G15 GA503",
+    "slug": "rog-zephyrus-g15-ga503-laptops",
+    "description": " ASUS ROG Zephyrus G15 turned out to be a very pleasing gaming device combining powerful hardware, beautiful design, good battery life, high-quality screen, and acoustics.",
+    "editorDescription": "",
+    "price": 1600,
+    "categoryName": "Laptops",
+    "subCategoryName": "Gaming Laptops",
+    "images": [
+      {
+        "imageUrl": "https://i1.wp.com/www.smartprix.com/bytes/wp-content/uploads/2021/07/Asus-ROG-Zephyrus-G15-Review-10-scaled.jpg?resize=1068%2C801&ssl=1",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://i1.wp.com/www.smartprix.com/bytes/wp-content/uploads/2021/07/Asus-ROG-Zephyrus-G15-Review-3-scaled.jpg?resize=1068%2C801&ssl=1",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://www.notebookcheck.net/fileadmin/Notebooks/Asus/ROG_Zephyrus_G15_GA503Q/G15_7.JPG",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "32GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "500GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA RTX 3070",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i9 10980HK",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Asus",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "ROG Zephyrus Duo 15 SE GX551",
+    "slug": "rog-zephyrus-duo-15-se-gx551-laptops",
+    "description": "Work and play on the cutting-edge with up to a AMD Ryzen™ 9 5900HX CPU and NVIDIA® GeForce RTX™ 3080 GPU. The overclockable CPU offers serious speed for intensive tasks like photo editing, 3D rendering, and streaming, running on up to 50W of sustained power when the GPU is active and 90W on its own.",
+    "editorDescription": "",
+    "price": 2100,
+    "categoryName": "Laptops",
+    "subCategoryName": "Gaming Laptops",
+    "images": [
+      {
+        "imageUrl": "https://growgrab.com/wp-content/uploads/2021/05/cover.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://root-nation.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/03/asus-rog-zephyrus-15-1.jpg.webp",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://root-nation.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/03/asus-rog-zephyrus-15-1-1.jpg.webp",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "32GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "500GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA RTX 3060",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i9 10980HK",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Asus",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Legion 7i Gen 6 Intel (16'') with RTX 3060",
+    "slug": "legion-7i-gen6-intel-16''-with-rtx-3060-gaming-laptop",
+    "description": "Gaming will never be the same after experiencing 11th Generation Intel® Core™ H-Series processors. Play and stream the latest AAA Titles at their absolute best with up to 5GHz clock speeds on multiple cores, enhanced overclocking, 45 Watts of dedicated processing power, up to 8 cores and 24MB of Intel® Smart Cache.",
+    "editorDescription": "",
+    "price": 1799.99,
+    "categoryName": "Laptops",
+    "subCategoryName": "Gaming Laptops",
+    "images": [
+      {
+        "imageUrl": "https://www.notebookcheck.net/fileadmin/_processed_/b/b/csm_Lenovo_Legion_7_AMD_16_Zoll_Storm_Grey_07_8a05c18b7f.png",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://i.gadgets360cdn.com/large/Lenovo_legion_2021_launch_1610524507873.jpg?downsize=950:*",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/Legion7_3.JPG",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "16GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "500GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA RTX 2080",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i7 10th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Lenovo",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Alienware M15 Ryzen™ Edition R5 Gaming Laptop",
+    "slug": "alienware-m15-ryzen-edition-r5-gaming-laptop",
+    "description": "Whether you're gaming at your leisure or in the thick of battle, never miss any critical details thanks to smoother gameplay. A result of our deliberate engineering decisions, the latest m15 is incredibly fast starting from 165Hz.",
+    "editorDescription": "",
+    "price": 1499.99,
+    "categoryName": "Laptops",
+    "subCategoryName": "Gaming Laptops",
+    "images": [
+      {
+        "imageUrl": "https://i.dell.com/is/image/DellContent//content/dam/global-site-design/product_images/dell_client_products/notebooks/alienware_notebooks/m15_r5_ryzen_edition/media_gallery/alienware-m15r5-ryze-edition-notebook-awm15-r5-15-cnb-00000ff090-5000x5000.psd?fmt=pjpg&pscan=auto&scl=1&wid=5000&hei=5000&qlt=100,0&resMode=sharp2&size=5000,5000",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://i0.wp.com/laptopmedia.com/wp-content/uploads/2021/05/2-8.jpg?resize=1000%2C750&ssl=1",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://www.techadvisor.com/cmsdata/reviews/3805712/alienware_m15_ryzen_edition_r5_02_thumb800.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "16GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "500GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA RTX 2070",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i7 10th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Dell",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "Asus Zenbook 14 UX433",
+    "slug": "asus-zenbook-14-ux433-ultrabook",
+    "description": "Creativity. Style. Innovation. These are the qualities that define the elegant new ZenBook 14. It’s one of the world’s smallest 14-inch laptops, and features the breathtaking frameless NanoEdge display and the exclusive NumberPad to give you the freedom to discover your creative power.",
+    "editorDescription": "",
+    "price": 1299.99,
+    "categoryName": "Laptops",
+    "subCategoryName": "Ultrabooks",
+    "images": [
+      {
+        "imageUrl": "https://dlcdnwebimgs.asus.com/gain/720d2121-9da7-4e16-b440-3d8d5cccb48c/w800",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://dlcdnwebimgs.asus.com/gain/7c7f225a-1ca7-49eb-8c74-30c028dc0bb7/w800",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://dlcdnwebimgs.asus.com/gain/78373abc-0d69-4660-badb-4d1d04ea7ba6/w800",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "8GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "250GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA MX 450",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i7 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Asus",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Lenovo ThinkPad X380 Yoga",
+    "slug": "lenovo-thinkpad-x380-yoga-ultrabook",
+    "description": "The sleek ThinkPad X380 Yoga is designed for you. This stylish powerhouse adapts to work with you—as a laptop, tablet, or anything in between. Moreover, hardware-level security features provide peace of mind when you're on-the-go.",
+    "editorDescription": "",
+    "price": 1099.99,
+    "categoryName": "Laptops",
+    "subCategoryName": "Ultrabooks",
+    "images": [
+      {
+        "imageUrl": "https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x380-2-in-1-feature-4.jpg?context=bWFzdGVyfHJvb3R8NjM0NTB8aW1hZ2UvanBnfGgxMS9oYTMvOTYxNzc5MTA1Nzk1MC5qcGd8OWQ4ZDlkYWRlNjA4NTc4NzQ5YThhNWEzMGI0OGFmODJkNGMwY2YzOWRiNzdmOTdiNjJmNTgyMzgzNjNmODZjZA&w=1920",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x380-2-in-1-feature-2.jpg?context=bWFzdGVyfHJvb3R8NzI5MDZ8aW1hZ2UvanBnfGg4ZC9oMmEvOTYxNzc5MDk5MjQxNC5qcGd8ZTZiZWZhNmMyMzhlNTdhNTI0NjYwMjZiMmFkODg1NGE3Y2Q2MzdiYzk4MmJiYTdiY2M3YzM2Y2NjOGFhMmIyMw&w=1920",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x380-2-in-1-feature-1.jpg?context=bWFzdGVyfHJvb3R8NzkxMTN8aW1hZ2UvanBnfGg0NS9oYmMvOTYxNzc5MDg2MTM0Mi5qcGd8OTA5ODU5NGZjZjM1ZmRmYjYwMWFhNWRlNGNjMmEyM2FiZGUyNmU1ZDdiOWU4ZTRjZjQ3ZDBhMzc3Zjc2ZGM2MA&w=1920",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "8GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "250GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA MX 450",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i7 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Lenovo",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Lenovo IdeaPad 5i (15'')",
+    "slug": "lenovo-ideapad-5i-15''",
+    "description": "The IdeaPad 5i (15'') Intel boasts an enticing list of included and optional features, making it a powerful combination of performance, connectivity, and entertainment with up to 10th Gen Intel® Core™ i7 processing.",
+    "editorDescription": "",
+    "price": 1199.99,
+    "categoryName": "Laptops",
+    "subCategoryName": "Ultrabooks",
+    "images": [
+      {
+        "imageUrl": "https://www.lenovo.com/medias/lenovo-laptops-ideapad-5-15in-intel-hero.png?context=bWFzdGVyfHJvb3R8Mjk0NTYxfGltYWdlL3BuZ3xoNzcvaGNhLzEwNzQ2MjI0OTM0OTQyLnBuZ3wzYmE2NzQ5MmY0ZmM0NzNiMjI4YmJkNjNmZDlhMTQ3YWM3NzBhZTNlNDAyMmM2M2RmZGJkNDI0NjBjYWY1ZWJk",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://www.lenovo.com/medias/lenovo-laptops-ideapad-5-15in-intel-gallery-1.png?context=bWFzdGVyfHJvb3R8MjgwNDc0fGltYWdlL3BuZ3xoOGQvaDU5LzEwNzQ2MjIyNzA2NzE4LnBuZ3w5NTBjYTA2ODkwZWQ2Yzk3OGQ0Y2M5MjRiOWZkNTNlMDJiOWQ4MDlmMGNlM2U5Mzc1ODkzYzhmNTRiYzNlYTIx",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://www.lenovo.com/medias/lenovo-laptops-ideapad-5-15in-intel-gallery-4.jpg?context=bWFzdGVyfHJvb3R8MjIyMTUxfGltYWdlL2pwZ3xoMzQvaDgwLzEwNzQ2MjIzNDI3NjE0LmpwZ3xjYzZkZWIwZWExOTFlMDRmZGM5ZTgwNzE0Y2MyMmQ3YzI1YWNlYjRkNjRjN2Y2NDg4NWRhN2FiNzFiYTYyNDY2",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "8GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "250GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA MX 350",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i5 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Lenovo",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "Macbook Pro 13''",
+    "slug": "macbook-pro-13''-traditional-laptops",
+    "description": "The Apple M1 chip gives the 13‑inch MacBook Pro speed and power beyond belief.",
+    "editorDescription": "",
+    "price": 1699.99,
+    "categoryName": "Laptops",
+    "subCategoryName": "Traditional Laptops",
+    "images": [
+      {
+        "imageUrl": "https://www.apple.com/v/macbook-pro-13/h/images/overview/hero_endframe__bsza6x4fldiq_large.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://www.apple.com/v/macbook-pro-13/h/images/overview/retina_hero_screen__gddr9b8m4kuq_large.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://www.apple.com/v/macbook-pro-13/h/images/overview/magic_keyboard__brx9diaauwaa_large.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "8GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "500GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "500GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "Intel Dedicated",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i5 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Apple",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Acer Swift 5",
+    "slug": "acer-swift-5-traditional-laptops",
+    "description": "Designed on the Intel® Evo™ platform for an exceptional experience anywhere, the Swift 5 weighs in at around 1 kg, is just 14.95 mm thin, and boasts an incredible 90% screen-to-body ratio. With up to 17 hours of battery, stay mobile and stay productive.",
+    "editorDescription": "",
+    "price": 999.99,
+    "categoryName": "Laptops",
+    "subCategoryName": "Traditional Laptops",
+    "images": [
+      {
+        "imageUrl": "https://static.acer.com/up/Resource/Acer/Laptops/Swift_5/SF514_55/20200824/Swift-5_ksp_03_large.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://static.acer.com/up/Resource/Acer/Laptops/Swift_5/SF514_55/20200824/Swift-5_ksp_05.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://static.acer.com/up/Resource/Acer/Laptops/Swift_5/SF514_55/20210416/Swift-5_ksp_04.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "8GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "250GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA MX 450",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i5 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Acer",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "Playstation",
+    "slug": "playstation-5-consoles",
+    "description": "Experience lightning-fast loading with an ultra-high speed SSD, deeper immersion with support for haptic feedback, adaptive triggers and 3D Audio*, and an all-new generation of incredible PlayStation® games.",
+    "editorDescription": "",
+    "price": 549.99,
+    "categoryName": "Consoles",
+    "subCategoryName": "Playstation",
+    "images": [
+      {
+        "imageUrl": "https://images.pexels.com/photos/5961216/pexels-photo-5961216.jpeg?auto=compress",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://images.pexels.com/photos/5961235/pexels-photo-5961235.jpeg?auto=compress",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://images.pexels.com/photos/3945673/pexels-photo-3945673.jpeg?auto=compress",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "32GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "2TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "250GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA RTX 2080",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i7 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Sony",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "Playstation 4",
+    "slug": "playstation-4-consoles",
+    "description": "The PS4 console, delivering awesome gaming power, incredible entertainment and vibrant HDR technology",
+    "editorDescription": "",
+    "price": 349.99,
+    "categoryName": "Consoles",
+    "subCategoryName": "Playstation",
+    "images": [
+      {
+        "imageUrl": "https://images.unsplash.com/photo-1518908336710-4e1cf821d3d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://images.unsplash.com/photo-1486401899868-0e435ed85128?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://images.unsplash.com/photo-1507457379470-08b800bebc67?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "32GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "250GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA GTX 1660TI",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i5 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Sony",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "Playstation 4",
+    "slug": "playstation-4-pro-consoles",
+    "description": "Blur the lines of reality with the PlayStation®4 Pro console. Faster, more powerful and with 4K TV gaming.",
+    "editorDescription": "",
+    "price": 399.99,
+    "categoryName": "Consoles",
+    "subCategoryName": "Playstation",
+    "images": [
+      {
+        "imageUrl": "https://wallpapercave.com/wp/wp1841725.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://wallpapercave.com/wp/wp3589270.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://wallpapercave.com/wp/wp3589275.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "32GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "250GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA GTX 1660TI",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i5 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Sony",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "1 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "XBox Series X",
+    "slug": "xbox-series-x-consoles",
+    "description": "The Xbox Series X delivers sensationally smooth frame rates of up to 120FPS with the visual pop of HDR. Immerse yourself with sharper characters, brighter worlds, and impossible details with true-to-life 4K.",
+    "editorDescription": "",
+    "price": 499.99,
+    "categoryName": "Consoles",
+    "subCategoryName": "XBox",
+    "images": [
+      {
+        "imageUrl": "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://images.unsplash.com/photo-1621259182228-4d6861278090?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://www.renderhub.com/dinapixstudio/xbox-series-x-3d-wallpaper/xbox-series-x-3d-wallpaper_1920x1080.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "32GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "2TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "500GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA RTX 2080",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i7 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Microsoft",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "XBox Series S",
+    "slug": "xbox-series-s-consoles",
+    "description": "The next generation of gaming brings our largest digital launch library yet to our smallest Xbox ever. With more dynamic worlds, faster load times, and the addition of Xbox Game Pass (sold separately), the all-digital Xbox Series S is the best value in gaming.",
+    "editorDescription": "",
+    "price": 399.99,
+    "categoryName": "Consoles",
+    "subCategoryName": "XBox",
+    "images": [
+      {
+        "imageUrl": "https://compass-ssl.xbox.com/assets/c9/82/c9827ca6-83ee-457e-b33b-1c1a350efb57.png?n=0202999-BuyBox01_Image-D.png",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://cutewallpaper.org/22/xbox-series-s-wallpapers/111479882.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://cutewallpaper.org/22/xbox-series-s-wallpapers/56931854.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "32GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "2TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "500GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA RTX 2070",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i7 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Microsoft",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "3 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "XBox One X S",
+    "slug": "xbox-one-x-consoles",
+    "description": "Experience immersive 4K gaming, where action is brought to life with 2160p frame buffers and 6 Teraflops of graphical processing power.",
+    "editorDescription": "",
+    "price": 450,
+    "categoryName": "Consoles",
+    "subCategoryName": "XBox",
+    "images": [
+      {
+        "imageUrl": "https://cdn.mos.cms.futurecdn.net/c2f3BWwansb8rQ5d8bAAqb-1024-80.jpeg.webp",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://news.microsoft.com/wp-content/uploads/sites/68/2017/06/Xbox-One-X_Console-Controller_FrontTilt-Top-960x640.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://news.microsoft.com/wp-content/uploads/sites/68/2017/09/Xbox-One-X_CnslCntlr_Hrz_ANRTlt_GrdBG_96PPI_V2_RGB-960x640.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "32GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "500GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA GTX 1660TI",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i7 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Microsoft",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "Nintendo Switch – OLED Model",
+    "slug": "nintendo-switch-olen-model-consoles",
+    "description": "The new system features a vibrant 7-inch OLED screen, a wide adjustable stand, a dock with a wired LAN port, 64 GB of internal storage, and enhanced audio.",
+    "editorDescription": "",
+    "price": 349.99,
+    "categoryName": "Consoles",
+    "subCategoryName": "Nintendo",
+    "images": [
+      {
+        "imageUrl": "https://assets.nintendo.com/image/upload/f_auto,h_813,q_auto,w_1440/ncom/en_US/switch/site-design-update/mode-1?v=2021100904",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://c0.wallpaperflare.com/preview/49/314/574/nintendo-switch-switch-nintendo-console.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://c4.wallpaperflare.com/wallpaper/18/289/77/nintendo-switch-review-console-wallpaper-preview.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "8GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "500GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA GTX 1650",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i5 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Nintendo",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+  {
+    "name": "Nintendo Switch – OLED Model",
+    "slug": "nintendo-switch-olen-model-consoles",
+    "description": "Nintendo Switch is designed to fit your life, transforming from home console to portable system in a snap.",
+    "editorDescription": "",
+    "price": 299.99,
+    "categoryName": "Consoles",
+    "subCategoryName": "Nintendo",
+    "images": [
+      {
+        "imageUrl": "https://c0.wallpaperflare.com/preview/49/314/574/nintendo-switch-switch-nintendo-console.jpg",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://www.trustedreviews.com/wp-content/uploads/sites/54/2020/09/750027-920x518.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://gamingbolt.com/wp-content/uploads/2020/10/nintendo-switch-image-1536x864.jpg",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "16GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "500GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA GTX 1660TI",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i7 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Nintendo",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Guarantee",
+        "value": "2 Years",
+        "filterType": "MULTIPLE_SELECT"
+      }
+    ]
+  },
+
+  {
+    "name": "Steam Deck",
+    "slug": "steam-deck-consoles",
+    "description": "The Steam Deck was built for extended play sessions—whether you're using thumbsticks or trackpads—with full-size controls positioned perfectly within your reach",
+    "editorDescription": "",
+    "price": 499.99,
+    "categoryName": "Consoles",
+    "subCategoryName": "Steam Deck",
+    "images": [
+      {
+        "imageUrl": "https://www.screenhub.com.au/wp-content/uploads/sites/4/2021/07/steam-deck.jpg?resize=1536,864",
+        "isDefaultImage": true
+      },
+      {
+        "imageUrl": "https://jeuxvideo.rds.ca/wp-content/uploads/sites/2/2021/07/steamdeck_photo_skus-1920x1080.jpg",
+        "isDefaultImage": false
+      },
+      {
+        "imageUrl": "https://i0.wp.com/m2now.com/wp-content/uploads/2021/07/Steam-Deck.jpg?resize=1200%2C600&ssl=1",
+        "isDefaultImage": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "RAM",
+        "value": "16GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "SSD",
+        "value": "500GB",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Graphics Card",
+        "value": "NVIDIA GTX 1660TI",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Processor",
+        "value": "Intel Core i7 9th Gen",
+        "filterType": "MULTIPLE_SELECT"
+      },
+      {
+        "name": "Brand",
+        "value": "Valve",
         "filterType": "MULTIPLE_SELECT"
       },
       {

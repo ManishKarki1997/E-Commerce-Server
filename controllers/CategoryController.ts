@@ -7,8 +7,6 @@ import {
   UNAUTHORIZED_ERROR,
 } from "../helpers/Error";
 import { HttpStatusCode } from "../constants/HttpStatusCodes";
-import sendEmail from "../helpers/SendMail";
-import { auth } from "../middlewares";
 import { CategorySchema, UserSchema } from "../validators";
 import {
   generateSlug,
@@ -25,6 +23,7 @@ const Router = express.Router();
 Router.get("/", async (req: Request, res: Response, next: NextFunction) => {
   try {
     const {
+      subCategoriesOnly = false,
       includeSubCategories = false,
       take = 10,
       skip = 0,
@@ -35,13 +34,16 @@ Router.get("/", async (req: Request, res: Response, next: NextFunction) => {
       skip: parseInt(skip),
       where: {
         parentId:
-          includeSubCategories !== "false"
+          subCategoriesOnly === "false"
             ? {
                 not: null,
               }
             : {
                 equals: null,
               },
+      },
+      include: {
+        subCategories: includeSubCategories === "true",
       },
     });
 
