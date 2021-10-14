@@ -1,12 +1,17 @@
 {
+  "engines": {
+    "node": "15.14.0"
+  },
   "name": "ecommerce-server",
   "version": "1.0.0",
   "description": "Server for the ecommerce app",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon -x ts-node index.ts",
-    "start": "ts-node index.ts",
+    "start": "node dist/index.js",
+    "postinstall": "tsc",
     "build": "tsc",
+    "deploy": "git add . && git commit -m Heroku && git push heroku master",
     "ts-node": "ts-node --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\""
   },
   "author": "Manish Karki",
