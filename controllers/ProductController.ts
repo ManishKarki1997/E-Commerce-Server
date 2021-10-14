@@ -62,19 +62,20 @@ Router.get(
   async (req: Request, res: Response, next: NextFunction) => {
     try {
       const {
-        categoryName,
-        subCategoryName,
+        categorySlug,
+        subCategorySlug,
         take = 10,
         skip = 0,
       } = (req as any).query;
+
       const totalProductsCount = await prisma.product.count();
 
       let subCategoryParam = {
-        subCategoryName,
+        subCategorySlug,
       };
-      if (subCategoryName && subCategoryName.includes("*")) {
+      if (subCategorySlug && subCategorySlug.includes("*")) {
         subCategoryParam = {
-          subCategoryName: subCategoryName.replace("*", " & "),
+          subCategorySlug: subCategorySlug.replace("*", " & "),
         };
       }
 
@@ -82,9 +83,9 @@ Router.get(
         take: parseInt(take),
         skip: parseInt(skip),
         where: {
-          categoryName: categoryName.includes("*")
-            ? categoryName.replace("*", " & ")
-            : categoryName,
+          categorySlug: categorySlug.includes("*")
+            ? categorySlug.replace("*", " & ")
+            : categorySlug,
           ...subCategoryParam,
         },
         include: {

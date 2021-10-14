@@ -4,8 +4,8 @@
   "description": "Server for the ecommerce app",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --exec ts-node  index.ts",
-    "start": "node dist/index.ts",
+    "dev": "nodemon -x ts-node index.ts",
+    "start": "ts-node index.ts",
     "build": "tsc",
     "ts-node": "ts-node --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\""
   },

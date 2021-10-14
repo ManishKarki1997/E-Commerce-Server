@@ -35,7 +35,7 @@ Router.get("/", async (req: Request, res: Response, next: NextFunction) => {
       skip: parseInt(skip),
       where: {
         parentId:
-          includeSubCategories === "false"
+          includeSubCategories !== "false"
             ? {
                 not: null,
               }

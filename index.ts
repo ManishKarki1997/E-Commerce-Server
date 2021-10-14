@@ -1,4 +1,4 @@
-import express from "express";
+import express, { Request, Response } from "express";
 import cookieParser from "cookie-parser";
 import errorHandler from "./middlewares/errorHandler";
 
@@ -15,6 +15,7 @@ import {
   WishlistController,
 } from "./controllers";
 import cors from "cors";
+import { HttpStatusCode } from "./constants/HttpStatusCodes";
 
 const app = express();
 
@@ -27,6 +28,10 @@ app.use(
 
 app.use(express.json({ limit: "500mb" }));
 app.use(cookieParser());
+
+app.get("/", async (req: Request, res: Response) => {
+  return res.status(HttpStatusCode.OK).send("Welcome to the API");
+});
 
 app.use("/api/users", AuthController);
 app.use("/api/categories", CategoryController);
