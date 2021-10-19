@@ -1,7 +1,6 @@
 import express, { NextFunction, Request, Response } from "express";
-import cookie from "cookie";
-const jwt = require("jsonwebtoken");
-import bcrypt from "bcryptjs";
+import mcache from "memory-cache";
+
 import {
   BAD_REQUEST_ERROR,
   INTERNAL_SERVER_ERROR,
@@ -9,9 +8,8 @@ import {
   OK_REQUEST,
 } from "../helpers/Error";
 import { HttpStatusCode } from "../constants/HttpStatusCodes";
-import sendEmail from "../helpers/SendMail";
-import { auth } from "../middlewares";
-import { CategorySchema, UserSchema } from "../validators";
+import MemCacheKeys from "../constants/MemCacheKeys";
+
 import {
   generateSlug,
   getCategorySubCategoryNameFromSlug,
@@ -387,6 +385,17 @@ Router.get(
   async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { slug } = req.params;
+      let key = `${MemCacheKeys.SINGLE_PRODUCT}-${slug}`;
+      let cachedBody = mcache.get(key);
+
+      if (cachedBody) {
+        return res.status(HttpStatusCode.OK).send(
+          new OK_REQUEST("Product fetched successfully", {
+            product: cachedBody,
+          })
+        );
+      }
+
       const product = await prisma.product.findFirst({
         where: {
           slug,
@@ -439,6 +448,8 @@ Router.get(
       if (!product) {
         return next(new NOT_FOUND_ERROR("Product not found"));
       }
+
+      mcache.put(key, product, 300 * 1000);
 
       return res
         .status(HttpStatusCode.OK)

@@ -1,4 +1,6 @@
 import express, { NextFunction, Request, Response } from "express";
+import mcache from "memory-cache";
+
 import {
   BAD_REQUEST_ERROR,
   INTERNAL_SERVER_ERROR,
@@ -16,6 +18,7 @@ import {
 
 import prisma from "../db/prisma";
 import { UserRoles } from "../constants/UserRoles";
+import MemCacheKeys from "../constants/MemCacheKeys";
 
 const Router = express.Router();
 
@@ -67,6 +70,7 @@ Router.get(
     if (!slug) {
       return next(new BAD_REQUEST_ERROR("Category name not provided"));
     }
+
     try {
       const {
         includeSubCategories = "true",
@@ -74,6 +78,17 @@ Router.get(
         take = 10,
         skip = 0,
       } = (req as any).query;
+
+      let key = `${MemCacheKeys.SINGLE_SUB_CATEGORY}-${slug}-${includeProducts}-${take}-${skip}`;
+      let cachedBody = mcache.get(key);
+
+      if (cachedBody) {
+        return res.status(HttpStatusCode.OK).send(
+          new OK_REQUEST("Category fetched successfully", {
+            category: cachedBody,
+          })
+        );
+      }
 
       const category = await prisma.category.findFirst({
         take: parseInt(take),
@@ -107,6 +122,8 @@ Router.get(
               : false,
         },
       });
+
+      mcache.put(key, category, 300 * 1000);
 
       return res.status(HttpStatusCode.OK).send(
         new OK_REQUEST("Category fetched successfully", {
