@@ -26,7 +26,7 @@ app.use(
       "http://localhost:3000",
       "https://localhost:3000",
       "https://varyacommerce.netlify.app",
-      "https://testcommercespa.netlify.app/",
+      "https://ssr-ecommerce-app.vercel.app",
     ],
   })
 );
