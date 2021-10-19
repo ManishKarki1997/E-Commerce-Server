@@ -27,6 +27,8 @@ app.use(
       "https://localhost:3000",
       "https://varyacommerce.netlify.app",
       "https://ssr-ecommerce-app.vercel.app",
+      "https://ssr-ecommerce-app-ey7b7d901-manishkarki247.vercel.app",
+      process.env.SECONDARY_FRONTEND_URL!,
     ],
   })
 );
