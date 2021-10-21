@@ -68,6 +68,64 @@ Router.get("/", async (req: Request, res: Response, next: NextFunction) => {
   }
 });
 
+// fetch products on flash sale i.e discounted products
+Router.get(
+  "/flashSale",
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { take = 10, skip = 0 } = (req as any).query;
+
+      const products = await prisma.productDiscount.findMany({
+        take: parseInt(take),
+        skip: parseInt(skip),
+        where: {
+          OR: [
+            {
+              validUntil: {
+                gt: new Date(),
+              },
+            },
+            {
+              validUntil: null,
+            },
+          ],
+        },
+        include: {
+          product: {
+            include: {
+              images: true,
+              pricing: true,
+              productDiscount: {
+                where: {
+                  OR: [
+                    {
+                      validUntil: {
+                        gt: new Date(),
+                      },
+                    },
+                    {
+                      validUntil: null,
+                    },
+                  ],
+                },
+              },
+            },
+          },
+        },
+      });
+
+      return res.status(HttpStatusCode.OK).send(
+        new OK_REQUEST("Flash sale products fetched successfully", {
+          products,
+        })
+      );
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  }
+);
+
 // get products for a category/subcategory
 Router.get(
   "/category",
