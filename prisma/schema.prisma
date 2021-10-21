@@ -94,7 +94,6 @@ model Product {
   shortInfo             String
   description           String
   editorDescription     String?
-  price                 Float
   category              Category          @relation(fields: [categoryId], references: [id])
   categoryId            Int
   categoryName          String
@@ -139,7 +138,7 @@ model ProductDiscount {
   product         Product      @relation(fields: [productId], references: [id])
   discountedValue Float
   discountedUnit  DiscountUnit @default(PERCENTAGE)
-  couponCode      String
+  couponCode      String?
   validFrom       DateTime
   validUntil      DateTime?
   createdAt       DateTime     @default(now())

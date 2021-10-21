@@ -37,7 +37,12 @@
         "value": "1 Year",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 5,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2023/1/5"
+    }
   },
   {
     "name": "Logitech C920 Webcam",
@@ -77,7 +82,12 @@
         "value": "1 Year",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 2,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2023/1/1"
+    }
   },
 
   {
@@ -199,7 +209,13 @@
         "value": "1 Year",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 8,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2022/3/5",
+      "couponCode": "NEW_YEAR_2023"
+    }
   },
   {
     "name": "PRO X WIRELESS",
@@ -239,7 +255,13 @@
         "value": "1 Year",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 3,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2021/12/5",
+      "couponCode": "NEW_YEAR_2023"
+    }
   },
 
   {
@@ -280,7 +302,13 @@
         "value": "1 Year",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 11,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2021/1/5",
+      "couponCode": "NEW_YEAR_2023"
+    }
   },
   {
     "name": "Logitech Z200 STEREO SPEAKERS",
@@ -366,7 +394,13 @@
         "value": "2 Years",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 10,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2022/5/1",
+      "couponCode": "NEW_YEAR_2022"
+    }
   },
   {
     "name": "iPhone 12",
@@ -411,7 +445,13 @@
         "value": "2 Years",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 3,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2021/11/5",
+      "couponCode": "NEW_YEAR_2022"
+    }
   },
   {
     "name": "Galaxy Z Fold3 ",
@@ -542,7 +582,13 @@
         "value": "2 Years",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 100,
+      "disocuntedUnit": "CURRENCY",
+      "validUntil": "2022/10/5",
+      "couponCode": "NEW_YEAR_2022"
+    }
   },
   {
     "name": "Apple Watch Series 7",
@@ -582,7 +628,13 @@
         "value": "2 Years",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 50,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2022/5/5",
+      "couponCode": "APPLE_FESTIVAL_2022"
+    }
   },
   {
     "name": "Galaxy Watch4",
@@ -658,7 +710,13 @@
         "value": "2 Years",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 13,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2022/1/5",
+      "couponCode": "ANNIVERSARY_2022"
+    }
   },
   {
     "name": "Samsung 80cm (32'') T4450 Smart HD TV",
@@ -693,7 +751,13 @@
         "value": "2 Years",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 10,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2022/10/5",
+      "couponCode": "ANNIVERSARY_2022"
+    }
   },
   {
     "name": "Mi QLED TV 4K 55",
@@ -728,7 +792,13 @@
         "value": "2 Years",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 9,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2022/1/5",
+      "couponCode": "ANNIVERSARY_2022"
+    }
   },
   {
     "name": "ASUS CG32UQ",
@@ -798,7 +868,13 @@
         "value": "2 Years",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 10,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2022/2/5",
+      "couponCode": "ANNIVERSARY_2022"
+    }
   },
   {
     "name": "24'' CRG5 Gaming Monitor",
@@ -975,7 +1051,13 @@
         "value": "2 Years",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 30,
+      "disocuntedUnit": "CURRENCY",
+      "validUntil": "2022/4/5",
+      "couponCode": "MONITORS_2022"
+    }
   },
   {
     "name": "Dell - S3220DGF 32'' LED Curved QHD FreeSync Monitor with HDR",
@@ -1010,7 +1092,13 @@
         "value": "2 Years",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 25,
+      "disocuntedUnit": "CURRENCY",
+      "validUntil": "2022/5/5",
+      "couponCode": "MONITORS_2022"
+    }
   },
   {
     "name": "Samsung - CHG9 Series C49HG90DMN 49'' HDR LED Curved FHD FreeSync Monitor",
@@ -1081,7 +1169,13 @@
         "value": "2 Years",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 30,
+      "disocuntedUnit": "CURRENCY",
+      "validUntil": "2022/2/5",
+      "couponCode": "ACCESSORIES_2022"
+    }
   },
   {
     "name": "ASUS AX5400 Dual Band Mesh WiFi 6 Gaming Router",
@@ -1151,7 +1245,13 @@
         "value": "2 Years",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 30,
+      "disocuntedUnit": "CURRENCY",
+      "validUntil": "2022/2/5",
+      "couponCode": "ACCESSORIES_2022"
+    }
   },
 
   {
@@ -1404,7 +1504,13 @@
         "value": "1 Year",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 30,
+      "disocuntedUnit": "CURRENCY",
+      "validUntil": "2022/7/1",
+      "couponCode": "RAZER_2022"
+    }
   },
   {
     "name": "RAZER BlackWidow Mini V2",
@@ -1565,7 +1671,13 @@
         "value": "1 Year",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 10,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2022/7/1",
+      "couponCode": "RAZER_2022"
+    }
   },
   {
     "name": "LOGITECH PEBBLE WIRELESS MOUSE M350",
@@ -1706,7 +1818,13 @@
         "value": "2 Years",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 13,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2022/7/1",
+      "couponCode": "ASUS_2022"
+    }
   },
   {
     "name": "ROG Zephyrus Duo 15 SE GX551",
@@ -1766,7 +1884,13 @@
         "value": "2 Years",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 13,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2022/7/1",
+      "couponCode": "ASUS_2022"
+    }
   },
   {
     "name": "Legion 7i Gen 6 Intel (16'') with RTX 3060",
@@ -1886,7 +2010,13 @@
         "value": "1 Years",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 9,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2022/7/1",
+      "couponCode": "LAPTOPS_2022"
+    }
   },
 
   {
@@ -1947,7 +2077,13 @@
         "value": "1 Years",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 13,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2022/10/1",
+      "couponCode": "ASUS_2022"
+    }
   },
   {
     "name": "Lenovo ThinkPad X380 Yoga",
@@ -2128,7 +2264,13 @@
         "value": "2 Years",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 10,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2022/7/1",
+      "couponCode": "APPLE_FESTIVAL_2022"
+    }
   },
   {
     "name": "Acer Swift 5",
@@ -2249,7 +2391,13 @@
         "value": "2 Years",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 10,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2022/12/1",
+      "couponCode": "CONSOLES_2022"
+    }
   },
 
   {
@@ -2310,7 +2458,13 @@
         "value": "2 Years",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 10,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2022/12/1",
+      "couponCode": "CONSOLES_2022"
+    }
   },
 
   {
@@ -2371,7 +2525,13 @@
         "value": "1 Years",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 15,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2022/12/1",
+      "couponCode": "CONSOLES_2022"
+    }
   },
 
   {
@@ -2432,7 +2592,13 @@
         "value": "2 Years",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 9,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2022/12/1",
+      "couponCode": "CONSOLES_2022"
+    }
   },
   {
     "name": "XBox Series S",
@@ -2492,7 +2658,13 @@
         "value": "3 Years",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 12,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2022/12/1",
+      "couponCode": "CONSOLES_2022"
+    }
   },
   {
     "name": "XBox One X S",
@@ -2552,7 +2724,13 @@
         "value": "2 Years",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 17,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2022/12/1",
+      "couponCode": "CONSOLES_2022"
+    }
   },
 
   {
@@ -2613,7 +2791,13 @@
         "value": "2 Years",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 11,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2022/12/1",
+      "couponCode": "CONSOLES_2022"
+    }
   },
   {
     "name": "Nintendo Switch – OLED Model",
@@ -2673,7 +2857,13 @@
         "value": "2 Years",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 21,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2022/12/1",
+      "couponCode": "CONSOLES_2022"
+    }
   },
 
   {
@@ -2734,6 +2924,12 @@
         "value": "2 Years",
         "filterType": "MULTIPLE_SELECT"
       }
-    ]
+    ],
+    "discount": {
+      "discountedValue": 5,
+      "disocuntedUnit": "PERCENTAGE",
+      "validUntil": "2022/12/1",
+      "couponCode": "CONSOLES_2022"
+    }
   }
 ]

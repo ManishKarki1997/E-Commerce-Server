@@ -89,12 +89,12 @@ async function main() {
     const categories: any = await prisma.category.findMany({});
 
     await prisma.product.create({
+      // @ts-ignore: Unreachable code error
       data: {
         name: product.name,
         slug: generateSlug(product.name, "", true),
         shortInfo: product.description,
         description: product.description,
-        price: product.price,
         categoryName: product.categoryName,
         categorySlug: categories.find(
           (c: any) => c.name === product.categoryName && !c.parentName
@@ -139,6 +139,21 @@ async function main() {
             })),
           ],
         },
+        ...(product.discount !== undefined && {
+          productDiscount: {
+            create: {
+              couponCode: product.discount?.couponCode || undefined,
+              discountedValue: product.discount?.discountedValue,
+              // gives error if directly set, likely because discountedUnit is an enum
+              discountedUnit:
+                product.discount?.disocuntedUnit === "PERCENTAGE"
+                  ? "PERCENTAGE"
+                  : "CURRENCY",
+              validFrom: new Date(Date.now()),
+              validUntil: new Date(product.discount?.validUntil!),
+            },
+          },
+        }),
       },
     });
   }

@@ -36,6 +36,20 @@ Router.get("/", async (req: Request, res: Response, next: NextFunction) => {
       include: {
         images: true,
         pricing: true,
+        productDiscount: {
+          where: {
+            OR: [
+              {
+                validUntil: {
+                  gt: new Date(),
+                },
+              },
+              {
+                validUntil: null,
+              },
+            ],
+          },
+        },
       },
       orderBy: {
         createdAt: orderBy || "desc",
@@ -89,6 +103,20 @@ Router.get(
         include: {
           images: true,
           pricing: true,
+          productDiscount: {
+            where: {
+              OR: [
+                {
+                  validUntil: {
+                    gt: new Date(),
+                  },
+                },
+                {
+                  validUntil: null,
+                },
+              ],
+            },
+          },
         },
       });
 
@@ -139,14 +167,6 @@ Router.get(
       delete productParams.price;
 
       const prismaParams = {
-        categorySlug: {
-          equals: (query as any).categoryName,
-          mode: "insensitive",
-        },
-        subCategorySlug: {
-          equals: (query as any).subCategoryName,
-          mode: "insensitive",
-        },
         // gives typescript error, couldn't disable
         // i need case insensitivity for these product query params
         // @ts-ignore: Unreachable code error
@@ -166,30 +186,44 @@ Router.get(
             },
           })),
         ],
-        pricing: {
-          every: {
-            AND:
-              Object.keys(priceParams).length > 0
-                ? [
-                    {
-                      basePrice: {
-                        gte: parseInt(priceParams.min),
-                      },
-                    },
-                    {
-                      basePrice: {
-                        lte: parseFloat(priceParams.max),
-                      },
-                    },
-                  ]
-                : [],
-          },
-        },
       };
 
       const products = await prisma.product.findMany({
         // @ts-ignore: Unreachable code error
         where: {
+          ...(query.categoryName && {
+            categorySlug: {
+              equals: (query as any).categoryName,
+              mode: "insensitive",
+            },
+          }),
+          ...(query.subCategoryName && {
+            categorySlug: {
+              equals: (query as any).categoryName,
+              mode: "insensitive",
+            },
+          }),
+          ...(query.price && {
+            pricing: {
+              every: {
+                AND:
+                  Object.keys(priceParams).length > 0
+                    ? [
+                        {
+                          basePrice: {
+                            gte: parseInt(priceParams.min),
+                          },
+                        },
+                        {
+                          basePrice: {
+                            lte: parseFloat(priceParams.max),
+                          },
+                        },
+                      ]
+                    : [],
+              },
+            },
+          }),
           ...prismaParams,
         },
         orderBy: {
@@ -264,7 +298,20 @@ Router.get(
         include: {
           images: true,
           pricing: true,
-          productDiscount: true,
+          productDiscount: {
+            where: {
+              OR: [
+                {
+                  validUntil: {
+                    gt: new Date(),
+                  },
+                },
+                {
+                  validUntil: null,
+                },
+              ],
+            },
+          },
         },
         where: {
           subCategoryName: product?.subCategoryName,
@@ -319,6 +366,7 @@ Router.post(
       }
 
       const product = await prisma.product.create({
+        // @ts-ignore: Unreachable code error
         data: {
           name,
           description,
@@ -328,7 +376,11 @@ Router.post(
           subCategoryName,
           categorySlug: generateSlug(categoryName),
           subCategorySlug: generateSlug(subCategoryName),
-          price: parseFloat(price),
+          pricing: {
+            create: {
+              basePrice: parseFloat(price),
+            },
+          },
           images: {
             create: [...images],
           },
@@ -353,11 +405,6 @@ Router.post(
                 },
               })),
             ],
-          },
-          pricing: {
-            create: {
-              basePrice: parseFloat(price),
-            },
           },
         },
       });
@@ -531,7 +578,11 @@ Router.put(
           subCategoryName,
           categoryName,
           slug: generateSlug(name, categoryName),
-          price: parseFloat(price),
+          pricing: {
+            create: {
+              basePrice: price,
+            },
+          },
           category: {
             connect: {
               name: req.body.categoryName,
@@ -606,61 +657,65 @@ Router.get(
       delete productParams.categoryName;
       delete productParams.price;
 
-      const prismaParams = {
-        categorySlug: {
-          equals: (query as any).categorySlug,
-          mode: "insensitive",
-        },
-
-        name: {
-          contains: searchQuery,
-          mode: "insensitive",
-        },
-        pricing: {
-          every: {
-            AND:
-              Object.keys(priceParams).length > 0
-                ? [
-                    {
-                      basePrice: {
-                        gte: parseFloat(priceParams.min || 0),
-                      },
-                    },
-                    {
-                      basePrice: {
-                        lte: parseFloat(
-                          priceParams.max || Number.POSITIVE_INFINITY
-                        ),
-                      },
-                    },
-                  ]
-                : [],
-          },
-        },
-      };
-
-      if (query.categorySlug === undefined || query.categorySlug === "") {
-        delete (prismaParams as any).categorySlug;
-      }
-
       const products = await prisma.product.findMany({
         // @ts-ignore: Unreachable code error
         where: {
-          OR: [
-            { ...(prismaParams as any) },
+          AND: [
             {
-              filters: {
-                some: {
-                  name: {
-                    equals: "Brand",
-                    mode: "insensitive",
-                  },
-                  value: {
-                    contains: searchQuery as string,
-                    mode: "insensitive",
+              ...(query.price !== undefined && {
+                pricing: {
+                  every: {
+                    AND:
+                      Object.keys(priceParams).length > 0
+                        ? [
+                            {
+                              basePrice: {
+                                gte: parseFloat(priceParams.min || 0),
+                              },
+                            },
+                            {
+                              basePrice: {
+                                lte: parseFloat(
+                                  priceParams.max || Number.POSITIVE_INFINITY
+                                ),
+                              },
+                            },
+                          ]
+                        : [],
                   },
                 },
+              }),
+            },
+            {
+              ...(query.categorySlug !== undefined && {
+                categorySlug: query.categorySlug as string,
+              }),
+            },
+            {
+              // @ts-ignore: Unreachable code error
+              name: {
+                contains: searchQuery as string,
+                mode: "insensitive",
               },
+            },
+
+            {
+              OR: [
+                {
+                  filters: {
+                    some: {
+                      name: {
+                        equals: "Brand",
+                        mode: "insensitive",
+                      },
+                      value: {
+                        contains: searchQuery as string,
+                        mode: "insensitive",
+                      },
+                    },
+                  },
+                },
+              ],
             },
           ],
         },
