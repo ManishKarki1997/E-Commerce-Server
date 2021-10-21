@@ -80,15 +80,15 @@ Router.get(
       } = (req as any).query;
 
       let key = `${MemCacheKeys.SINGLE_SUB_CATEGORY}-${slug}-${includeProducts}-${take}-${skip}`;
-      let cachedBody = mcache.get(key);
+      // let cachedBody = mcache.get(key);
 
-      if (cachedBody) {
-        return res.status(HttpStatusCode.OK).send(
-          new OK_REQUEST("Category fetched successfully", {
-            category: cachedBody,
-          })
-        );
-      }
+      // if (cachedBody) {
+      //   return res.status(HttpStatusCode.OK).send(
+      //     new OK_REQUEST("Category fetched successfully", {
+      //       category: cachedBody,
+      //     })
+      //   );
+      // }
 
       const category = await prisma.category.findFirst({
         take: parseInt(take),

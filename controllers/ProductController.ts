@@ -687,7 +687,7 @@ Router.get(
               }),
             },
             {
-              ...(query.categorySlug !== undefined && {
+              ...(query.categorySlug !== "" && {
                 categorySlug: query.categorySlug as string,
               }),
             },
