@@ -1,5 +1,4 @@
 import express, { NextFunction, Request, Response } from "express";
-import mcache from "memory-cache";
 
 import {
   BAD_REQUEST_ERROR,
@@ -8,7 +7,8 @@ import {
   OK_REQUEST,
 } from "../helpers/Error";
 import { HttpStatusCode } from "../constants/HttpStatusCodes";
-import MemCacheKeys from "../constants/MemCacheKeys";
+
+import { setCache, getCache, removeCache, clearCache } from "../helpers/Cache";
 
 import {
   generateSlug,
@@ -513,8 +513,7 @@ Router.get(
   async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { slug } = req.params;
-      let key = `${MemCacheKeys.SINGLE_PRODUCT}-${slug}`;
-      let cachedBody = mcache.get(key);
+      const cachedBody = getCache(req.originalUrl);
 
       if (cachedBody) {
         return res.status(HttpStatusCode.OK).send(
@@ -577,7 +576,7 @@ Router.get(
         return next(new NOT_FOUND_ERROR("Product not found"));
       }
 
-      mcache.put(key, product, 300 * 1000);
+      setCache({ key: req.originalUrl, payload: product });
 
       return res
         .status(HttpStatusCode.OK)
@@ -948,6 +947,7 @@ Router.put(
           },
         });
       }
+      clearCache();
       if (removeDiscount) {
         // just remove, nothing else to do
         return next(
