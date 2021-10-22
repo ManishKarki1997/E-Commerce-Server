@@ -217,6 +217,8 @@ Router.get(
         ...req.query,
       };
 
+      console.log(productParams);
+
       let tempSortParams =
         (query as any).sort === undefined
           ? {}
@@ -232,9 +234,7 @@ Router.get(
         delete productParams.sort;
       }
 
-      const priceParams = (query as any).price
-        ? JSON.parse((query as any).price)
-        : {};
+      const priceParams = JSON.parse((query as any).price);
 
       delete productParams.categoryName;
       delete productParams.subCategoryName;
@@ -277,27 +277,34 @@ Router.get(
               mode: "insensitive",
             },
           }),
-          ...(query.price && {
-            pricing: {
-              every: {
-                AND:
-                  Object.keys(priceParams).length > 0
-                    ? [
-                        {
-                          basePrice: {
-                            gte: parseInt(priceParams.min),
-                          },
-                        },
-                        {
-                          basePrice: {
-                            lte: parseFloat(priceParams.max),
-                          },
-                        },
-                      ]
-                    : [],
+          ...(query.price !== undefined &&
+            Object.keys(priceParams).length > 0 && {
+              price: {
+                gte: parseFloat(priceParams.min || 0),
+                lte: parseFloat(priceParams.max || Number.POSITIVE_INFINITY),
               },
-            },
-          }),
+            }),
+          // ...(query.price && {
+          //   pricing: {
+          //     every: {
+          //       AND:
+          //         Object.keys(priceParams).length > 0
+          //           ? [
+          //               {
+          //                 basePrice: {
+          //                   gte: parseInt(priceParams.min),
+          //                 },
+          //               },
+          //               {
+          //                 basePrice: {
+          //                   lte: parseFloat(priceParams.max),
+          //                 },
+          //               },
+          //             ]
+          //           : [],
+          //     },
+          //   },
+          // }),
           ...prismaParams,
         },
         orderBy: {
@@ -798,30 +805,41 @@ Router.get(
         where: {
           AND: [
             {
-              ...(query.price !== undefined && {
-                pricing: {
-                  every: {
-                    AND:
-                      Object.keys(priceParams).length > 0
-                        ? [
-                            {
-                              basePrice: {
-                                gte: parseFloat(priceParams.min || 0),
-                              },
-                            },
-                            {
-                              basePrice: {
-                                lte: parseFloat(
-                                  priceParams.max || Number.POSITIVE_INFINITY
-                                ),
-                              },
-                            },
-                          ]
-                        : [],
+              ...(query.price !== undefined &&
+                Object.keys(priceParams).length > 0 && {
+                  price: {
+                    gte: parseFloat(priceParams.min || 0),
+                    lte: parseFloat(
+                      priceParams.max || Number.POSITIVE_INFINITY
+                    ),
                   },
-                },
-              }),
+                }),
             },
+            // {
+            //   ...(query.price !== undefined && {
+            //     pricing: {
+            //       every: {
+            //         AND:
+            //           Object.keys(priceParams).length > 0
+            //             ? [
+            //                 {
+            //                   basePrice: {
+            //                     gte: parseFloat(priceParams.min || 0),
+            //                   },
+            //                 },
+            //                 {
+            //                   basePrice: {
+            //                     lte: parseFloat(
+            //                       priceParams.max || Number.POSITIVE_INFINITY
+            //                     ),
+            //                   },
+            //                 },
+            //               ]
+            //             : [],
+            //       },
+            //     },
+            //   }),
+            // },
             {
               ...(query.categorySlug !== "" && {
                 categorySlug: query.categorySlug as string,
@@ -887,6 +905,71 @@ Router.get(
       return res.status(HttpStatusCode.OK).send(
         new OK_REQUEST("Products fetched successfully", {
           products,
+        })
+      );
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  }
+);
+
+// handle product discount
+Router.put(
+  "/discount",
+  auth,
+  checkIfAdmin,
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const {
+        productId,
+        discountedUnit,
+        discountedValue,
+        discountId,
+        validFrom,
+        validUntil,
+        expiryDate,
+        removeDiscount,
+      } = req.body;
+
+      let res;
+
+      // discountId presence means either the existing discount is being removed
+      // or,a new discount is instead being created (same as updating the discount in the frontend)
+      // either case, we need to remove the currently existing discount id,
+      // by setting the validUntil to a date in the past
+      if (discountId) {
+        res = await prisma.productDiscount.update({
+          where: {
+            id: parseInt(discountId),
+          },
+          data: {
+            validUntil: new Date(expiryDate),
+          },
+        });
+      }
+      if (removeDiscount) {
+        // just remove, nothing else to do
+        return next(
+          new OK_REQUEST("Product discount updated successfully", {
+            productDiscount: res,
+          })
+        );
+      }
+
+      const productDiscount = await prisma.productDiscount.create({
+        data: {
+          discountedValue: parseFloat(discountedValue),
+          discountedUnit,
+          productId: parseInt(productId),
+          validFrom: new Date(validFrom) || new Date(),
+          validUntil: new Date(validUntil) || new Date("2023/12/1"),
+        },
+      });
+
+      return next(
+        new OK_REQUEST("Discount updated successfully", {
+          productDiscount,
         })
       );
     } catch (error) {
