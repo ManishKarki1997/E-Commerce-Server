@@ -6,22 +6,22 @@
     "subCategories": [
       {
         "name": "Playstation",
-        "imageUrl": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634887834/varyaCommerce/categories/images_unsplash_com-photo-1606144042614-b2417e99c4e3_1.jpg",
         "description": "Playstation consoles - PS4 and PS5"
       },
       {
         "name": "XBox",
-        "imageUrl": "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634887891/varyaCommerce/categories/images_unsplash_com-photo-1621259182978-fbf93132d53d.jpg",
         "description": "XBox consoles - XBox Series X, XBox Series S, XBox One S and more"
       },
       {
         "name": "Nintendo Switch",
-        "imageUrl": "https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634887784/varyaCommerce/categories/images_unsplash_com-photo-1606144042614-b2417e99c4e3.jpg",
         "description": "Nintendo consoles - Nintendo Switch, Nintendo Switch Lite"
       },
       {
         "name": "Steam Deck",
-        "imageUrl": "https://cdn.cloudflare.steamstatic.com/steamdeck/images/overview-shared-library-english.jpg",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634887807/varyaCommerce/categories/overview-shared-library-english.jpg",
         "description": "Steam Deck is a powerful handheld gaming PC that delivers the Steam games and features you love."
       }
     ]
@@ -29,22 +29,22 @@
 
   {
     "name": "Laptops",
-    "imageUrl": "https://images.unsplash.com/photo-1611078489935-0cb964de46d6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
+    "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634887131/varyaCommerce/categories/images_unsplash_com-photo-1611078489935-0cb964de46d6.jpg",
     "description": "Traditional & Gaming Laptops, UltraBooks and more",
     "subCategories": [
       {
         "name": "Gaming Laptops",
-        "imageUrl": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634887636/varyaCommerce/categories/images_unsplash_com-photo-1603302576837-37561b2e2302.jpg",
         "description": "Gaming laptops for all budget range"
       },
       {
         "name": "Ultrabooks",
-        "imageUrl": "https://images.unsplash.com/photo-1609240873963-9caa6e2e55fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634887564/varyaCommerce/categories/images_unsplash_com-photo-1609240873963-9caa6e2e55fb.jpg",
         "description": "Great battery capacity and color accurate ultrabooks"
       },
       {
         "name": "Traditional Laptops",
-        "imageUrl": "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634887510/varyaCommerce/categories/images_unsplash_com-photo-1611186871348-b1ce696e52c9.jpg",
         "description": "General purpose traditional laptops for your daily use"
       }
     ]
@@ -52,27 +52,27 @@
 
   {
     "name": "Storage",
-    "imageUrl": "https://images.unsplash.com/photo-1628557118391-56cd62c9f2cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
+    "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634887225/varyaCommerce/categories/images_unsplash_com-photo-1628557118391-56cd62c9f2cb.jpg",
     "description": "All kinds of storage medias",
     "subCategories": [
       {
         "name": "SSD",
-        "imageUrl": "https://images.unsplash.com/photo-1602526428496-8346b5cf9954?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634888283/varyaCommerce/categories/images_unsplash_com-photo-1602526428496-8346b5cf9954.jpg",
         "description": "SSDs with different storage capacities"
       },
       {
         "name": "HDD",
-        "imageUrl": "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634888266/varyaCommerce/categories/images_unsplash_com-photo-1531492746076-161ca9bcad58.jpg",
         "description": "HDDs with different storage capacities"
       },
       {
         "name": "USB",
-        "imageUrl": "https://images.unsplash.com/photo-1625886390251-01af1ea39853?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634888345/varyaCommerce/categories/imgonline-com-ua-CompressToSize-qZ3jtPnVrm.jpg",
         "description": "USBs with different storage capacities"
       },
       {
         "name": "Memory Card",
-        "imageUrl": "https://images.unsplash.com/photo-1602525968752-43f2d69250b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634888302/varyaCommerce/categories/images_unsplash_com-photo-1602525968752-43f2d69250b4.jpg",
         "description": "Memory Cards with different storage capacities"
       }
     ]
@@ -80,17 +80,17 @@
 
   {
     "name": "Accessories",
-    "imageUrl": "https://images.unsplash.com/photo-1577375729078-820d5283031c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
+    "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634887285/varyaCommerce/categories/images_unsplash_com-photo-1577375729078-820d5283031c.jpg",
     "description": "Computer accessories like Keyboard, Mouse, Charger etc",
     "subCategories": [
       {
         "name": "Keyboard",
-        "imageUrl": "https://images.unsplash.com/photo-1541140532154-b024d705b90a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634888459/varyaCommerce/categories/cyborg_scythe.jpg",
         "description": "All kinds of keyboards like Mechanical, Gaming etc"
       },
       {
         "name": "Mouse",
-        "imageUrl": "https://images.unsplash.com/photo-1527814050087-3793815479db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx880",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634888482/varyaCommerce/categories/images_unsplash_com-photo-1541140532154-b024d705b90a_1.jpg",
         "description": "All kinds of computer mouse"
       },
       {
@@ -100,7 +100,7 @@
       },
       {
         "name": "Cables",
-        "imageUrl": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634888505/varyaCommerce/categories/images_unsplash_com-photo-1541140532154-b024d705b90a.jpg",
         "description": "Cables for your mobile, laptops and other accessories"
       }
     ]
@@ -108,17 +108,17 @@
 
   {
     "name": "Audio Devices",
-    "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
+    "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634887360/varyaCommerce/categories/images_unsplash_com-photo-1505740420928-5e560c06d30e.jpg",
     "description": "Headphones, Earphones, Speakers and more",
     "subCategories": [
       {
         "name": "Headphones",
-        "imageUrl": "https://images.unsplash.com/photo-1516972238977-89271fb2bab8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634888708/varyaCommerce/categories/images_unsplash_com-photo-1516972238977-89271fb2bab8.jpg",
         "description": "Headphones for different purposes"
       },
       {
         "name": "Speakers",
-        "imageUrl": "https://images.unsplash.com/photo-1545454675-3531b543be5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634888684/varyaCommerce/categories/images_unsplash_com-photo-1516972238977-89271fb2bab8_2.jpg",
         "description": "Speakers, Woofers and Soundbars"
       }
     ]
@@ -126,22 +126,22 @@
 
   {
     "name": "Smart Devices",
-    "imageUrl": "https://images.unsplash.com/photo-1491933382434-500287f9b54b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
+    "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634887420/varyaCommerce/categories/images_unsplash_com-photo-1491933382434-500287f9b54b.jpg",
     "description": "Smart devices like Smart TVs, Smart Watches, Smartphones and more",
     "subCategories": [
       {
         "name": "Smartphones",
-        "imageUrl": "https://images.unsplash.com/photo-1583573636246-18cb2246697f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634888841/varyaCommerce/categories/images_unsplash_com-photo-1583573636246-18cb2246697f_2.jpg",
         "description": "Smartphones for all budget range, by different brands"
       },
       {
         "name": "SmartWatch",
-        "imageUrl": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634888847/varyaCommerce/categories/images_unsplash_com-photo-1583573636246-18cb2246697f_1.jpg",
         "description": "Smartwatches from brands like Apple, Samsung and more"
       },
       {
         "name": "Smart TV",
-        "imageUrl": "https://images.unsplash.com/flagged/photo-1572609239482-d3a83f976aa0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634888843/varyaCommerce/categories/images_unsplash_com-photo-1583573636246-18cb2246697f.jpg",
         "description": "4k UHD TVs, LCD TVs and more"
       }
     ]
@@ -149,22 +149,22 @@
 
   {
     "name": "Monitors",
-    "imageUrl": "https://images.unsplash.com/photo-1598986646512-9330bcc4c0dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
+    "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634889269/varyaCommerce/categories/images_unsplash_com-photo-1598986646512-9330bcc4c0dc.jpg",
     "description": "Gaming Monitors, 4k Monitors, Normal Monitors and more",
     "subCategories": [
       {
         "name": "Gaming Monitors",
-        "imageUrl": "https://images.unsplash.com/photo-1606490102015-697a49636e32?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634889031/varyaCommerce/categories/images_unsplash_com-photo-1560205001-a7011fc0093c_1.jpg",
         "description": "Gaming monitors for all budget range"
       },
       {
         "name": "4k Monitors",
-        "imageUrl": "https://images.unsplash.com/photo-1552831388-6a0b3575b32a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634889033/varyaCommerce/categories/images_unsplash_com-photo-1560205001-a7011fc0093c.jpg",
         "description": "Modern 4k Monitors"
       },
       {
         "name": "Curved Monitors",
-        "imageUrl": "https://images.unsplash.com/photo-1560205001-a7011fc0093c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634889053/varyaCommerce/categories/images_unsplash_com-photo-1560205001-a7011fc0093c_2.jpg",
         "description": "Curved monitors"
       }
     ]
@@ -177,17 +177,17 @@
     "subCategories": [
       {
         "name": "Routers",
-        "imageUrl": "https://images.unsplash.com/photo-1606904825846-647eb07f5be2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634889180/varyaCommerce/categories/images_unsplash_com-photo-1589113050289-1c654e7e305d.jpg",
         "description": "2.5 and 5 GHz routers for all network speeds"
       },
       {
         "name": "Projectors",
-        "imageUrl": "https://images.unsplash.com/photo-1589113050289-1c654e7e305d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634889177/varyaCommerce/categories/images_unsplash_com-photo-1589113050289-1c654e7e305d_2.jpg",
         "description": "Projectors for all budget range"
       },
       {
         "name": "Printers",
-        "imageUrl": "https://images.unsplash.com/photo-1625961332771-3f40b0e2bdcf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634889194/varyaCommerce/categories/images_unsplash_com-photo-1589113050289-1c654e7e305d_1.jpg",
         "description": "Printers from all brands and for all budget range"
       }
     ]

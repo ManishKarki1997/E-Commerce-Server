@@ -96,6 +96,7 @@ async function main() {
         shortInfo: product.description,
         description: product.description,
         categoryName: product.categoryName,
+        price: product.price,
         categorySlug: categories.find(
           (c: any) => c.name === product.categoryName && !c.parentName
         )?.slug,

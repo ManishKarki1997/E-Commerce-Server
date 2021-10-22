@@ -51,15 +51,22 @@ Router.get(
 // fetch filters for a subcategory
 Router.get(
   "/single",
-  //  auth,
+  auth,
   async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { subCategoryName, categoryName } = (req as any).query;
+      const {
+        subCategoryName,
+        categoryName,
+        valueNull = "true",
+      } = (req as any).query;
       const filters = await prisma.filter.findMany({
         where: {
           productId: null,
           subCategoryName,
           categoryName,
+          ...(valueNull === "true" && {
+            value: null,
+          }),
         },
         include: {
           filterOptions: true,

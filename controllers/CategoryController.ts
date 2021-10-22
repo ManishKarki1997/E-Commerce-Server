@@ -105,6 +105,12 @@ Router.get(
               filterOptions: true,
             },
           },
+          _count: {
+            select: {
+              subCategories: true,
+              products: true,
+            },
+          },
           subCategories: {
             include: {
               _count: true,

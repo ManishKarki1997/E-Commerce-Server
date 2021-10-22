@@ -9,15 +9,15 @@
     "subCategoryName": "Webcam",
     "images": [
       {
-        "imageUrl": "https://www.adesso.com/wp-content/uploads/2020/04/CyberTrack-H4-1.jpg",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634836536/varyaCommerce/products/CyberTrack-H4-1.webp",
         "isDefaultImage": true
       },
       {
-        "imageUrl": "https://static.bhphoto.com/images/multiple_images/images500x500/1591198218_IMG_1368933.jpg",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634836535/varyaCommerce/products/1591198218_IMG_1368933.webp",
         "isDefaultImage": false
       },
       {
-        "imageUrl": "https://static.bhphoto.com/images/images500x500/adesso_cybertrackh4_cybertrack_h4_1080p_desktop_1591198526_1567510.jpg",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634836535/varyaCommerce/products/adesso_cybertrackh4_cybertrack_h4_1080p_desktop_1591198526_1567510.webp",
         "isDefaultImage": false
       }
     ],
@@ -54,15 +54,15 @@
     "subCategoryName": "Webcam",
     "images": [
       {
-        "imageUrl": "https://cdn.mos.cms.futurecdn.net/LUxZJTSqXRKXgeLb4dtUsS-1200-80.jpg.webp",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634836818/varyaCommerce/products/LUxZJTSqXRKXgeLb4dtUsS-1200-80.jpg.webp",
         "isDefaultImage": true
       },
       {
-        "imageUrl": "https://i0.wp.com/comboblogger.com/wp-content/uploads/2021/05/Screenshot-639.jpg?fit=1171%2C701&ssl=1",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634836818/varyaCommerce/products/i0_wp_com-Screenshot-639.webp",
         "isDefaultImage": false
       },
       {
-        "imageUrl": "https://www.windowscentral.com/sites/wpcentral.com/files/styles/large_wm_brw/public/field/image/2016/08/logitech-c920-2_0.jpg",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634836818/varyaCommerce/products/logitech-c920-2_0.webp",
         "isDefaultImage": false
       }
     ],
@@ -227,7 +227,7 @@
     "subCategoryName": "Headphones",
     "images": [
       {
-        "imageUrl": "https://www.itnetwork.rs/wp-content/uploads/2020/08/High_Resolution_PNG-Logitech-G-PRO-Wireless-Headset-3QTR-ENVIRO.jpg",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634886129/varyaCommerce/products/High_Resolution_PNG-Logitech-G-PRO-Wireless-Headset-3QTR-ENVIRO.jpg",
         "isDefaultImage": true
       },
       {
@@ -554,7 +554,7 @@
     "subCategoryName": "SmartWatch",
     "images": [
       {
-        "imageUrl": "https://i01.appmifile.com/webfile/globalimg/7/05C870D9-8E6B-1FCE-1EE8-C988901DC1D1.png",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634886210/varyaCommerce/products/05C870D9-8E6B-1FCE-1EE8-C988901DC1D1.png",
         "isDefaultImage": true
       },
       {
@@ -2343,7 +2343,7 @@
     "subCategoryName": "Playstation",
     "images": [
       {
-        "imageUrl": "https://images.pexels.com/photos/5961216/pexels-photo-5961216.jpeg?auto=compress",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634886973/varyaCommerce/products/images_pexels_com-pexels-photo-5961216.jpg",
         "isDefaultImage": true
       },
       {
@@ -2410,7 +2410,7 @@
     "subCategoryName": "Playstation",
     "images": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1518908336710-4e1cf821d3d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634889380/varyaCommerce/products/images_unsplash_com-photo-1518908336710-4e1cf821d3d1.jpg",
         "isDefaultImage": true
       },
       {
@@ -2544,11 +2544,11 @@
     "subCategoryName": "XBox",
     "images": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634886629/varyaCommerce/products/photo-1621259182978-fbf93132d53d_1.jpg",
         "isDefaultImage": true
       },
       {
-        "imageUrl": "https://images.unsplash.com/photo-1621259182228-4d6861278090?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
+        "imageUrl": "https://res.cloudinary.com/dnoibyqq2/image/upload/v1634886840/varyaCommerce/products/photo-1621259182228-4d6861278090.jpg",
         "isDefaultImage": false
       },
       {
@@ -2740,7 +2740,7 @@
     "editorDescription": "",
     "price": 349.99,
     "categoryName": "Consoles",
-    "subCategoryName": "Nintendo",
+    "subCategoryName": "Nintendo Switch",
     "images": [
       {
         "imageUrl": "https://assets.nintendo.com/image/upload/f_auto,h_813,q_auto,w_1440/ncom/en_US/switch/site-design-update/mode-1?v=2021100904",
@@ -2806,7 +2806,7 @@
     "editorDescription": "",
     "price": 299.99,
     "categoryName": "Consoles",
-    "subCategoryName": "Nintendo",
+    "subCategoryName": "Nintendo Switch",
     "images": [
       {
         "imageUrl": "https://c0.wallpaperflare.com/preview/49/314/574/nintendo-switch-switch-nintendo-console.jpg",

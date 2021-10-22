@@ -93,6 +93,7 @@ model Product {
   name                  String
   shortInfo             String
   description           String
+  price                 Decimal
   editorDescription     String?
   category              Category          @relation(fields: [categoryId], references: [id])
   categoryId            Int

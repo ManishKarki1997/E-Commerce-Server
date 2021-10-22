@@ -20,6 +20,7 @@ import {
 
 import prisma from "../db/prisma";
 import ProductSchema from "../validators/ProductValidator";
+import { auth, checkIfAdmin } from "../middlewares";
 
 const Router = express.Router();
 
@@ -35,7 +36,12 @@ Router.get("/", async (req: Request, res: Response, next: NextFunction) => {
       skip: parseInt(skip),
       include: {
         images: true,
-        pricing: true,
+        pricing: {
+          take: 1,
+          orderBy: {
+            createdAt: "desc",
+          },
+        },
         productDiscount: {
           where: {
             OR: [
@@ -94,7 +100,12 @@ Router.get(
           product: {
             include: {
               images: true,
-              pricing: true,
+              pricing: {
+                orderBy: {
+                  createdAt: "desc",
+                },
+                take: 1,
+              },
               productDiscount: {
                 where: {
                   OR: [
@@ -160,7 +171,12 @@ Router.get(
         },
         include: {
           images: true,
-          pricing: true,
+          pricing: {
+            orderBy: {
+              createdAt: "desc",
+            },
+            take: 1,
+          },
           productDiscount: {
             where: {
               OR: [
@@ -290,10 +306,10 @@ Router.get(
         include: {
           images: true,
           pricing: {
+            take: 1,
             orderBy: {
               createdAt: "desc",
             },
-            take: 1,
           },
           productDiscount: {
             where: {
@@ -566,11 +582,69 @@ Router.get(
   }
 );
 
+// quick update product
+Router.put(
+  "/quickEdit",
+  auth,
+  checkIfAdmin,
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const {
+        id,
+        name,
+        description,
+        price,
+        subCategoryName,
+        categoryName,
+        subCategorySlug,
+        categorySlug,
+      } = req.body;
+
+      const isValidSchema = ProductSchema.validate(req.body, {
+        stripUnknown: true,
+      });
+
+      if (isValidSchema.error) {
+        return next(
+          new BAD_REQUEST_ERROR(
+            "Invalid product data",
+            transformJoiErrors(isValidSchema.error)
+          )
+        );
+      }
+
+      const product = await prisma.product.update({
+        where: {
+          id,
+        },
+        data: {
+          name,
+          description,
+          categoryName,
+          subCategoryName,
+          categorySlug,
+          subCategorySlug,
+          price,
+        },
+      });
+
+      return res.status(HttpStatusCode.OK).send(
+        new OK_REQUEST("Product updated successfully", {
+          product,
+        })
+      );
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  }
+);
+
 // update product
 Router.put(
   "/",
-  // auth,
-  // checkIfAdmin,
+  auth,
+  checkIfAdmin,
   async (req: Request, res: Response, next: NextFunction) => {
     try {
       const {
@@ -600,7 +674,7 @@ Router.put(
         );
       }
 
-      if (imagesToDelete.length > 0) {
+      if (imagesToDelete && imagesToDelete.length > 0) {
         const imagesToDeleteIds = [
           ...req.body.imagesToDelete.map((x: any) => x.productId),
         ];
@@ -613,7 +687,11 @@ Router.put(
         });
       }
 
-      if (images.length > 0 && !images.find((x: any) => x.isDefaultImage)) {
+      if (
+        images &&
+        images.length > 0 &&
+        !images.find((x: any) => x.isDefaultImage)
+      ) {
         images[0].isDefaultImage = true;
       }
 
@@ -633,9 +711,9 @@ Router.put(
           name,
           description,
           editorDescription,
-          subCategoryName,
           categoryName,
-          slug: generateSlug(name, categoryName),
+          subCategoryName,
+          // slug: generateSlug(name, "", true),
           pricing: {
             create: {
               basePrice: price,
