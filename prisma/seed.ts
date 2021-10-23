@@ -37,12 +37,13 @@ const returnTotalProductsForACategory = (categoryName: string) => {
 
 async function main() {
   for (let category of categories) {
+    const categorySlug = generateSlug(category.name);
     await prisma.category.create({
       data: {
         name: category.name,
         description: category.description,
         imageUrl: category.imageUrl,
-        slug: generateSlug(category.name),
+        slug: categorySlug,
         totalSubCategories: category.subCategories.length,
         totalProducts: returnTotalProductsForACategory(category.name),
         subCategories: {
@@ -58,6 +59,7 @@ async function main() {
                 description: s.description,
                 imageUrl: s.imageUrl,
                 parentName: category.name,
+                parentSlug: categorySlug,
                 totalProducts: products.filter(
                   (p: any) => p.subCategoryName === s.name
                 ).length,
@@ -106,11 +108,6 @@ async function main() {
             c.parentName === product.categoryName
         )?.slug,
         subCategoryName: product.subCategoryName,
-        pricing: {
-          create: {
-            basePrice: product.price,
-          },
-        },
         category: {
           connect: {
             name: product.categoryName,

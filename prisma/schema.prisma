@@ -63,6 +63,7 @@ model Category {
   totalProducts      Int                @default(0)
   totalSubCategories Int                @default(0)
   parentName         String?
+  parentSlug         String?
   parent             Category?          @relation("CategorySubCategories", fields: [parentId], references: [id])
   parentId           Int?
   subCategories      Category[]         @relation("CategorySubCategories")
@@ -116,8 +117,7 @@ model Product {
   isDeleted             Boolean           @default(false)
 
   @@map("products")
-  locationId    Int?
-  phoneNumberId Int?
+  
 }
 
 model ProductPricing {

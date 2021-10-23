@@ -11,6 +11,7 @@
     "start": "node dist/index.js",
     "postinstall": "tsc",
     "build": "tsc",
+    "seed": "npx prisma db seed --preview-feature",
     "deploy": "git add . && git commit -m Heroku && git push heroku master",
     "ts-node": "ts-node --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\""
   },

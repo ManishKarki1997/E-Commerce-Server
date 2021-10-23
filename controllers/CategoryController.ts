@@ -19,6 +19,7 @@ import {
 import prisma from "../db/prisma";
 import { UserRoles } from "../constants/UserRoles";
 import MemCacheKeys from "../constants/MemCacheKeys";
+import { auth, checkIfAdmin } from "../middlewares";
 
 const Router = express.Router();
 
@@ -70,7 +71,6 @@ Router.get(
     if (!slug) {
       return next(new BAD_REQUEST_ERROR("Category name not provided"));
     }
-
     try {
       const {
         includeSubCategories = "true",
@@ -121,7 +121,6 @@ Router.get(
               ? {
                   include: {
                     images: true,
-                    pricing: true,
                     productDiscount: true,
                   },
                 }
@@ -159,6 +158,7 @@ Router.get(
             uid: true,
             name: true,
             imageUrl: true,
+            slug: true,
           },
           where: {
             parentName: null,
@@ -171,6 +171,7 @@ Router.get(
             uid: true,
             name: true,
             imageUrl: true,
+            slug: true,
           },
         });
       }
@@ -188,15 +189,18 @@ Router.get(
 
 // fetch subcategories for a category
 Router.get(
-  "/subcategories/:categoryName",
+  "/subcategories/:categorySlug",
   async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { categoryName } = req.params;
+      const { categorySlug } = req.params;
+      const { take = 10, skip = 0 } = (req as any).query;
 
       const subCategories = await prisma.category.findMany({
+        take: parseInt(take),
+        skip: parseInt(skip),
         where: {
           parentName: {
-            equals: categoryName,
+            equals: categorySlug,
             mode: "insensitive",
           },
         },
@@ -222,9 +226,10 @@ Router.get(
 // create a category
 Router.post(
   "/",
-  // auth,
+  auth,
+  checkIfAdmin,
   async (req: Request, res: Response, next: NextFunction) => {
-    const isSubCategory = req.body.categoryName ? true : false;
+    const isSubCategory = req.body.categorySlug !== undefined ? true : false;
     try {
       const isValidSchema = CategorySchema.validate(req.body, {
         stripUnknown: true,
@@ -269,17 +274,17 @@ Router.post(
       const category = await prisma.category.create({
         data: {
           name: req.body.name,
-          slug: generateSlug(
-            req.body.name,
-            isSubCategory ? req.body.categoryName : ""
-          ),
+          slug: isSubCategory
+            ? generateSlug(req.body.name, "", true)
+            : generateSlug(req.body.name),
           description: req.body.description,
           imageUrl: req.body.imageUrl,
+          parentSlug: isSubCategory ? req.body.categorySlug : null,
           parentName: isSubCategory ? req.body.categoryName : null,
           parent: isSubCategory
             ? {
                 connect: {
-                  name: req.body.categoryName,
+                  slug: req.body.categorySlug,
                 },
               }
             : undefined,
@@ -309,8 +314,8 @@ Router.post(
 // edit a category
 Router.put(
   "/",
-  // auth,
-  // checkIfAdmin,
+  auth,
+  checkIfAdmin,
   async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { uid } = req.body;
@@ -323,15 +328,93 @@ Router.put(
       //   throw new UNAUTHORIZED_ERROR("Permission Denied");
       // }
 
+      const {
+        isCategory,
+        name,
+        slug,
+        originalName,
+        originalSlug,
+        originalParentName,
+        originalParentSlug,
+      } = req.body;
+      let newSlug = slug;
+      let newParentName = originalParentName;
+      let newParentSlug = originalParentSlug;
+
+      if (isCategory) {
+        if (originalName !== name) {
+          newSlug = generateSlug(name);
+          // update all sub categories to this update category's name
+          // i.e. set all related subcategories' parentName and parentSlug
+          await prisma.category.updateMany({
+            where: {
+              parentName: originalName,
+            },
+            data: {
+              parentName: name,
+              parentSlug: newSlug,
+            },
+          });
+          // update all products' category Name and slug to the new name and slug
+          await prisma.product.updateMany({
+            where: {
+              categorySlug: originalSlug,
+            },
+            data: {
+              categoryName: name,
+              categorySlug: newSlug,
+            },
+          });
+        }
+      } else {
+        newParentName =
+          req.body.parentName === originalParentName
+            ? originalParentName
+            : req.body.parentName;
+        newParentSlug =
+          req.body.parentSlug === originalParentSlug
+            ? originalParentSlug
+            : req.body.parentSlug;
+        if (originalName !== name) {
+          newSlug = generateSlug(name, "", true);
+
+          // update all products' categorySlug and subCategorySlug to the new slug
+          await prisma.product.updateMany({
+            where: {
+              subCategorySlug: slug,
+            },
+            data: {
+              subCategoryName: name,
+              categorySlug: req.body.parentSlug,
+              subCategorySlug: newSlug,
+            },
+          });
+        }
+      }
+
+      const keysToDelete = [
+        "isCategory",
+        "slug",
+        "originalName",
+        "originalSlug",
+        "originalParentName",
+        "originalParentSlug",
+      ];
+      const bodyCopy = { ...req.body };
+      keysToDelete.forEach((k) => delete bodyCopy[k]);
+
       const category = await prisma.category.update({
         where: {
           uid,
         },
         data: {
-          ...req.body,
-          // parent:parentObj
+          slug: newSlug,
+          name: req.body.name,
+          ...bodyCopy,
         },
       });
+
+      // if(req.body.originalP)
 
       return res.status(HttpStatusCode.OK).send(
         new OK_REQUEST("Category updated successfully", {

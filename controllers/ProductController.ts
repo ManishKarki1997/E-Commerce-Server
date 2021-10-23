@@ -217,8 +217,6 @@ Router.get(
         ...req.query,
       };
 
-      console.log(productParams);
-
       let tempSortParams =
         (query as any).sort === undefined
           ? {}
@@ -234,7 +232,10 @@ Router.get(
         delete productParams.sort;
       }
 
-      const priceParams = JSON.parse((query as any).price);
+      const priceParams =
+        (query as any).price === undefined
+          ? {}
+          : JSON.parse((query as any).price);
 
       delete productParams.categoryName;
       delete productParams.subCategoryName;
@@ -244,39 +245,43 @@ Router.get(
         // gives typescript error, couldn't disable
         // i need case insensitivity for these product query params
         // @ts-ignore: Unreachable code error
-        AND: [
-          ...Object.keys(productParams).map((x: string) => ({
-            filters: {
-              some: {
-                name: {
-                  equals: x,
-                  mode: "insensitive",
-                },
-                value: {
-                  equals: productParams[x]?.toString(),
-                  mode: "insensitive",
+        ...(Object.keys(productParams).length > 0 && {
+          AND: [
+            ...Object.keys(productParams).map((x: string) => ({
+              filters: {
+                some: {
+                  name: {
+                    equals: x,
+                    mode: "insensitive",
+                  },
+                  value: {
+                    equals: productParams[x]?.toString(),
+                    mode: "insensitive",
+                  },
                 },
               },
-            },
-          })),
-        ],
+            })),
+          ],
+        }),
+      };
+
+      const categoriesParams = {
+        ...(query.categoryName !== undefined && {
+          categorySlug: {
+            equals: (query as any).categoryName,
+          },
+        }),
+        ...(query.subCategoryName !== undefined && {
+          subCategorySlug: {
+            equals: (query as any).subCategoryName,
+          },
+        }),
       };
 
       const products = await prisma.product.findMany({
         // @ts-ignore: Unreachable code error
         where: {
-          ...(query.categoryName && {
-            categorySlug: {
-              equals: (query as any).categoryName,
-              mode: "insensitive",
-            },
-          }),
-          ...(query.subCategoryName && {
-            categorySlug: {
-              equals: (query as any).categoryName,
-              mode: "insensitive",
-            },
-          }),
+          ...categoriesParams,
           ...(query.price !== undefined &&
             Object.keys(priceParams).length > 0 && {
               price: {
@@ -284,27 +289,29 @@ Router.get(
                 lte: parseFloat(priceParams.max || Number.POSITIVE_INFINITY),
               },
             }),
-          // ...(query.price && {
-          //   pricing: {
-          //     every: {
-          //       AND:
-          //         Object.keys(priceParams).length > 0
-          //           ? [
-          //               {
-          //                 basePrice: {
-          //                   gte: parseInt(priceParams.min),
-          //                 },
-          //               },
-          //               {
-          //                 basePrice: {
-          //                   lte: parseFloat(priceParams.max),
-          //                 },
-          //               },
-          //             ]
-          //           : [],
-          //     },
-          //   },
-          // }),
+
+          ...(query.price && {
+            pricing: {
+              every: {
+                AND:
+                  Object.keys(priceParams).length > 0
+                    ? [
+                        {
+                          basePrice: {
+                            gte: parseInt(priceParams.min),
+                          },
+                        },
+                        {
+                          basePrice: {
+                            lte: parseFloat(priceParams.max),
+                          },
+                        },
+                      ]
+                    : [],
+              },
+            },
+          }),
+
           ...prismaParams,
         },
         orderBy: {
@@ -312,12 +319,12 @@ Router.get(
         },
         include: {
           images: true,
-          pricing: {
-            take: 1,
-            orderBy: {
-              createdAt: "desc",
-            },
-          },
+          // pricing: {
+          //   take: 1,
+          //   orderBy: {
+          //     createdAt: "desc",
+          //   },
+          // },
           productDiscount: {
             where: {
               OR: [
@@ -417,8 +424,8 @@ Router.get(
 // create a product
 Router.post(
   "/",
-  // auth,
-  // checkIfAdmin,
+  auth,
+  checkIfAdmin,
   async (req: Request, res: Response, next: NextFunction) => {
     try {
       const {
@@ -429,6 +436,8 @@ Router.post(
         price,
         subCategoryName,
         categoryName,
+        categorySlug,
+        subCategorySlug,
         images,
         filters,
       } = req.body;
@@ -455,20 +464,16 @@ Router.post(
           editorDescription,
           categoryName,
           subCategoryName,
-          categorySlug: generateSlug(categoryName),
-          subCategorySlug: generateSlug(subCategoryName),
-          pricing: {
-            create: {
-              basePrice: parseFloat(price),
-            },
-          },
+          categorySlug,
+          subCategorySlug,
+          price: parseFloat(price),
           images: {
             create: [...images],
           },
-          slug: generateSlug(name, categoryName),
+          slug: generateSlug(name, "", true),
           category: {
             connect: {
-              name: req.body.categoryName,
+              slug: subCategorySlug,
             },
           },
           filters: {
