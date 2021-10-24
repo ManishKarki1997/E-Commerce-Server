@@ -196,20 +196,20 @@ Router.get(
       const { take = 10, skip = 0 } = (req as any).query;
 
       const subCategories = await prisma.category.findMany({
-        take: parseInt(take),
-        skip: parseInt(skip),
         where: {
           parentName: {
             equals: categorySlug,
             mode: "insensitive",
           },
         },
+        take: parseInt(take),
+        skip: parseInt(skip),
       });
 
-      if (!subCategories) {
-        next(new NOT_FOUND_ERROR("Category with that name not found"));
-        return;
-      }
+      // if (!subCategories) {
+      //   next(new NOT_FOUND_ERROR("Category with that name not found"));
+      //   return;
+      // }
 
       return res.status(HttpStatusCode.OK).send(
         new OK_REQUEST("SubCategories fetched successfully", {
@@ -413,8 +413,6 @@ Router.put(
           ...bodyCopy,
         },
       });
-
-      // if(req.body.originalP)
 
       return res.status(HttpStatusCode.OK).send(
         new OK_REQUEST("Category updated successfully", {

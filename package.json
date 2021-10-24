@@ -12,7 +12,8 @@
     "postinstall": "tsc",
     "build": "tsc",
     "seed": "npx prisma db seed --preview-feature",
-    "deploy": "git add . && git commit -m Heroku && git push heroku master",
+    "deployMigration": "npx prisma migrate deploy --preview-feature",
+    "pushHeroku": "git push heroku master",
     "ts-node": "ts-node --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\""
   },
   "author": "Manish Karki",

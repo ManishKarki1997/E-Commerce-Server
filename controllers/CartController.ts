@@ -51,7 +51,7 @@ Router.post(
     try {
       const user = (req as any).user;
 
-      const { product, count, totalPrice } = req.body;
+      const { product, count } = req.body;
 
       if (!user) {
         return next(new BAD_REQUEST_ERROR("You're not logged in."));
@@ -81,7 +81,6 @@ Router.post(
             },
           },
           count: parseInt(count),
-          totalPrice: parseFloat(totalPrice),
           product: {
             connect: {
               uid: product.uid,
@@ -115,7 +114,7 @@ Router.delete(
         cartItemId,
         productUid,
       }: { cartItemId: string; productUid: string } = (req as any).query;
-
+      console.log({ cartItemId, productUid });
       await prisma.product.update({
         where: {
           uid: productUid,

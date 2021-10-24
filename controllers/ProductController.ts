@@ -80,7 +80,6 @@ Router.get(
   async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { take = 10, skip = 0 } = (req as any).query;
-
       const products = await prisma.productDiscount.findMany({
         take: parseInt(take),
         skip: parseInt(skip),
