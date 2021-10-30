@@ -114,7 +114,7 @@ Router.delete(
         cartItemId,
         productUid,
       }: { cartItemId: string; productUid: string } = (req as any).query;
-      console.log({ cartItemId, productUid });
+
       await prisma.product.update({
         where: {
           uid: productUid,

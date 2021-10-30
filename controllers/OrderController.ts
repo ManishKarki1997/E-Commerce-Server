@@ -30,7 +30,7 @@ Router.post(
           name: item.product.name,
           description: item.product.name,
           images: [item.product.images[0]?.imageUrl],
-          amount: item.totalPrice * 100,
+          amount: item.count * parseInt(item.product.price) * 100,
           currency,
           quantity: item.count,
         };
@@ -108,7 +108,7 @@ Router.post(
         userId: user.id,
         productId: parseInt(item.product.id),
         quantity: item.count,
-        perItemPrice: item.product.price,
+        perItemPrice: parseFloat(item.product.price),
         paymentIntentId,
         totalPrice: parseInt(item.count) * parseFloat(item.product.price),
       }));
