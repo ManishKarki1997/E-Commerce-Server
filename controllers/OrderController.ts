@@ -13,7 +13,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 });
 
 const currency = "usd";
-const frontendUrl = "http://localhost:3000";
+const frontendUrl = process.env.FRONTEND_URL || "http://localhost:3000";
 
 const Router = express.Router();
 
