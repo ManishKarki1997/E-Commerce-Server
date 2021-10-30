@@ -144,7 +144,7 @@ Router.delete(
   async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { questionId, answerId } = (req as any).query;
-      console.log({ questionId, answerId });
+
       const user = (req as any).user;
 
       const question = await prisma.qnA.findFirst({
