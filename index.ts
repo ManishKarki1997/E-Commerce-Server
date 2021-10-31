@@ -22,7 +22,11 @@ const app = express();
 app.use(
   cors({
     credentials: true,
-    origin: ["http://localhost:3000", process.env.SECONDARY_FRONTEND_URL!],
+    origin: [
+      "http://localhost:3000",
+      process.env.FRONTEND_URL!,
+      process.env.SECONDARY_FRONTEND_URL!,
+    ],
   })
 );
 
